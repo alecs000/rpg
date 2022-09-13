@@ -30,15 +30,11 @@ public abstract class JoysticDefault : MonoBehaviour, IPointerDownHandler, IPoin
             return;
         }
     }
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     public void OnPointerDown(PointerEventData eventData)
     {
         SwitchJoystick();
         Vector2 backgroundAreaPosition;
+        Debug.Log("w");
         if (RectTransformUtility.ScreenPointToLocalPointInRectangle(joystickZone.rectTransform, eventData.position, null, out backgroundAreaPosition))
         {
             joystickBackground.rectTransform.anchoredPosition = new Vector2(backgroundAreaPosition.x, backgroundAreaPosition.y); ;

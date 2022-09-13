@@ -242,6 +242,246 @@ TextureImporter:
   - first:
       213: 7673495237466308533
     second: carry_79
+  - first:
+      213: -2773059799695285154
+    second: character_carry_0
+  - first:
+      213: 9102699217641232985
+    second: character_carry_1
+  - first:
+      213: -8462330410678191614
+    second: character_carry_2
+  - first:
+      213: -467390044187629109
+    second: character_carry_3
+  - first:
+      213: 179106164011957490
+    second: character_carry_4
+  - first:
+      213: 4383824815269408564
+    second: character_carry_5
+  - first:
+      213: -3292970191521299150
+    second: character_carry_6
+  - first:
+      213: 4021093875272368155
+    second: character_carry_7
+  - first:
+      213: -3197719986023302787
+    second: character_carry_8
+  - first:
+      213: 6183024324465501916
+    second: character_carry_9
+  - first:
+      213: 1670390723839288524
+    second: character_carry_10
+  - first:
+      213: -6193465872952200543
+    second: character_carry_11
+  - first:
+      213: 8544475436686645726
+    second: character_carry_12
+  - first:
+      213: 3842915118753785698
+    second: character_carry_13
+  - first:
+      213: 8045404642447858147
+    second: character_carry_14
+  - first:
+      213: 8801266081497047793
+    second: character_carry_15
+  - first:
+      213: -7093506535621509757
+    second: character_carry_16
+  - first:
+      213: 6657909826638203580
+    second: character_carry_17
+  - first:
+      213: 5754322980747549310
+    second: character_carry_18
+  - first:
+      213: -1270628528650189611
+    second: character_carry_19
+  - first:
+      213: 3956177922238138115
+    second: character_carry_20
+  - first:
+      213: -5501044343996585291
+    second: character_carry_21
+  - first:
+      213: -745756126152503752
+    second: character_carry_22
+  - first:
+      213: 9147486284382155649
+    second: character_carry_23
+  - first:
+      213: 1238564847717897143
+    second: character_carry_24
+  - first:
+      213: -7148063423666384893
+    second: character_carry_25
+  - first:
+      213: -7044600554629295988
+    second: character_carry_26
+  - first:
+      213: -3284870212682371206
+    second: character_carry_27
+  - first:
+      213: 2242597290167470732
+    second: character_carry_28
+  - first:
+      213: -6367118920534654976
+    second: character_carry_29
+  - first:
+      213: -7028868286739517237
+    second: character_carry_30
+  - first:
+      213: 6918259905630934038
+    second: character_carry_31
+  - first:
+      213: 8149353515509906365
+    second: character_carry_32
+  - first:
+      213: 4344316490739894032
+    second: character_carry_33
+  - first:
+      213: -8056905798015510133
+    second: character_carry_34
+  - first:
+      213: 5244251486227380457
+    second: character_carry_35
+  - first:
+      213: -6651225448989988825
+    second: character_carry_36
+  - first:
+      213: -8245587236739318372
+    second: character_carry_37
+  - first:
+      213: 1968614807869460857
+    second: character_carry_38
+  - first:
+      213: -233865694432487068
+    second: character_carry_39
+  - first:
+      213: -4685986853517183965
+    second: character_carry_40
+  - first:
+      213: -5435664191022608803
+    second: character_carry_41
+  - first:
+      213: -6811318383069767985
+    second: character_carry_42
+  - first:
+      213: 1467181446150288060
+    second: character_carry_43
+  - first:
+      213: 2515032181155117649
+    second: character_carry_44
+  - first:
+      213: -9012272029461486861
+    second: character_carry_45
+  - first:
+      213: 5758095408512975176
+    second: character_carry_46
+  - first:
+      213: 5241635199428340194
+    second: character_carry_47
+  - first:
+      213: -1754197856042032945
+    second: character_carry_48
+  - first:
+      213: 386602381253694987
+    second: character_carry_49
+  - first:
+      213: -8971619897712511454
+    second: character_carry_50
+  - first:
+      213: -1218729411163001764
+    second: character_carry_51
+  - first:
+      213: 8143396782084155414
+    second: character_carry_52
+  - first:
+      213: 2267504057590129842
+    second: character_carry_53
+  - first:
+      213: -2958077205488458785
+    second: character_carry_54
+  - first:
+      213: 2884278019913298809
+    second: character_carry_55
+  - first:
+      213: -2973437106817660533
+    second: character_carry_56
+  - first:
+      213: -6868182108349441287
+    second: character_carry_57
+  - first:
+      213: -5787134108368650162
+    second: character_carry_58
+  - first:
+      213: 8411086425117642724
+    second: character_carry_59
+  - first:
+      213: -4040323437089026151
+    second: character_carry_60
+  - first:
+      213: 673280037158601548
+    second: character_carry_61
+  - first:
+      213: -3371284614568148032
+    second: character_carry_62
+  - first:
+      213: -8622597403120390501
+    second: character_carry_63
+  - first:
+      213: -70088836285293246
+    second: character_carry_64
+  - first:
+      213: 4943397230479700826
+    second: character_carry_65
+  - first:
+      213: -5720211272922125478
+    second: character_carry_66
+  - first:
+      213: -8882970409274198511
+    second: character_carry_67
+  - first:
+      213: 6113851811627639325
+    second: character_carry_68
+  - first:
+      213: 6424664735562828173
+    second: character_carry_69
+  - first:
+      213: -4163690016311152873
+    second: character_carry_70
+  - first:
+      213: 1745582476264440019
+    second: character_carry_71
+  - first:
+      213: 8502366082500983976
+    second: character_carry_72
+  - first:
+      213: -6798388396923380784
+    second: character_carry_73
+  - first:
+      213: -7030444251322275323
+    second: character_carry_74
+  - first:
+      213: -7853346413786122799
+    second: character_carry_75
+  - first:
+      213: -3514092859227476181
+    second: character_carry_76
+  - first:
+      213: -889000644017362569
+    second: character_carry_77
+  - first:
+      213: 6748453268290918599
+    second: character_carry_78
+  - first:
+      213: 5133197637136317753
+    second: character_carry_79
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -263,6 +503,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -271,9 +512,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -294,9 +535,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -351,1681 +595,1681 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: carry_0
+      name: character_carry_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2100
-        width: 360
-        height: 300
+        x: 112
+        y: 2133
+        width: 132
+        height: 176
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb16b810cdaf694d0800000000000000
-      internalID: -3128037068336569924
+      spriteID: e542f32fdcc1489d0800000000000000
+      internalID: -2773059799695285154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_1
+      name: character_carry_1
       rect:
         serializedVersion: 2
-        x: 360
-        y: 2100
-        width: 360
-        height: 300
+        x: 470
+        y: 2135
+        width: 134
+        height: 175
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ec88ead8e5dd53a0800000000000000
-      internalID: -6674943876611404575
+      spriteID: 95a5bb4d5b8435e70800000000000000
+      internalID: 9102699217641232985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_2
+      name: character_carry_2
       rect:
         serializedVersion: 2
-        x: 720
-        y: 2100
-        width: 360
-        height: 300
+        x: 828
+        y: 2137
+        width: 137
+        height: 175
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b780f35bc58863c60800000000000000
-      internalID: 7797569736597768315
+      spriteID: 20a7a8ba353cf8a80800000000000000
+      internalID: -8462330410678191614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_3
+      name: character_carry_3
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 2100
-        width: 360
-        height: 300
+        x: 1188
+        y: 2138
+        width: 137
+        height: 175
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d595da65da5a829b0800000000000000
-      internalID: -5104648013722330787
+      spriteID: bc964ac2b3f7389f0800000000000000
+      internalID: -467390044187629109
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_4
+      name: character_carry_4
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 2100
-        width: 360
-        height: 300
+        x: 1548
+        y: 2138
+        width: 137
+        height: 176
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b338de4585051fb0800000000000000
-      internalID: -4677826567842810959
+      spriteID: 2fcf3037b105c7200800000000000000
+      internalID: 179106164011957490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_5
+      name: character_carry_5
       rect:
         serializedVersion: 2
-        x: 1800
-        y: 2100
-        width: 360
-        height: 300
+        x: 1908
+        y: 2138
+        width: 137
+        height: 176
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d7597a10dbed8680800000000000000
-      internalID: -8751079221881120807
+      spriteID: 43feca7617976dc30800000000000000
+      internalID: 4383824815269408564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_6
+      name: character_carry_6
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 2100
-        width: 360
-        height: 300
+        x: 2269
+        y: 2137
+        width: 136
+        height: 176
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c466bb50c71ef6720800000000000000
-      internalID: 2841737812682434124
+      spriteID: 2354c66ce050d42d0800000000000000
+      internalID: -3292970191521299150
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_7
+      name: character_carry_7
       rect:
         serializedVersion: 2
-        x: 2520
-        y: 2100
-        width: 360
-        height: 300
+        x: 2630
+        y: 2135
+        width: 136
+        height: 177
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 216f2440fba1df8a0800000000000000
-      internalID: -6269825698517289454
+      spriteID: b10cb1c239bcdc730800000000000000
+      internalID: 4021093875272368155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_8
+      name: character_carry_8
       rect:
         serializedVersion: 2
-        x: 2880
-        y: 2100
-        width: 360
-        height: 300
+        x: 2992
+        y: 2133
+        width: 132
+        height: 178
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f27bc2e389e4c4ef0800000000000000
-      internalID: -122636674060732625
+      spriteID: d79f9ed6d9a6f93d0800000000000000
+      internalID: -3197719986023302787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_9
+      name: character_carry_9
       rect:
         serializedVersion: 2
-        x: 3240
-        y: 2100
-        width: 360
-        height: 300
+        x: 3354
+        y: 2133
+        width: 130
+        height: 176
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b321d0110b1c6c20800000000000000
-      internalID: 3200963126544638904
+      spriteID: cd6ad513dd38ec550800000000000000
+      internalID: 6183024324465501916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_10
+      name: character_carry_10
       rect:
         serializedVersion: 2
-        x: 3600
-        y: 2100
-        width: 360
-        height: 300
+        x: 3715
+        y: 2134
+        width: 131
+        height: 177
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0d41de52cef3b9b0800000000000000
-      internalID: -5065425045093790454
+      spriteID: cc46c82638b6e2710800000000000000
+      internalID: 1670390723839288524
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_11
+      name: character_carry_11
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1800
-        width: 360
-        height: 300
+        x: 116
+        y: 1835
+        width: 131
+        height: 178
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92736773ee1c650d0800000000000000
-      internalID: -3434344436946553047
+      spriteID: 1a2fd2a5a936c0aa0800000000000000
+      internalID: -6193465872952200543
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_12
+      name: character_carry_12
       rect:
         serializedVersion: 2
-        x: 360
-        y: 1800
-        width: 360
-        height: 300
+        x: 476
+        y: 1836
+        width: 133
+        height: 179
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0e193b0e4f7f9f10800000000000000
-      internalID: 2278679909645229579
+      spriteID: ed912cb9323149670800000000000000
+      internalID: 8544475436686645726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_13
+      name: character_carry_13
       rect:
         serializedVersion: 2
-        x: 720
-        y: 1800
-        width: 360
-        height: 300
+        x: 837
+        y: 1837
+        width: 133
+        height: 179
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffec61b1ec16b52c0800000000000000
-      internalID: -4441849069625225473
+      spriteID: 2672c4b90f6c45530800000000000000
+      internalID: 3842915118753785698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_14
+      name: character_carry_14
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 1800
-        width: 360
-        height: 300
+        x: 1197
+        y: 1837
+        width: 133
+        height: 179
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5dbc041110763f20800000000000000
-      internalID: 3402029787178122587
+      spriteID: 3e9126b55e407af60800000000000000
+      internalID: 8045404642447858147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_15
+      name: character_carry_15
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 1800
-        width: 360
-        height: 300
+        x: 1557
+        y: 1837
+        width: 132
+        height: 179
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8ceceabf1b83e630800000000000000
-      internalID: 3955157866157763726
+      spriteID: 1f26359bed0642a70800000000000000
+      internalID: 8801266081497047793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_16
+      name: character_carry_16
       rect:
         serializedVersion: 2
-        x: 1800
-        y: 1800
-        width: 360
-        height: 300
+        x: 1916
+        y: 1836
+        width: 132
+        height: 179
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c17956fc81ec47460800000000000000
-      internalID: 7238637107045308188
+      spriteID: 38d3e5c836dce8d90800000000000000
+      internalID: -7093506535621509757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_17
+      name: character_carry_17
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 1800
-        width: 360
-        height: 300
+        x: 2276
+        y: 1835
+        width: 131
+        height: 179
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 551c7f68252b26ce0800000000000000
-      internalID: -1413371265519468203
+      spriteID: cba4a5356b5a56c50800000000000000
+      internalID: 6657909826638203580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_18
+      name: character_carry_18
       rect:
         serializedVersion: 2
-        x: 2520
-        y: 1800
-        width: 360
-        height: 300
+        x: 2635
+        y: 1834
+        width: 130
+        height: 179
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f672d82d7eda90630800000000000000
-      internalID: 3893834564020021103
+      spriteID: e7a135663467bdf40800000000000000
+      internalID: 5754322980747549310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_19
+      name: character_carry_19
       rect:
         serializedVersion: 2
-        x: 2880
-        y: 1800
-        width: 360
-        height: 300
+        x: 2994
+        y: 1833
+        width: 130
+        height: 178
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f522fc7fb34eabd50800000000000000
-      internalID: 6753961537407230559
+      spriteID: 5d40454d512dd5ee0800000000000000
+      internalID: -1270628528650189611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_20
+      name: character_carry_20
       rect:
         serializedVersion: 2
-        x: 3240
-        y: 1800
-        width: 360
-        height: 300
+        x: 3345
+        y: 1834
+        width: 154
+        height: 175
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9d6c2a126bcdda30800000000000000
-      internalID: 4241770046259228060
+      spriteID: 3074f3b0cda27e630800000000000000
+      internalID: 3956177922238138115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_21
+      name: character_carry_21
       rect:
         serializedVersion: 2
-        x: 3600
-        y: 1800
-        width: 360
-        height: 300
+        x: 3706
+        y: 1839
+        width: 151
+        height: 175
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 132466aa2e40e92b0800000000000000
-      internalID: -5576013917070147023
+      spriteID: 5ba696e905d58a3b0800000000000000
+      internalID: -5501044343996585291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_22
+      name: character_carry_22
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1500
-        width: 360
-        height: 300
+        x: 107
+        y: 1542
+        width: 150
+        height: 175
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d5ec291a10441130800000000000000
-      internalID: 3536522088228382166
+      spriteID: 83ecb9321ca86a5f0800000000000000
+      internalID: -745756126152503752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_23
+      name: character_carry_23
       rect:
         serializedVersion: 2
-        x: 360
-        y: 1500
-        width: 360
-        height: 300
+        x: 467
+        y: 1544
+        width: 149
+        height: 175
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b725f6ce96088d0e0800000000000000
-      internalID: -2244903221817552261
+      spriteID: 1833b586f4662fe70800000000000000
+      internalID: 9147486284382155649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_24
+      name: character_carry_24
       rect:
         serializedVersion: 2
-        x: 720
-        y: 1500
-        width: 360
-        height: 300
+        x: 827
+        y: 1545
+        width: 149
+        height: 174
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 682b004c4f2aea930800000000000000
-      internalID: 4156438678253646470
+      spriteID: 7b3d283ba24403110800000000000000
+      internalID: 1238564847717897143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_25
+      name: character_carry_25
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 1500
-        width: 360
-        height: 300
+        x: 1188
+        y: 1544
+        width: 149
+        height: 175
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed722baac7db6ff50800000000000000
-      internalID: 6914922621011371998
+      spriteID: 3001760303afccc90800000000000000
+      internalID: -7148063423666384893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_26
+      name: character_carry_26
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 1500
-        width: 360
-        height: 300
+        x: 1549
+        y: 1543
+        width: 149
+        height: 175
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f81437154fa4b4bc0800000000000000
-      internalID: -3797859447557897841
+      spriteID: c801dc49e1d8c3e90800000000000000
+      internalID: -7044600554629295988
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_27
+      name: character_carry_27
       rect:
         serializedVersion: 2
-        x: 1800
-        y: 1500
-        width: 360
-        height: 300
+        x: 1911
+        y: 1540
+        width: 150
+        height: 176
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce5aea73b22a71260800000000000000
-      internalID: 7068296446682768876
+      spriteID: a7f2ecf02fbc962d0800000000000000
+      internalID: -3284870212682371206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_28
+      name: character_carry_28
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 1500
-        width: 360
-        height: 300
+        x: 2274
+        y: 1536
+        width: 150
+        height: 177
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fd6d985d3dd3cec0800000000000000
-      internalID: -3547748825888363019
+      spriteID: c8a8fa68a5e4f1f10800000000000000
+      internalID: 2242597290167470732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_29
+      name: character_carry_29
       rect:
         serializedVersion: 2
-        x: 2520
-        y: 1500
-        width: 360
-        height: 300
+        x: 2638
+        y: 1531
+        width: 150
+        height: 178
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37904757f98562a50800000000000000
-      internalID: 6495976954422102387
+      spriteID: 0000dd2831373a7a0800000000000000
+      internalID: -6367118920534654976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_30
+      name: character_carry_30
       rect:
         serializedVersion: 2
-        x: 2880
-        y: 1500
-        width: 360
-        height: 300
+        x: 2998
+        y: 1536
+        width: 152
+        height: 178
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff0c811b72e50ce70800000000000000
-      internalID: 9133403568875290879
+      spriteID: bc0f1e3a881747e90800000000000000
+      internalID: -7028868286739517237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_31
+      name: character_carry_31
       rect:
         serializedVersion: 2
-        x: 3240
-        y: 1500
-        width: 360
-        height: 300
+        x: 3359
+        y: 1540
+        width: 153
+        height: 177
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67d1a0e06cb6417e0800000000000000
-      internalID: -1795691853030744714
+      spriteID: 61495facab8920060800000000000000
+      internalID: 6918259905630934038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_32
+      name: character_carry_32
       rect:
         serializedVersion: 2
-        x: 3600
-        y: 1500
-        width: 360
-        height: 300
+        x: 3719
+        y: 1543
+        width: 155
+        height: 176
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9db70ca0a83c3cf80800000000000000
-      internalID: -8087405508173988903
+      spriteID: dbb7c0168d1581170800000000000000
+      internalID: 8149353515509906365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_33
+      name: character_carry_33
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1200
-        width: 360
-        height: 300
+        x: 119
+        y: 1245
+        width: 155
+        height: 176
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aad2c4cd553be86e0800000000000000
-      internalID: -1833330816943641174
+      spriteID: 0174c66c4dc1a4c30800000000000000
+      internalID: 4344316490739894032
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_34
+      name: character_carry_34
       rect:
         serializedVersion: 2
-        x: 360
-        y: 1200
-        width: 360
-        height: 300
+        x: 479
+        y: 1245
+        width: 156
+        height: 176
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61f4ea041b5bc1e70800000000000000
-      internalID: 9087337921025822486
+      spriteID: b8910803dde103090800000000000000
+      internalID: -8056905798015510133
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_35
+      name: character_carry_35
       rect:
         serializedVersion: 2
-        x: 720
-        y: 1200
-        width: 360
-        height: 300
+        x: 839
+        y: 1245
+        width: 155
+        height: 176
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 806ad46e1850cb500800000000000000
-      internalID: 413211321284011528
+      spriteID: 9e8b56501f257c840800000000000000
+      internalID: 5244251486227380457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_36
+      name: character_carry_36
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 1200
-        width: 360
-        height: 300
+        x: 1197
+        y: 1244
+        width: 155
+        height: 177
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7af135888e4018420800000000000000
-      internalID: 2630389054127153063
+      spriteID: 728e9ef91b912b3a0800000000000000
+      internalID: -6651225448989988825
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_37
+      name: character_carry_37
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 1200
-        width: 360
-        height: 300
+        x: 1554
+        y: 1242
+        width: 155
+        height: 178
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65432d4a77b8bc9b0800000000000000
-      internalID: -5058796410438011818
+      spriteID: c9d78ad581ac19d80800000000000000
+      internalID: -8245587236739318372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_38
+      name: character_carry_38
       rect:
         serializedVersion: 2
-        x: 1800
-        y: 1200
-        width: 360
-        height: 300
+        x: 1910
+        y: 1239
+        width: 154
+        height: 180
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee3beb18c47c3ff60800000000000000
-      internalID: 8067010488958890990
+      spriteID: 97112a2dcbce15b10800000000000000
+      internalID: 1968614807869460857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_39
+      name: character_carry_39
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 1200
-        width: 360
-        height: 300
+        x: 2265
+        y: 1235
+        width: 153
+        height: 183
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 681e7205be0536300800000000000000
-      internalID: 244127776400466310
+      spriteID: 4699336d36421ccf0800000000000000
+      internalID: -233865694432487068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_40
+      name: character_carry_40
       rect:
         serializedVersion: 2
-        x: 2520
-        y: 1200
-        width: 360
-        height: 300
+        x: 2637
+        y: 1227
+        width: 127
+        height: 177
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: add4a82a9e59bf6e0800000000000000
-      internalID: -1802682395144860198
+      spriteID: 32435fdb8c708feb0800000000000000
+      internalID: -4685986853517183965
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_41
+      name: character_carry_41
       rect:
         serializedVersion: 2
-        x: 2880
-        y: 1200
-        width: 360
-        height: 300
+        x: 2998
+        y: 1228
+        width: 128
+        height: 174
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da0bf359cf5962c90800000000000000
-      internalID: -7194898442609512275
+      spriteID: d5e49c7b734a094b0800000000000000
+      internalID: -5435664191022608803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_42
+      name: character_carry_42
       rect:
         serializedVersion: 2
-        x: 3240
-        y: 1200
-        width: 360
-        height: 300
+        x: 3358
+        y: 1230
+        width: 129
+        height: 171
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41ff6eeb1fa834bc0800000000000000
-      internalID: -3800040889676005612
+      spriteID: fc6d90db4065971a0800000000000000
+      internalID: -6811318383069767985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_43
+      name: character_carry_43
       rect:
         serializedVersion: 2
-        x: 3600
-        y: 1200
-        width: 360
-        height: 300
+        x: 3717
+        y: 1231
+        width: 131
+        height: 170
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cae9310220fc92e0800000000000000
-      internalID: -2117553695930848571
+      spriteID: cb2f4d670c97c5410800000000000000
+      internalID: 1467181446150288060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_44
+      name: character_carry_44
       rect:
         serializedVersion: 2
-        x: 0
-        y: 900
-        width: 360
-        height: 300
+        x: 117
+        y: 931
+        width: 131
+        height: 170
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c4a49c82f49bb580800000000000000
-      internalID: -8810284476558695223
+      spriteID: 15a3d6c817037e220800000000000000
+      internalID: 2515032181155117649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_45
+      name: character_carry_45
       rect:
         serializedVersion: 2
-        x: 360
-        y: 900
-        width: 360
-        height: 300
+        x: 477
+        y: 931
+        width: 130
+        height: 170
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0a64e842724182a0800000000000000
-      internalID: -6737030508952917491
+      spriteID: 3f262c8965afde280800000000000000
+      internalID: -9012272029461486861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_46
+      name: character_carry_46
       rect:
         serializedVersion: 2
-        x: 720
-        y: 900
-        width: 360
-        height: 300
+        x: 837
+        y: 930
+        width: 130
+        height: 171
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cda78502dc3a09a0800000000000000
-      internalID: -6266129058799047224
+      spriteID: 841493f244dd8ef40800000000000000
+      internalID: 5758095408512975176
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_47
+      name: character_carry_47
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 900
-        width: 360
-        height: 300
+        x: 1197
+        y: 929
+        width: 128
+        height: 172
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c50eed4da9dee73a0800000000000000
-      internalID: -6665629149209632676
+      spriteID: 2e92c1841770eb840800000000000000
+      internalID: 5241635199428340194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_48
+      name: character_carry_48
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 900
-        width: 360
-        height: 300
+        x: 1557
+        y: 928
+        width: 127
+        height: 173
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c1229133dc7d7a30800000000000000
-      internalID: 4214662072800256452
+      spriteID: fc0ecd41856d7a7e0800000000000000
+      internalID: -1754197856042032945
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_49
+      name: character_carry_49
       rect:
         serializedVersion: 2
-        x: 1800
-        y: 900
-        width: 360
-        height: 300
+        x: 1913
+        y: 927
+        width: 128
+        height: 175
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dde45b82b286da810800000000000000
-      internalID: 1778191962457067229
+      spriteID: b0652f341dc7d5500800000000000000
+      internalID: 386602381253694987
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_50
+      name: character_carry_50
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 900
-        width: 360
-        height: 300
+        x: 2272
+        y: 928
+        width: 128
+        height: 175
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc30c931d42d474a0800000000000000
-      internalID: -6596416325707627571
+      spriteID: 226f4099c376e7380800000000000000
+      internalID: -8971619897712511454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_51
+      name: character_carry_51
       rect:
         serializedVersion: 2
-        x: 2520
-        y: 900
-        width: 360
-        height: 300
+        x: 2631
+        y: 928
+        width: 127
+        height: 175
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95c812a9efbf65000800000000000000
-      internalID: 24483918923271257
+      spriteID: c5cee42ce04361fe0800000000000000
+      internalID: -1218729411163001764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_52
+      name: character_carry_52
       rect:
         serializedVersion: 2
-        x: 2880
-        y: 900
-        width: 360
-        height: 300
+        x: 2991
+        y: 929
+        width: 127
+        height: 175
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76c80cc097a71a120800000000000000
-      internalID: 2423352734825614439
+      spriteID: 6186f2d4a38230170800000000000000
+      internalID: 8143396782084155414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_53
+      name: character_carry_53
       rect:
         serializedVersion: 2
-        x: 3240
-        y: 900
-        width: 360
-        height: 300
+        x: 3351
+        y: 929
+        width: 127
+        height: 176
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c82c0d12037fe020800000000000000
-      internalID: 2373241981562005701
+      spriteID: 2b4aa673deac77f10800000000000000
+      internalID: 2267504057590129842
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_54
+      name: character_carry_54
       rect:
         serializedVersion: 2
-        x: 3600
-        y: 900
-        width: 360
-        height: 300
+        x: 3711
+        y: 929
+        width: 127
+        height: 176
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c47e92c032e416760800000000000000
-      internalID: 7449321171082405708
+      spriteID: fd32ea4447cc2f6d0800000000000000
+      internalID: -2958077205488458785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_55
+      name: character_carry_55
       rect:
         serializedVersion: 2
-        x: 0
-        y: 600
-        width: 360
-        height: 300
+        x: 111
+        y: 629
+        width: 127
+        height: 176
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b96807e734a6284d0800000000000000
-      internalID: -3133825552579787109
+      spriteID: 973366ad393070820800000000000000
+      internalID: 2884278019913298809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_56
+      name: character_carry_56
       rect:
         serializedVersion: 2
-        x: 360
-        y: 600
-        width: 360
-        height: 300
+        x: 471
+        y: 629
+        width: 127
+        height: 176
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65acc628ba300e0f0800000000000000
-      internalID: -1089867074661201322
+      spriteID: b890b2e84ba3cb6d0800000000000000
+      internalID: -2973437106817660533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_57
+      name: character_carry_57
       rect:
         serializedVersion: 2
-        x: 720
-        y: 600
-        width: 360
-        height: 300
+        x: 832
+        y: 628
+        width: 127
+        height: 176
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3a8f6851b52c08e0800000000000000
-      internalID: -1725963113566598597
+      spriteID: 9fa532bf2c05fa0a0800000000000000
+      internalID: -6868182108349441287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_58
+      name: character_carry_58
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 600
-        width: 360
-        height: 300
+        x: 1193
+        y: 628
+        width: 127
+        height: 176
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd3b118a22bf89820800000000000000
-      internalID: 2925364084244329436
+      spriteID: e40c323a038ffafa0800000000000000
+      internalID: -5787134108368650162
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_59
+      name: character_carry_59
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 600
-        width: 360
-        height: 300
+        x: 1555
+        y: 627
+        width: 127
+        height: 177
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d436f7ec58f05add0800000000000000
-      internalID: -2475555352800697523
+      spriteID: 4ef4f303a8e2ab470800000000000000
+      internalID: 8411086425117642724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_60
+      name: character_carry_60
       rect:
         serializedVersion: 2
-        x: 1800
-        y: 600
-        width: 360
-        height: 300
+        x: 1943
+        y: 674
+        width: 56
+        height: 30
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35a83e8193a248920800000000000000
-      internalID: 2991562477199919699
+      spriteID: 99f8f929d33ede7c0800000000000000
+      internalID: -4040323437089026151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_61
+      name: character_carry_61
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 600
-        width: 360
-        height: 300
+        x: 2304
+        y: 678
+        width: 56
+        height: 30
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72db98e35d91aa970800000000000000
-      internalID: 8766848028298034471
+      spriteID: c43433960a8f75900800000000000000
+      internalID: 673280037158601548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_62
+      name: character_carry_62
       rect:
         serializedVersion: 2
-        x: 2520
-        y: 600
-        width: 360
-        height: 300
+        x: 2665
+        y: 681
+        width: 56
+        height: 30
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6e8e37853ebfbe00800000000000000
-      internalID: 1062777174194294380
+      spriteID: 0c30def318ac631d0800000000000000
+      internalID: -3371284614568148032
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_63
+      name: character_carry_63
       rect:
         serializedVersion: 2
-        x: 2880
-        y: 600
-        width: 360
-        height: 300
+        x: 3025
+        y: 683
+        width: 57
+        height: 30
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f718a831bf1240c70800000000000000
-      internalID: 8936304922858258815
+      spriteID: b9eadc9a851665880800000000000000
+      internalID: -8622597403120390501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_64
+      name: character_carry_64
       rect:
         serializedVersion: 2
-        x: 3240
-        y: 600
-        width: 360
-        height: 300
+        x: 3385
+        y: 684
+        width: 58
+        height: 30
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f54f312ef8bbdfc0800000000000000
-      internalID: -3468975686339836423
+      spriteID: 24d9e72239ef60ff0800000000000000
+      internalID: -70088836285293246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_65
+      name: character_carry_65
       rect:
         serializedVersion: 2
-        x: 3600
-        y: 600
-        width: 360
-        height: 300
+        x: 3746
+        y: 682
+        width: 57
+        height: 31
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6622f9b017f9bd4d0800000000000000
-      internalID: -3108715809894096282
+      spriteID: a53746207997a9440800000000000000
+      internalID: 4943397230479700826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_66
+      name: character_carry_66
       rect:
         serializedVersion: 2
-        x: 0
-        y: 300
-        width: 360
-        height: 300
+        x: 147
+        y: 381
+        width: 57
+        height: 31
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 991c0e0a6ef1f3140800000000000000
-      internalID: 4701511611400110489
+      spriteID: a5baa4d772abd90b0800000000000000
+      internalID: -5720211272922125478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_67
+      name: character_carry_67
       rect:
         serializedVersion: 2
-        x: 360
-        y: 300
-        width: 360
-        height: 300
+        x: 510
+        y: 378
+        width: 57
+        height: 31
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73db5a9433a89ddc0800000000000000
-      internalID: -3613705273104548553
+      spriteID: 116b7ec0a7959b480800000000000000
+      internalID: -8882970409274198511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_68
+      name: character_carry_68
       rect:
         serializedVersion: 2
-        x: 720
-        y: 300
-        width: 360
-        height: 300
+        x: 874
+        y: 374
+        width: 57
+        height: 31
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9105a02e0e2b01ac0800000000000000
-      internalID: -3886409799485992935
+      spriteID: d12a17184d3c8d450800000000000000
+      internalID: 6113851811627639325
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_69
+      name: character_carry_69
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 300
-        width: 360
-        height: 300
+        x: 1239
+        y: 370
+        width: 57
+        height: 30
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99480ae88600b2640800000000000000
-      internalID: 5056135455722996889
+      spriteID: d898334a98ef82950800000000000000
+      internalID: 6424664735562828173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_70
+      name: character_carry_70
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 300
-        width: 360
-        height: 300
+        x: 1598
+        y: 373
+        width: 57
+        height: 30
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0617860f20c0175a0800000000000000
-      internalID: -6525421178320293536
+      spriteID: 71feee68df99736c0800000000000000
+      internalID: -4163690016311152873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_71
+      name: character_carry_71
       rect:
         serializedVersion: 2
-        x: 1800
-        y: 300
-        width: 360
-        height: 300
+        x: 1957
+        y: 376
+        width: 57
+        height: 30
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e08214720d5165b00800000000000000
-      internalID: 816864366170286094
+      spriteID: 3d083ef730e893810800000000000000
+      internalID: 1745582476264440019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_72
+      name: character_carry_72
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 300
-        width: 360
-        height: 300
+        x: 2317
+        y: 377
+        width: 57
+        height: 31
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69f4ba2b57cec5930800000000000000
-      internalID: 4133438548272172950
+      spriteID: 8acfcc197e87ef570800000000000000
+      internalID: 8502366082500983976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_73
+      name: character_carry_73
       rect:
         serializedVersion: 2
-        x: 2520
-        y: 300
-        width: 360
-        height: 300
+        x: 2677
+        y: 379
+        width: 56
+        height: 30
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27d74df9034945990800000000000000
-      internalID: -7398125351302038158
+      spriteID: 0db9e3cb5c547a1a0800000000000000
+      internalID: -6798388396923380784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_74
+      name: character_carry_74
       rect:
         serializedVersion: 2
-        x: 2880
-        y: 300
-        width: 360
-        height: 300
+        x: 3036
+        y: 379
+        width: 57
+        height: 31
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78b053d9ec7101a40800000000000000
-      internalID: 5336791734602238855
+      spriteID: 50aafbac338de6e90800000000000000
+      internalID: -7030444251322275323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_75
+      name: character_carry_75
       rect:
         serializedVersion: 2
-        x: 3240
-        y: 300
-        width: 360
-        height: 300
+        x: 3396
+        y: 379
+        width: 56
+        height: 30
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddee5736d9903a280800000000000000
-      internalID: -9033365855991894307
+      spriteID: 1d5b034ab0f430390800000000000000
+      internalID: -7853346413786122799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_76
+      name: character_carry_76
       rect:
         serializedVersion: 2
-        x: 3600
-        y: 300
-        width: 360
-        height: 300
+        x: 3754
+        y: 378
+        width: 57
+        height: 31
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c1ef3bddc48e89b0800000000000000
-      internalID: -5075973710318411321
+      spriteID: b2f620ab92f6b3fc0800000000000000
+      internalID: -3514092859227476181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_77
+      name: character_carry_77
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 360
-        height: 300
+        x: 151
+        y: 77
+        width: 57
+        height: 31
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ff064d8a10cff7e0800000000000000
-      internalID: -1729452511615119373
+      spriteID: 7796048df92a9a3f0800000000000000
+      internalID: -889000644017362569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_78
+      name: character_carry_78
       rect:
         serializedVersion: 2
-        x: 360
-        y: 0
-        width: 360
-        height: 300
+        x: 508
+        y: 76
+        width: 56
+        height: 30
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e13a4abf7e0df530800000000000000
-      internalID: 3890281594867036641
+      spriteID: 7c8ddcf1e7257ad50800000000000000
+      internalID: 6748453268290918599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carry_79
+      name: character_carry_79
       rect:
         serializedVersion: 2
-        x: 720
-        y: 0
-        width: 360
-        height: 300
+        x: 862
+        y: 74
+        width: 57
+        height: 30
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bfb4d6334bbd7a60800000000000000
-      internalID: 7673495237466308533
+      spriteID: 93d726bdd08cc3740800000000000000
+      internalID: 5133197637136317753
       vertices: []
       indices: 
       edges: []
