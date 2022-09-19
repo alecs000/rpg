@@ -10,8 +10,7 @@ public abstract class JoysticDefault : MonoBehaviour, IPointerDownHandler, IPoin
     [SerializeField] private Image joystickZone;
     [SerializeField] private Image joystickBackground;
     private bool isJoystickActive =false;
-    protected static Vector2 inputPosition;
-
+    protected Vector2 inputPosition;
     // Start is called before the first frame update
     private void SwitchJoystick()
     {

@@ -6,6 +6,9 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private float speed;
+    [SerializeField] private JoystickForMovment joystickForMovment;
+    [SerializeField] private JoystickForAttack joystickForAttack;
+    [SerializeField] private GameObject gameObjectCollider;
     private Dictionary<Type, IPlayerBehaviour> behaviorsMap;
     private IPlayerBehaviour currentBehaviour;
     private Animator animator;
@@ -14,7 +17,8 @@ public class Player : MonoBehaviour
     {
         behaviorsMap = new Dictionary<Type, IPlayerBehaviour>();
         behaviorsMap[typeof(IdlePlayerBehaviour)] = new IdlePlayerBehaviour();
-        behaviorsMap[typeof(RunningPlayerBehaviour)] = new RunningPlayerBehaviour(rb,speed, animator);
+        behaviorsMap[typeof(RunningPlayerBehaviour)] = new RunningPlayerBehaviour(rb,speed, animator, joystickForMovment, this);
+        behaviorsMap[typeof(AttackSwordPlayerBehaviour)] = new AttackSwordPlayerBehaviour(animator, joystickForAttack, this, gameObjectCollider);
 
     }
     private void Start()
@@ -55,6 +59,13 @@ public class Player : MonoBehaviour
     public void SetBehaviourRunning()
     {
         var behavior = GetBehaviour<RunningPlayerBehaviour>();
+        if (currentBehaviour == behavior)
+            return;
+        SetBehaviour(behavior);
+    }
+    public void SetBehaviourAttackSword()
+    {
+        var behavior = GetBehaviour<AttackSwordPlayerBehaviour>();
         if (currentBehaviour == behavior)
             return;
         SetBehaviour(behavior);

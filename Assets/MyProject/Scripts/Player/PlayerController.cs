@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Player player;
+    [SerializeField] private JoystickForMovment joystickForMovment;
+    [SerializeField] private JoystickForAttack JoystickForAttack;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,14 +16,15 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (JoystickForMovment.vectorDirection!= Vector2.zero)
+        if (joystickForMovment.vectorDirection!= Vector2.zero)
         {
             player.SetBehaviourRunning();
             return;
         }
-        if (JoystickForMovment.vectorDirection == Vector2.zero)
+        if (JoystickForAttack.vectorAttack != Vector2.zero)
         {
-            player.SetBehaviourIdle();
+            player.SetBehaviourAttackSword();
+            return;
         }
     }
 }
