@@ -9,21 +9,23 @@ public class Player : MonoBehaviour
     [SerializeField] private JoystickForMovment joystickForMovment;
     [SerializeField] private JoystickForAttack joystickForAttack;
     [SerializeField] private GameObject gameObjectCollider;
+    [SerializeField] private GameObject Sword;
+    [SerializeField] private GameObject[] animatorSword;
     private Dictionary<Type, IPlayerBehaviour> behaviorsMap;
     private IPlayerBehaviour currentBehaviour;
-    private Animator animator;
+    private Animator animatorBody;
     private Rigidbody2D rb;
     private void InitBehaviors()
     {
         behaviorsMap = new Dictionary<Type, IPlayerBehaviour>();
         behaviorsMap[typeof(IdlePlayerBehaviour)] = new IdlePlayerBehaviour();
-        behaviorsMap[typeof(RunningPlayerBehaviour)] = new RunningPlayerBehaviour(rb,speed, animator, joystickForMovment, this);
-        behaviorsMap[typeof(AttackSwordPlayerBehaviour)] = new AttackSwordPlayerBehaviour(animator, joystickForAttack, this, gameObjectCollider);
+        behaviorsMap[typeof(RunningPlayerBehaviour)] = new RunningPlayerBehaviour(rb,speed, animatorBody, joystickForMovment, this);
+        behaviorsMap[typeof(AttackSwordPlayerBehaviour)] = new AttackSwordPlayerBehaviour(animatorBody, joystickForAttack, this, gameObjectCollider, animatorSword, Sword);
 
     }
     private void Start()
     {
-        animator = GetComponent<Animator>();
+        animatorBody = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         InitBehaviors();
         SetBehaviourByDefoult();

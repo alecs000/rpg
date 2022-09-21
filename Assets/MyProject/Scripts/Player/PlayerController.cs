@@ -7,22 +7,33 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Player player;
     [SerializeField] private JoystickForMovment joystickForMovment;
     [SerializeField] private JoystickForAttack JoystickForAttack;
+    public static bool isAttack;
+
     // Start is called before the first frame update
     void Start()
     {
         
     }
-
-    // Update is called once per frame
+    public void AttackEnd()
+    {
+        player.SetBehaviourIdle();
+        isAttack = false;
+    }
     void Update()
     {
+        Debug.Log(isAttack);
+        if (isAttack)
+            return;
         if (joystickForMovment.vectorDirection!= Vector2.zero)
         {
             player.SetBehaviourRunning();
             return;
         }
-        if (JoystickForAttack.vectorAttack != Vector2.zero)
+        Debug.Log(JoystickForAttack.vectorAttack);
+
+        if (JoystickForAttack.vectorAttack.x>0.5||JoystickForAttack.vectorAttack.x < -0.5 || JoystickForAttack.vectorAttack.y > 0.5 || JoystickForAttack.vectorAttack.y < -0.5)
         {
+            Debug.Log("Attack");
             player.SetBehaviourAttackSword();
             return;
         }
