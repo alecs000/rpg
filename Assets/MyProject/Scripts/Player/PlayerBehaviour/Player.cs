@@ -5,12 +5,10 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public IWeapon weapon;
     [SerializeField] private float speed;
     [SerializeField] private JoystickForMovment joystickForMovment;
-    [SerializeField] private JoystickForAttack joystickForAttack;
-    [SerializeField] private GameObject gameObjectCollider;
-    [SerializeField] private GameObject Sword;
-    [SerializeField] private GameObject[] animatorSword;
+    [SerializeField] private float swordDamage;
     private Dictionary<Type, IPlayerBehaviour> behaviorsMap;
     private IPlayerBehaviour currentBehaviour;
     private Animator animatorBody;
@@ -19,8 +17,8 @@ public class Player : MonoBehaviour
     {
         behaviorsMap = new Dictionary<Type, IPlayerBehaviour>();
         behaviorsMap[typeof(IdlePlayerBehaviour)] = new IdlePlayerBehaviour();
-        behaviorsMap[typeof(RunningPlayerBehaviour)] = new RunningPlayerBehaviour(rb,speed, animatorBody, joystickForMovment, this);
-        behaviorsMap[typeof(AttackSwordPlayerBehaviour)] = new AttackSwordPlayerBehaviour(animatorBody, joystickForAttack, this, gameObjectCollider, animatorSword, Sword);
+        behaviorsMap[typeof(RunningPlayerBehaviour)] = new RunningPlayerBehaviour(rb, speed, animatorBody, joystickForMovment, this);
+        behaviorsMap[typeof(AttackPlayerBehaviour)] = new AttackPlayerBehaviour(weapon);
 
     }
     private void Start()
@@ -65,9 +63,9 @@ public class Player : MonoBehaviour
             return;
         SetBehaviour(behavior);
     }
-    public void SetBehaviourAttackSword()
+    public void SetBehaviourAttack()
     {
-        var behavior = GetBehaviour<AttackSwordPlayerBehaviour>();
+        var behavior = GetBehaviour<AttackPlayerBehaviour>();
         if (currentBehaviour == behavior)
             return;
         SetBehaviour(behavior);
