@@ -32,7 +32,7 @@ public abstract class MeleeWeapon :MonoBehaviour,  IWeapon
             item.GetComponent<IAlive>().GetDamage(weaponInfo.damage);
         }
         animatorBody.SetBool("IdleActive", true);
-        animatorBody.SetInteger("SwordAttack", 4);
+        animatorBody.SetInteger(weaponInfo.animationName, 4);
         animatorsWeapons[0].SetActive(false);
         animatorsWeapons[1].SetActive(false);
         animatorsWeapons[2].SetActive(false);
@@ -71,6 +71,7 @@ public abstract class MeleeWeapon :MonoBehaviour,  IWeapon
     {
         float radians = (float)Math.Atan(joystickForAttack.vectorAttack.y / joystickForAttack.vectorAttack.x);
         float angle = (float)Math.Abs(radians * (180 / Math.PI));
+        Debug.Log(angle);
         if (joystickForAttack.vectorAttack.x < 0 && joystickForAttack.vectorAttack.y < 0)
         {
             angle += 180;

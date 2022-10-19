@@ -1,14 +1,13 @@
-using System;
+  using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public IWeapon weapon;
+    public IWeapon weapon; // Изменять оружие на нужное в этой переменной
     [SerializeField] private float speed;
     [SerializeField] private JoystickForMovment joystickForMovment;
-    [SerializeField] private float swordDamage;
     private Dictionary<Type, IPlayerBehaviour> behaviorsMap;
     private IPlayerBehaviour currentBehaviour;
     private Animator animatorBody;
