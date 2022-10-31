@@ -1276,10 +1276,10 @@ TextureImporter:
       name: character_hammer_0
       rect:
         serializedVersion: 2
-        x: 113
-        y: 3033
-        width: 161
-        height: 181
+        x: 0
+        y: 3000
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1297,10 +1297,10 @@ TextureImporter:
       name: character_hammer_1
       rect:
         serializedVersion: 2
-        x: 473
-        y: 3033
-        width: 161
-        height: 181
+        x: 360
+        y: 3000
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1318,10 +1318,10 @@ TextureImporter:
       name: character_hammer_2
       rect:
         serializedVersion: 2
-        x: 832
-        y: 3032
-        width: 160
-        height: 181
+        x: 720
+        y: 3000
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1339,10 +1339,10 @@ TextureImporter:
       name: character_hammer_3
       rect:
         serializedVersion: 2
-        x: 1193
-        y: 3032
-        width: 156
-        height: 181
+        x: 1080
+        y: 3000
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1360,10 +1360,10 @@ TextureImporter:
       name: character_hammer_4
       rect:
         serializedVersion: 2
-        x: 1553
-        y: 3033
-        width: 152
-        height: 179
+        x: 1440
+        y: 3000
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1381,10 +1381,10 @@ TextureImporter:
       name: character_hammer_5
       rect:
         serializedVersion: 2
-        x: 1914
-        y: 3033
-        width: 146
-        height: 178
+        x: 1800
+        y: 3000
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1402,10 +1402,10 @@ TextureImporter:
       name: character_hammer_6
       rect:
         serializedVersion: 2
-        x: 2263
-        y: 3033
-        width: 140
-        height: 169
+        x: 2160
+        y: 3000
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1423,10 +1423,10 @@ TextureImporter:
       name: character_hammer_7
       rect:
         serializedVersion: 2
-        x: 2622
-        y: 3033
-        width: 141
-        height: 165
+        x: 2520
+        y: 3000
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1444,10 +1444,10 @@ TextureImporter:
       name: character_hammer_8
       rect:
         serializedVersion: 2
-        x: 2981
-        y: 3033
-        width: 142
-        height: 165
+        x: 2880
+        y: 3000
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1465,10 +1465,10 @@ TextureImporter:
       name: character_hammer_9
       rect:
         serializedVersion: 2
-        x: 3341
-        y: 3033
-        width: 142
-        height: 165
+        x: 3240
+        y: 3000
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1486,10 +1486,10 @@ TextureImporter:
       name: character_hammer_10
       rect:
         serializedVersion: 2
-        x: 3702
-        y: 3033
-        width: 141
-        height: 167
+        x: 3600
+        y: 3000
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1507,10 +1507,10 @@ TextureImporter:
       name: character_hammer_11
       rect:
         serializedVersion: 2
-        x: 102
-        y: 2733
-        width: 141
-        height: 167
+        x: 0
+        y: 2700
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1528,10 +1528,10 @@ TextureImporter:
       name: character_hammer_12
       rect:
         serializedVersion: 2
-        x: 462
-        y: 2733
-        width: 141
-        height: 168
+        x: 360
+        y: 2700
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1549,10 +1549,10 @@ TextureImporter:
       name: character_hammer_13
       rect:
         serializedVersion: 2
-        x: 823
-        y: 2733
-        width: 140
-        height: 168
+        x: 720
+        y: 2700
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1570,10 +1570,10 @@ TextureImporter:
       name: character_hammer_14
       rect:
         serializedVersion: 2
-        x: 1183
-        y: 2733
-        width: 140
-        height: 169
+        x: 1080
+        y: 2700
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1591,10 +1591,10 @@ TextureImporter:
       name: character_hammer_15
       rect:
         serializedVersion: 2
-        x: 1543
-        y: 2733
-        width: 140
-        height: 169
+        x: 1440
+        y: 2700
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1612,10 +1612,10 @@ TextureImporter:
       name: character_hammer_16
       rect:
         serializedVersion: 2
-        x: 1903
-        y: 2733
-        width: 140
-        height: 169
+        x: 1800
+        y: 2700
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1633,10 +1633,10 @@ TextureImporter:
       name: character_hammer_17
       rect:
         serializedVersion: 2
-        x: 2265
-        y: 2733
-        width: 139
-        height: 169
+        x: 2160
+        y: 2700
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1654,10 +1654,10 @@ TextureImporter:
       name: character_hammer_18
       rect:
         serializedVersion: 2
-        x: 2628
-        y: 2732
-        width: 138
-        height: 170
+        x: 2520
+        y: 2700
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1675,10 +1675,10 @@ TextureImporter:
       name: character_hammer_19
       rect:
         serializedVersion: 2
-        x: 2993
-        y: 2732
-        width: 136
-        height: 171
+        x: 2880
+        y: 2700
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1696,10 +1696,10 @@ TextureImporter:
       name: character_hammer_20
       rect:
         serializedVersion: 2
-        x: 3356
-        y: 2733
-        width: 134
-        height: 172
+        x: 3240
+        y: 2700
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1717,10 +1717,10 @@ TextureImporter:
       name: character_hammer_21
       rect:
         serializedVersion: 2
-        x: 3718
-        y: 2733
-        width: 133
-        height: 173
+        x: 3600
+        y: 2700
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1738,10 +1738,10 @@ TextureImporter:
       name: character_hammer_22
       rect:
         serializedVersion: 2
-        x: 118
-        y: 2433
-        width: 133
-        height: 173
+        x: 0
+        y: 2400
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1759,10 +1759,10 @@ TextureImporter:
       name: character_hammer_23
       rect:
         serializedVersion: 2
-        x: 468
-        y: 2515
-        width: 27
-        height: 19
+        x: 360
+        y: 2400
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1780,10 +1780,10 @@ TextureImporter:
       name: character_hammer_24
       rect:
         serializedVersion: 2
-        x: 539
-        y: 2488
-        width: 60
-        height: 64
+        x: 720
+        y: 2400
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1801,10 +1801,10 @@ TextureImporter:
       name: character_hammer_25
       rect:
         serializedVersion: 2
-        x: 828
-        y: 2514
-        width: 27
-        height: 19
+        x: 1080
+        y: 2400
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1822,10 +1822,10 @@ TextureImporter:
       name: character_hammer_26
       rect:
         serializedVersion: 2
-        x: 898
-        y: 2488
-        width: 61
-        height: 64
+        x: 1440
+        y: 2400
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1843,10 +1843,10 @@ TextureImporter:
       name: character_hammer_27
       rect:
         serializedVersion: 2
-        x: 1188
-        y: 2510
-        width: 27
-        height: 19
+        x: 1800
+        y: 2400
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1864,10 +1864,10 @@ TextureImporter:
       name: character_hammer_28
       rect:
         serializedVersion: 2
-        x: 1257
-        y: 2489
-        width: 62
-        height: 63
+        x: 2160
+        y: 2400
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1885,10 +1885,10 @@ TextureImporter:
       name: character_hammer_29
       rect:
         serializedVersion: 2
-        x: 1548
-        y: 2504
-        width: 27
-        height: 18
+        x: 2520
+        y: 2400
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1906,10 +1906,10 @@ TextureImporter:
       name: character_hammer_30
       rect:
         serializedVersion: 2
-        x: 1612
-        y: 2492
-        width: 66
-        height: 59
+        x: 2880
+        y: 2400
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1927,10 +1927,10 @@ TextureImporter:
       name: character_hammer_31
       rect:
         serializedVersion: 2
-        x: 1963
-        y: 2498
-        width: 72
-        height: 51
+        x: 3240
+        y: 2400
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1948,10 +1948,10 @@ TextureImporter:
       name: character_hammer_32
       rect:
         serializedVersion: 2
-        x: 2309
-        y: 2507
-        width: 81
-        height: 36
+        x: 3600
+        y: 2400
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1969,10 +1969,10 @@ TextureImporter:
       name: character_hammer_33
       rect:
         serializedVersion: 2
-        x: 1908
-        y: 2493
-        width: 28
-        height: 19
+        x: 0
+        y: 2100
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1990,10 +1990,10 @@ TextureImporter:
       name: character_hammer_34
       rect:
         serializedVersion: 2
-        x: 2270
-        y: 2478
-        width: 27
-        height: 21
+        x: 360
+        y: 2100
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2011,10 +2011,10 @@ TextureImporter:
       name: character_hammer_35
       rect:
         serializedVersion: 2
-        x: 2734
-        y: 2477
-        width: 22
-        height: 22
+        x: 720
+        y: 2100
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2032,10 +2032,10 @@ TextureImporter:
       name: character_hammer_36
       rect:
         serializedVersion: 2
-        x: 3094
-        y: 2477
-        width: 22
-        height: 22
+        x: 1080
+        y: 2100
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2053,10 +2053,10 @@ TextureImporter:
       name: character_hammer_37
       rect:
         serializedVersion: 2
-        x: 3454
-        y: 2477
-        width: 22
-        height: 22
+        x: 1440
+        y: 2100
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2074,10 +2074,10 @@ TextureImporter:
       name: character_hammer_38
       rect:
         serializedVersion: 2
-        x: 3814
-        y: 2477
-        width: 22
-        height: 22
+        x: 1800
+        y: 2100
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2095,10 +2095,10 @@ TextureImporter:
       name: character_hammer_39
       rect:
         serializedVersion: 2
-        x: 2642
-        y: 2443
-        width: 26
-        height: 19
+        x: 2160
+        y: 2100
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2116,10 +2116,10 @@ TextureImporter:
       name: character_hammer_40
       rect:
         serializedVersion: 2
-        x: 3002
-        y: 2446
-        width: 26
-        height: 19
+        x: 2520
+        y: 2100
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2137,10 +2137,10 @@ TextureImporter:
       name: character_hammer_41
       rect:
         serializedVersion: 2
-        x: 3362
-        y: 2447
-        width: 25
-        height: 19
+        x: 2880
+        y: 2100
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2158,10 +2158,10 @@ TextureImporter:
       name: character_hammer_42
       rect:
         serializedVersion: 2
-        x: 3722
-        y: 2446
-        width: 25
-        height: 19
+        x: 3240
+        y: 2100
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2179,10 +2179,10 @@ TextureImporter:
       name: character_hammer_43
       rect:
         serializedVersion: 2
-        x: 214
-        y: 2177
-        width: 22
-        height: 22
+        x: 3600
+        y: 2100
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2200,10 +2200,10 @@ TextureImporter:
       name: character_hammer_44
       rect:
         serializedVersion: 2
-        x: 574
-        y: 2177
-        width: 22
-        height: 22
+        x: 0
+        y: 1800
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2221,10 +2221,10 @@ TextureImporter:
       name: character_hammer_45
       rect:
         serializedVersion: 2
-        x: 934
-        y: 2177
-        width: 22
-        height: 22
+        x: 360
+        y: 1800
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2242,10 +2242,10 @@ TextureImporter:
       name: character_hammer_46
       rect:
         serializedVersion: 2
-        x: 1294
-        y: 2177
-        width: 22
-        height: 22
+        x: 720
+        y: 1800
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2263,10 +2263,10 @@ TextureImporter:
       name: character_hammer_47
       rect:
         serializedVersion: 2
-        x: 1654
-        y: 2177
-        width: 22
-        height: 22
+        x: 1080
+        y: 1800
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2284,10 +2284,10 @@ TextureImporter:
       name: character_hammer_48
       rect:
         serializedVersion: 2
-        x: 2014
-        y: 2177
-        width: 22
-        height: 22
+        x: 1440
+        y: 1800
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2305,10 +2305,10 @@ TextureImporter:
       name: character_hammer_49
       rect:
         serializedVersion: 2
-        x: 2374
-        y: 2176
-        width: 22
-        height: 22
+        x: 1800
+        y: 1800
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2326,10 +2326,10 @@ TextureImporter:
       name: character_hammer_50
       rect:
         serializedVersion: 2
-        x: 2733
-        y: 2173
-        width: 21
-        height: 22
+        x: 2160
+        y: 1800
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2347,10 +2347,10 @@ TextureImporter:
       name: character_hammer_51
       rect:
         serializedVersion: 2
-        x: 3092
-        y: 2169
-        width: 20
-        height: 22
+        x: 2520
+        y: 1800
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2368,10 +2368,10 @@ TextureImporter:
       name: character_hammer_52
       rect:
         serializedVersion: 2
-        x: 3358
-        y: 2157
-        width: 24
-        height: 21
+        x: 2880
+        y: 1800
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2389,10 +2389,10 @@ TextureImporter:
       name: character_hammer_53
       rect:
         serializedVersion: 2
-        x: 3450
-        y: 2164
-        width: 21
-        height: 22
+        x: 3240
+        y: 1800
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2410,10 +2410,10 @@ TextureImporter:
       name: character_hammer_54
       rect:
         serializedVersion: 2
-        x: 3716
-        y: 2162
-        width: 24
-        height: 21
+        x: 3600
+        y: 1800
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2431,10 +2431,10 @@ TextureImporter:
       name: character_hammer_55
       rect:
         serializedVersion: 2
-        x: 3808
-        y: 2161
-        width: 21
-        height: 21
+        x: 0
+        y: 1500
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2452,10 +2452,10 @@ TextureImporter:
       name: character_hammer_56
       rect:
         serializedVersion: 2
-        x: 122
-        y: 2145
-        width: 25
-        height: 19
+        x: 360
+        y: 1500
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2473,10 +2473,10 @@ TextureImporter:
       name: character_hammer_57
       rect:
         serializedVersion: 2
-        x: 482
-        y: 2144
-        width: 26
-        height: 20
+        x: 720
+        y: 1500
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2494,10 +2494,10 @@ TextureImporter:
       name: character_hammer_58
       rect:
         serializedVersion: 2
-        x: 842
-        y: 2143
-        width: 26
-        height: 20
+        x: 1080
+        y: 1500
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2515,10 +2515,10 @@ TextureImporter:
       name: character_hammer_59
       rect:
         serializedVersion: 2
-        x: 1202
-        y: 2143
-        width: 26
-        height: 20
+        x: 1440
+        y: 1500
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2536,10 +2536,10 @@ TextureImporter:
       name: character_hammer_60
       rect:
         serializedVersion: 2
-        x: 1563
-        y: 2143
-        width: 25
-        height: 19
+        x: 1800
+        y: 1500
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2557,10 +2557,10 @@ TextureImporter:
       name: character_hammer_61
       rect:
         serializedVersion: 2
-        x: 1922
-        y: 2143
-        width: 26
-        height: 19
+        x: 2160
+        y: 1500
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2578,10 +2578,10 @@ TextureImporter:
       name: character_hammer_62
       rect:
         serializedVersion: 2
-        x: 2282
-        y: 2144
-        width: 26
-        height: 19
+        x: 2520
+        y: 1500
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2599,10 +2599,10 @@ TextureImporter:
       name: character_hammer_63
       rect:
         serializedVersion: 2
-        x: 2641
-        y: 2146
-        width: 26
-        height: 20
+        x: 2880
+        y: 1500
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2620,10 +2620,10 @@ TextureImporter:
       name: character_hammer_64
       rect:
         serializedVersion: 2
-        x: 3000
-        y: 2151
-        width: 24
-        height: 20
+        x: 3240
+        y: 1500
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2641,10 +2641,10 @@ TextureImporter:
       name: character_hammer_65
       rect:
         serializedVersion: 2
-        x: 115
-        y: 1865
-        width: 24
-        height: 21
+        x: 3600
+        y: 1500
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2662,10 +2662,10 @@ TextureImporter:
       name: character_hammer_66
       rect:
         serializedVersion: 2
-        x: 207
-        y: 1859
-        width: 21
-        height: 21
+        x: 0
+        y: 1200
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2683,10 +2683,10 @@ TextureImporter:
       name: character_hammer_67
       rect:
         serializedVersion: 2
-        x: 475
-        y: 1865
-        width: 24
-        height: 22
+        x: 360
+        y: 1200
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2704,10 +2704,10 @@ TextureImporter:
       name: character_hammer_68
       rect:
         serializedVersion: 2
-        x: 566
-        y: 1858
-        width: 22
-        height: 21
+        x: 720
+        y: 1200
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2725,12 +2725,12 @@ TextureImporter:
       name: character_hammer_69
       rect:
         serializedVersion: 2
-        x: 853
-        y: 1833
-        width: 137
-        height: 142
+        x: 1080
+        y: 1200
+        width: 360
+        height: 300
       alignment: 9
-      pivot: {x: 0.5, y: 0.26}
+      pivot: {x: 0.5, y: -0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2746,12 +2746,12 @@ TextureImporter:
       name: character_hammer_70
       rect:
         serializedVersion: 2
-        x: 1213
-        y: 1833
-        width: 136
-        height: 142
+        x: 1440
+        y: 1200
+        width: 360
+        height: 300
       alignment: 9
-      pivot: {x: 0.5, y: 0.26}
+      pivot: {x: 0.5, y: -0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2767,12 +2767,12 @@ TextureImporter:
       name: character_hammer_71
       rect:
         serializedVersion: 2
-        x: 1573
-        y: 1833
-        width: 135
-        height: 142
+        x: 1800
+        y: 1200
+        width: 360
+        height: 300
       alignment: 9
-      pivot: {x: 0.5, y: 0.26}
+      pivot: {x: 0.5, y: -0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2788,12 +2788,12 @@ TextureImporter:
       name: character_hammer_72
       rect:
         serializedVersion: 2
-        x: 1932
-        y: 1833
-        width: 131
-        height: 142
+        x: 2160
+        y: 1200
+        width: 360
+        height: 300
       alignment: 9
-      pivot: {x: 0.5, y: 0.26}
+      pivot: {x: 0.5, y: -0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2809,12 +2809,12 @@ TextureImporter:
       name: character_hammer_73
       rect:
         serializedVersion: 2
-        x: 2290
-        y: 1833
-        width: 124
-        height: 142
+        x: 2520
+        y: 1200
+        width: 360
+        height: 300
       alignment: 9
-      pivot: {x: 0.5, y: 0.26}
+      pivot: {x: 0.5, y: -0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2830,12 +2830,12 @@ TextureImporter:
       name: character_hammer_74
       rect:
         serializedVersion: 2
-        x: 2652
-        y: 1833
-        width: 107
-        height: 142
+        x: 2880
+        y: 1200
+        width: 360
+        height: 300
       alignment: 9
-      pivot: {x: 0.5, y: 0.26}
+      pivot: {x: 0.5, y: -0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2851,12 +2851,12 @@ TextureImporter:
       name: character_hammer_75
       rect:
         serializedVersion: 2
-        x: 2973
-        y: 1833
-        width: 121
-        height: 142
+        x: 3240
+        y: 1200
+        width: 360
+        height: 300
       alignment: 9
-      pivot: {x: 0.5, y: 0.26}
+      pivot: {x: 0.5, y: -0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2872,12 +2872,12 @@ TextureImporter:
       name: character_hammer_76
       rect:
         serializedVersion: 2
-        x: 3333
-        y: 1833
-        width: 121
-        height: 142
+        x: 3600
+        y: 1200
+        width: 360
+        height: 300
       alignment: 9
-      pivot: {x: 0.5, y: 0.26}
+      pivot: {x: 0.5, y: -0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2893,12 +2893,12 @@ TextureImporter:
       name: character_hammer_77
       rect:
         serializedVersion: 2
-        x: 3693
-        y: 1833
-        width: 121
-        height: 142
+        x: 0
+        y: 900
+        width: 360
+        height: 300
       alignment: 9
-      pivot: {x: 0.5, y: 0.26}
+      pivot: {x: 0.5, y: -0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2914,12 +2914,12 @@ TextureImporter:
       name: character_hammer_78
       rect:
         serializedVersion: 2
-        x: 93
-        y: 1533
-        width: 121
-        height: 142
+        x: 360
+        y: 900
+        width: 360
+        height: 300
       alignment: 9
-      pivot: {x: 0.5, y: 0.26}
+      pivot: {x: 0.5, y: -0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2935,12 +2935,12 @@ TextureImporter:
       name: character_hammer_79
       rect:
         serializedVersion: 2
-        x: 453
-        y: 1533
-        width: 121
-        height: 142
+        x: 720
+        y: 900
+        width: 360
+        height: 300
       alignment: 9
-      pivot: {x: 0.5, y: 0.26}
+      pivot: {x: 0.5, y: -0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2956,12 +2956,12 @@ TextureImporter:
       name: character_hammer_80
       rect:
         serializedVersion: 2
-        x: 813
-        y: 1533
-        width: 121
-        height: 142
+        x: 1080
+        y: 900
+        width: 360
+        height: 300
       alignment: 9
-      pivot: {x: 0.5, y: 0.26}
+      pivot: {x: 0.5, y: -0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2977,12 +2977,12 @@ TextureImporter:
       name: character_hammer_81
       rect:
         serializedVersion: 2
-        x: 1173
-        y: 1533
-        width: 121
-        height: 142
+        x: 1440
+        y: 900
+        width: 360
+        height: 300
       alignment: 9
-      pivot: {x: 0.5, y: 0.26}
+      pivot: {x: 0.5, y: -0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2998,12 +2998,12 @@ TextureImporter:
       name: character_hammer_82
       rect:
         serializedVersion: 2
-        x: 1533
-        y: 1533
-        width: 121
-        height: 142
+        x: 1800
+        y: 900
+        width: 360
+        height: 300
       alignment: 9
-      pivot: {x: 0.5, y: 0.26}
+      pivot: {x: 0.5, y: -0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3019,12 +3019,12 @@ TextureImporter:
       name: character_hammer_83
       rect:
         serializedVersion: 2
-        x: 1893
-        y: 1533
-        width: 121
-        height: 142
+        x: 2160
+        y: 900
+        width: 360
+        height: 300
       alignment: 9
-      pivot: {x: 0.5, y: 0.26}
+      pivot: {x: 0.5, y: -0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3040,12 +3040,12 @@ TextureImporter:
       name: character_hammer_84
       rect:
         serializedVersion: 2
-        x: 2253
-        y: 1533
-        width: 121
-        height: 142
+        x: 2520
+        y: 900
+        width: 360
+        height: 300
       alignment: 9
-      pivot: {x: 0.5, y: 0.26}
+      pivot: {x: 0.5, y: -0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3061,12 +3061,12 @@ TextureImporter:
       name: character_hammer_85
       rect:
         serializedVersion: 2
-        x: 2615
-        y: 1533
-        width: 119
-        height: 142
+        x: 2880
+        y: 900
+        width: 360
+        height: 300
       alignment: 9
-      pivot: {x: 0.5, y: 0.26}
+      pivot: {x: 0.5, y: -0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3082,12 +3082,12 @@ TextureImporter:
       name: character_hammer_86
       rect:
         serializedVersion: 2
-        x: 2980
-        y: 1533
-        width: 115
-        height: 142
+        x: 3240
+        y: 900
+        width: 360
+        height: 300
       alignment: 9
-      pivot: {x: 0.5, y: 0.26}
+      pivot: {x: 0.5, y: -0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3103,12 +3103,12 @@ TextureImporter:
       name: character_hammer_87
       rect:
         serializedVersion: 2
-        x: 3350
-        y: 1533
-        width: 105
-        height: 142
+        x: 3600
+        y: 900
+        width: 360
+        height: 300
       alignment: 9
-      pivot: {x: 0.5, y: 0.26}
+      pivot: {x: 0.5, y: -0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3124,12 +3124,12 @@ TextureImporter:
       name: character_hammer_88
       rect:
         serializedVersion: 2
-        x: 3720
-        y: 1533
-        width: 97
-        height: 142
+        x: 0
+        y: 600
+        width: 360
+        height: 300
       alignment: 9
-      pivot: {x: 0.5, y: 0.26}
+      pivot: {x: 0.5, y: -0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3145,12 +3145,12 @@ TextureImporter:
       name: character_hammer_89
       rect:
         serializedVersion: 2
-        x: 124
-        y: 1234
-        width: 97
-        height: 114
+        x: 360
+        y: 600
+        width: 360
+        height: 300
       alignment: 9
-      pivot: {x: 0.5, y: 0.26}
+      pivot: {x: 0.5, y: -0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3166,12 +3166,12 @@ TextureImporter:
       name: character_hammer_90
       rect:
         serializedVersion: 2
-        x: 480
-        y: 1234
-        width: 101
-        height: 114
+        x: 720
+        y: 600
+        width: 360
+        height: 300
       alignment: 9
-      pivot: {x: 0.5, y: 0.26}
+      pivot: {x: 0.5, y: -0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3187,12 +3187,12 @@ TextureImporter:
       name: character_hammer_91
       rect:
         serializedVersion: 2
-        x: 837
-        y: 1234
-        width: 104
-        height: 114
+        x: 1080
+        y: 600
+        width: 360
+        height: 300
       alignment: 9
-      pivot: {x: 0.5, y: 0.26}
+      pivot: {x: 0.5, y: -0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3208,10 +3208,10 @@ TextureImporter:
       name: character_hammer_92
       rect:
         serializedVersion: 2
-        x: 1206
-        y: 1270
-        width: 131
-        height: 141
+        x: 1440
+        y: 600
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3229,10 +3229,10 @@ TextureImporter:
       name: character_hammer_93
       rect:
         serializedVersion: 2
-        x: 1566
-        y: 1270
-        width: 131
-        height: 141
+        x: 1800
+        y: 600
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3250,10 +3250,10 @@ TextureImporter:
       name: character_hammer_94
       rect:
         serializedVersion: 2
-        x: 1925
-        y: 1270
-        width: 132
-        height: 141
+        x: 2160
+        y: 600
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3271,10 +3271,10 @@ TextureImporter:
       name: character_hammer_95
       rect:
         serializedVersion: 2
-        x: 2283
-        y: 1319
-        width: 20
-        height: 25
+        x: 2520
+        y: 600
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3292,10 +3292,10 @@ TextureImporter:
       name: character_hammer_96
       rect:
         serializedVersion: 2
-        x: 2299
-        y: 1268
-        width: 117
-        height: 142
+        x: 2880
+        y: 600
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3313,10 +3313,10 @@ TextureImporter:
       name: character_hammer_97
       rect:
         serializedVersion: 2
-        x: 2641
-        y: 1316
-        width: 19
-        height: 27
+        x: 3240
+        y: 600
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3334,10 +3334,10 @@ TextureImporter:
       name: character_hammer_98
       rect:
         serializedVersion: 2
-        x: 2656
-        y: 1262
-        width: 120
-        height: 147
+        x: 3600
+        y: 600
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3355,10 +3355,10 @@ TextureImporter:
       name: character_hammer_99
       rect:
         serializedVersion: 2
-        x: 3001
-        y: 1315
-        width: 20
-        height: 27
+        x: 0
+        y: 300
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3376,10 +3376,10 @@ TextureImporter:
       name: character_hammer_100
       rect:
         serializedVersion: 2
-        x: 3012
-        y: 1256
-        width: 123
-        height: 152
+        x: 360
+        y: 300
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3397,10 +3397,10 @@ TextureImporter:
       name: character_hammer_101
       rect:
         serializedVersion: 2
-        x: 3332
-        y: 1300
-        width: 119
-        height: 108
+        x: 720
+        y: 300
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3418,10 +3418,10 @@ TextureImporter:
       name: character_hammer_102
       rect:
         serializedVersion: 2
-        x: 3694
-        y: 1297
-        width: 116
-        height: 109
+        x: 1080
+        y: 300
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3439,10 +3439,10 @@ TextureImporter:
       name: character_hammer_103
       rect:
         serializedVersion: 2
-        x: 3427
-        y: 1269
-        width: 24
-        height: 23
+        x: 1440
+        y: 300
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3460,10 +3460,10 @@ TextureImporter:
       name: character_hammer_104
       rect:
         serializedVersion: 2
-        x: 3785
-        y: 1268
-        width: 24
-        height: 22
+        x: 1800
+        y: 300
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3481,10 +3481,10 @@ TextureImporter:
       name: character_hammer_105
       rect:
         serializedVersion: 2
-        x: 94
-        y: 996
-        width: 116
-        height: 110
+        x: 2160
+        y: 300
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3502,10 +3502,10 @@ TextureImporter:
       name: character_hammer_106
       rect:
         serializedVersion: 2
-        x: 454
-        y: 997
-        width: 116
-        height: 109
+        x: 2520
+        y: 300
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3523,10 +3523,10 @@ TextureImporter:
       name: character_hammer_107
       rect:
         serializedVersion: 2
-        x: 813
-        y: 998
-        width: 117
-        height: 109
+        x: 2880
+        y: 300
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3544,10 +3544,10 @@ TextureImporter:
       name: character_hammer_108
       rect:
         serializedVersion: 2
-        x: 1173
-        y: 998
-        width: 118
-        height: 109
+        x: 3240
+        y: 300
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3565,10 +3565,10 @@ TextureImporter:
       name: character_hammer_109
       rect:
         serializedVersion: 2
-        x: 1532
-        y: 999
-        width: 119
-        height: 108
+        x: 3600
+        y: 300
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3586,10 +3586,10 @@ TextureImporter:
       name: character_hammer_110
       rect:
         serializedVersion: 2
-        x: 1892
-        y: 999
-        width: 119
-        height: 108
+        x: 0
+        y: 0
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3607,10 +3607,10 @@ TextureImporter:
       name: character_hammer_111
       rect:
         serializedVersion: 2
-        x: 2252
-        y: 999
-        width: 119
-        height: 109
+        x: 360
+        y: 0
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3628,10 +3628,10 @@ TextureImporter:
       name: character_hammer_112
       rect:
         serializedVersion: 2
-        x: 2612
-        y: 1000
-        width: 119
-        height: 108
+        x: 720
+        y: 0
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3649,10 +3649,10 @@ TextureImporter:
       name: character_hammer_113
       rect:
         serializedVersion: 2
-        x: 2973
-        y: 999
-        width: 120
-        height: 109
+        x: 1080
+        y: 0
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3670,10 +3670,10 @@ TextureImporter:
       name: character_hammer_114
       rect:
         serializedVersion: 2
-        x: 3335
-        y: 999
-        width: 125
-        height: 107
+        x: 1440
+        y: 0
+        width: 360
+        height: 300
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3683,867 +3683,6 @@ TextureImporter:
       bones: []
       spriteID: 8f8cc04333684aa20800000000000000
       internalID: 3072728400248228088
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_115
-      rect:
-        serializedVersion: 2
-        x: 3699
-        y: 998
-        width: 127
-        height: 106
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e0b3a8fb9e6e1e720800000000000000
-      internalID: 2873831928854362894
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_116
-      rect:
-        serializedVersion: 2
-        x: 184
-        y: 967
-        width: 24
-        height: 23
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02dd85438b2bb9480800000000000000
-      internalID: -8891316535090946784
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_117
-      rect:
-        serializedVersion: 2
-        x: 545
-        y: 968
-        width: 24
-        height: 22
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb82d18f64937e850800000000000000
-      internalID: 6406151971930974395
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_118
-      rect:
-        serializedVersion: 2
-        x: 906
-        y: 968
-        width: 23
-        height: 23
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c7f6b63e6d797bb70800000000000000
-      internalID: 8914760936597450620
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_119
-      rect:
-        serializedVersion: 2
-        x: 1266
-        y: 968
-        width: 24
-        height: 23
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e94678437bbe87fa0800000000000000
-      internalID: -5802628947774053218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_120
-      rect:
-        serializedVersion: 2
-        x: 1627
-        y: 968
-        width: 23
-        height: 23
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7faeb8f871b15ded0800000000000000
-      internalID: -2389974239243670793
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_121
-      rect:
-        serializedVersion: 2
-        x: 1987
-        y: 969
-        width: 23
-        height: 22
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89ed04a36740bc070800000000000000
-      internalID: 8127594858350173848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_122
-      rect:
-        serializedVersion: 2
-        x: 2347
-        y: 969
-        width: 23
-        height: 23
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b21ad68c451c2990800000000000000
-      internalID: -7409523868507172174
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_123
-      rect:
-        serializedVersion: 2
-        x: 2707
-        y: 969
-        width: 24
-        height: 23
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70ee4399ebc219c70800000000000000
-      internalID: 8976004729451900423
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_124
-      rect:
-        serializedVersion: 2
-        x: 3065
-        y: 968
-        width: 24
-        height: 22
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ce0707031ea0f9c0800000000000000
-      internalID: -3895422280929964348
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_125
-      rect:
-        serializedVersion: 2
-        x: 3418
-        y: 965
-        width: 25
-        height: 22
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2f00960b32692f70800000000000000
-      internalID: 9162962922514681646
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_126
-      rect:
-        serializedVersion: 2
-        x: 3765
-        y: 960
-        width: 27
-        height: 21
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8776353ebf72167e0800000000000000
-      internalID: -1774092815403096200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_127
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 696
-        width: 129
-        height: 107
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6a7da597698c8a50800000000000000
-      internalID: 6524741038138817130
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_128
-      rect:
-        serializedVersion: 2
-        x: 471
-        y: 675
-        width: 127
-        height: 126
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 462bb6a67fe61a9e0800000000000000
-      internalID: -1611885182700506524
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_129
-      rect:
-        serializedVersion: 2
-        x: 834
-        y: 664
-        width: 128
-        height: 137
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d46761883333bb30800000000000000
-      internalID: 4301838386851177685
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_130
-      rect:
-        serializedVersion: 2
-        x: 1195
-        y: 661
-        width: 128
-        height: 140
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e8f32a2d8a10a0c70800000000000000
-      internalID: 8937958235070152590
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_131
-      rect:
-        serializedVersion: 2
-        x: 1553
-        y: 634
-        width: 127
-        height: 177
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d586093a4e2610720800000000000000
-      internalID: 2810636376592115805
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_132
-      rect:
-        serializedVersion: 2
-        x: 1913
-        y: 634
-        width: 127
-        height: 177
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ab53033b69b61060800000000000000
-      internalID: 6923925347197213606
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_133
-      rect:
-        serializedVersion: 2
-        x: 2274
-        y: 634
-        width: 126
-        height: 177
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f9cb2d4de845a020800000000000000
-      internalID: 2352366564410116594
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_134
-      rect:
-        serializedVersion: 2
-        x: 2634
-        y: 634
-        width: 127
-        height: 177
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4fa7b854dc7e652c0800000000000000
-      internalID: -4443109113533334796
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_135
-      rect:
-        serializedVersion: 2
-        x: 2995
-        y: 634
-        width: 126
-        height: 177
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 69191684507c94a70800000000000000
-      internalID: 8811792971430203798
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_136
-      rect:
-        serializedVersion: 2
-        x: 3356
-        y: 634
-        width: 127
-        height: 177
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5758f34f5380dc70800000000000000
-      internalID: 8993832901044361050
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_137
-      rect:
-        serializedVersion: 2
-        x: 3713
-        y: 634
-        width: 126
-        height: 176
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c843240ceee2b23a0800000000000000
-      internalID: -6689201218566081396
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_138
-      rect:
-        serializedVersion: 2
-        x: 148
-        y: 659
-        width: 27
-        height: 18
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 08c09e193b1f32670800000000000000
-      internalID: 8512913474209778816
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_139
-      rect:
-        serializedVersion: 2
-        x: 490
-        y: 661
-        width: 26
-        height: 20
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 935381d90ae0e83b0800000000000000
-      internalID: -5508449211234372295
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_140
-      rect:
-        serializedVersion: 2
-        x: 113
-        y: 334
-        width: 127
-        height: 174
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a271b7732d71cf560800000000000000
-      internalID: 7348774883603191594
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_141
-      rect:
-        serializedVersion: 2
-        x: 473
-        y: 334
-        width: 127
-        height: 174
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c90b081b8e9b3a200800000000000000
-      internalID: 190200018341245084
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_142
-      rect:
-        serializedVersion: 2
-        x: 833
-        y: 334
-        width: 127
-        height: 173
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02454b63da94e16a0800000000000000
-      internalID: -6476658205816237024
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_143
-      rect:
-        serializedVersion: 2
-        x: 1193
-        y: 334
-        width: 127
-        height: 173
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 261216ebe9bc102a0800000000000000
-      internalID: -6772908481929207454
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_144
-      rect:
-        serializedVersion: 2
-        x: 1553
-        y: 334
-        width: 127
-        height: 173
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0cd960300d61cc220800000000000000
-      internalID: 2507404175198297536
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_145
-      rect:
-        serializedVersion: 2
-        x: 1913
-        y: 334
-        width: 127
-        height: 172
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b6b74ccf087ab8aa0800000000000000
-      internalID: -6157643893060633749
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_146
-      rect:
-        serializedVersion: 2
-        x: 2273
-        y: 334
-        width: 127
-        height: 172
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea3b163db57959860800000000000000
-      internalID: 7536095972118606766
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_147
-      rect:
-        serializedVersion: 2
-        x: 2633
-        y: 334
-        width: 127
-        height: 172
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c4da656ae5f4b1c0800000000000000
-      internalID: -4488692541508889407
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_148
-      rect:
-        serializedVersion: 2
-        x: 2993
-        y: 334
-        width: 127
-        height: 173
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3dcb15bb9d10d6f30800000000000000
-      internalID: 4570311231513148627
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_149
-      rect:
-        serializedVersion: 2
-        x: 3353
-        y: 334
-        width: 127
-        height: 172
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 637bf0a86cba16d60800000000000000
-      internalID: 7881769692083238710
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_150
-      rect:
-        serializedVersion: 2
-        x: 3714
-        y: 334
-        width: 127
-        height: 173
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79f18cc20adafc350800000000000000
-      internalID: 6039236528784809879
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_151
-      rect:
-        serializedVersion: 2
-        x: 114
-        y: 34
-        width: 128
-        height: 173
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 420c2755af12a0f90800000000000000
-      internalID: -6986734512852778972
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_152
-      rect:
-        serializedVersion: 2
-        x: 474
-        y: 34
-        width: 134
-        height: 174
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 936ed8d1ab4b272d0800000000000000
-      internalID: -3282362466946914759
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_153
-      rect:
-        serializedVersion: 2
-        x: 835
-        y: 34
-        width: 131
-        height: 174
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31d893d3bb7676750800000000000000
-      internalID: 6298116657784655123
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_154
-      rect:
-        serializedVersion: 2
-        x: 1195
-        y: 34
-        width: 131
-        height: 174
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec72b3349ec7494b0800000000000000
-      internalID: -5434581509032171570
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_hammer_155
-      rect:
-        serializedVersion: 2
-        x: 1555
-        y: 34
-        width: 131
-        height: 174
-      alignment: 9
-      pivot: {x: 0.5, y: 0.26}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: edc9744288e99d3e0800000000000000
-      internalID: -2028415849592283938
       vertices: []
       indices: 
       edges: []

@@ -7,6 +7,10 @@ public class Elf : DefoultEnemy
 {
     protected override void Behavior()
     {
+        if (isDie)
+        {
+            return;
+        }
         bool isMoving = false;
         if (!isAttack)
         {

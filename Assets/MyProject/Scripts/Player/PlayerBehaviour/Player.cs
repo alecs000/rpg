@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     private void InitBehaviors()
     {
         behaviorsMap = new Dictionary<Type, IPlayerBehaviour>();
-        behaviorsMap[typeof(IdlePlayerBehaviour)] = new IdlePlayerBehaviour();
+        behaviorsMap[typeof(IdlePlayerBehaviour)] = new IdlePlayerBehaviour(rb);
         behaviorsMap[typeof(RunningPlayerBehaviour)] = new RunningPlayerBehaviour(rb, speed, animatorBody, joystickForMovment, this);
         behaviorsMap[typeof(AttackPlayerBehaviour)] = new AttackPlayerBehaviour(weapon);
 
@@ -47,6 +47,11 @@ public class Player : MonoBehaviour
     {
         if (currentBehaviour != null)
             currentBehaviour.Update();
+    }
+    private void FixedUpdate()
+    {
+        if (currentBehaviour != null)
+            currentBehaviour.FixedUpdate();
     }
     public void SetBehaviourIdle()
     { 

@@ -5,16 +5,20 @@ using UnityEngine.UI;
 
 public class WeaponsShopBehavior : MonoBehaviour
 {
-    [Tooltip("sword, hammer, piston, scythe, rifle")]
-    [SerializeField] WeaponInfo[] weaponsInfo;
     [SerializeField] Text nameWeapon;
     [SerializeField] Text characteristic;
     [SerializeField] Image weaponImage;
-
-    public void WeaponSelected(int weaponIndex)
+    
+    private WeaponInfo weaponInfo;
+    public void WeaponSelected(WeaponInfo weaponInfo)
     {
-        nameWeapon.text = weaponsInfo[weaponIndex].nameWeapon;
-        characteristic.text = "Damage: "+ weaponsInfo[weaponIndex].damage.ToString()+ "\nAttack speed: " + weaponsInfo[weaponIndex].attackSpeed.ToString();
-        weaponImage.sprite = weaponsInfo[weaponIndex].sprite;
+        this.weaponInfo = weaponInfo;
+        nameWeapon.text = weaponInfo.nameWeapon;
+        characteristic.text = "Damage: "+ weaponInfo.damage.ToString()+ "\nAttack speed: " + weaponInfo.attackSpeed.ToString();
+        weaponImage.sprite = weaponInfo.sprite;
+    }
+    public void Equip()
+    {
+        PlayerPrefs.SetInt("GunIndex", weaponInfo.index);
     }
 }

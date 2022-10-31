@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6214a843eddc1bb48ae6122e18df5291, type: 3}
   m_Name: Hammer
   m_EditorClassIdentifier: 
+  _index: 1
   _nameWeapon: Hammer
   _sprite: {fileID: -1245067320436552432, guid: fb1015b471b94354797cb9cba5c8ca74,
     type: 3}

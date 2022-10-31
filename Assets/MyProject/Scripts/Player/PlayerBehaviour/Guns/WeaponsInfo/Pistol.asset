@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6214a843eddc1bb48ae6122e18df5291, type: 3}
   m_Name: Pistol
   m_EditorClassIdentifier: 
+  _index: 2
   _nameWeapon: Pistol
   _sprite: {fileID: -6187221215261355628, guid: 5371930b9bda14a4ebd10f1c972c1d0b,
     type: 3}

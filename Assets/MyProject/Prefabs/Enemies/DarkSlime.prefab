@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1739804888812834046}
   - component: {fileID: 7302424203277111258}
   - component: {fileID: 8819740532686440134}
-  m_Layer: 20
+  m_Layer: 6
   m_Name: DarkSlime
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -195,6 +195,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  distance: 0.8
+  distance: 1
   _hitPoints: 17
   damage: 7

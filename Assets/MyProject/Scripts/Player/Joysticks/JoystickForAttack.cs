@@ -8,7 +8,14 @@ public class JoystickForAttack : JoysticDefault
     public Vector2 vectorAttack => inputPosition.normalized;
     public float GetAngle()
     {
-        float radians = (float)Math.Atan(vectorAttack.y / vectorAttack.x);
+        if (vectorAttack.x==0)
+        {
+            if (vectorAttack.y > 0)
+                return 90;
+            else
+                return 270;
+        }
+        double radians = Math.Atan(vectorAttack.y / vectorAttack.x);
         float angle = (float)Math.Abs(radians * (180 / Math.PI));
         if (vectorAttack.x < 0 && vectorAttack.y < 0)
         {

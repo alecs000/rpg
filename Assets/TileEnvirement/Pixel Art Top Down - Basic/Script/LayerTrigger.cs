@@ -8,17 +8,24 @@ namespace Cainos.PixelArtTopDown_Basic
     //used in the stair objects for player to travel between layers
     public class LayerTrigger : MonoBehaviour
     {
-        public string layer;
-        public string sortingLayer;
+        public static GameObject item;
+        [SerializeField] private int layerID;
+        [SerializeField] private string layerName;
         private void OnTriggerExit2D(Collider2D other)
         {
-            other.gameObject.layer = LayerMask.NameToLayer(layer);
-
-            other.gameObject.GetComponent<SpriteRenderer>().sortingLayerName = sortingLayer;
-            SpriteRenderer[] srs = other.gameObject.GetComponentsInChildren<SpriteRenderer>();
-            foreach ( SpriteRenderer sr in srs)
+            other.gameObject.layer = layerID;
+            SpriteRenderer spriteRenderer = other.GetComponent<SpriteRenderer>();
+            if(spriteRenderer == null)
+                return;
+            spriteRenderer.sortingLayerID = SortingLayer.NameToID(layerName); 
+            item.layer = layerID;
+            foreach (Transform sr in item.transform)
             {
-                sr.sortingLayerName = sortingLayer;
+                var srArr = sr.GetComponentsInChildren<SpriteRenderer>();
+                foreach (SpriteRenderer sr1 in srArr)
+                {
+                    sr1.sortingLayerID = SortingLayer.NameToID(layerName);
+                }
             }
         }
 

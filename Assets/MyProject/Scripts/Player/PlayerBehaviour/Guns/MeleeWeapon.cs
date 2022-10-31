@@ -11,6 +11,7 @@ public abstract class MeleeWeapon :MonoBehaviour,  IWeapon
     [SerializeField] private GameObject[] animatorsWeapons;
     [SerializeField] private Animator animatorBody;
     [SerializeField] private WeaponInfo weaponInfo;
+    public WeaponInfo _weaponInfo => weaponInfo;
     public virtual void StartAttack()
     {
         animatorBody.SetBool("IdleActive", false);

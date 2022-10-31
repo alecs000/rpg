@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 740822374446068018}
   - component: {fileID: 4640428603013853957}
   - component: {fileID: 1236419055}
-  m_Layer: 20
+  m_Layer: 6
   m_Name: Dark
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 8295882796182346709}
   - component: {fileID: 5809391369173153924}
   - component: {fileID: 450443181}
-  m_Layer: 20
+  m_Layer: 6
   m_Name: Thron2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 3487931854724238362}
   - component: {fileID: 4584575890843570919}
   - component: {fileID: 1733061192}
-  m_Layer: 20
+  m_Layer: 6
   m_Name: Thron3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 3439584743275140363}
   - component: {fileID: 5183717748089566804}
   - component: {fileID: 713391735}
-  m_Layer: 20
+  m_Layer: 6
   m_Name: Thron1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

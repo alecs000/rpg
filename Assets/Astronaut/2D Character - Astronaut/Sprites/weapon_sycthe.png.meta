@@ -380,6 +380,141 @@ TextureImporter:
   - first:
       213: -1433540493709526968
     second: sycthe_41
+  - first:
+      213: 8213825600424015896
+    second: weapon_sycthe_0
+  - first:
+      213: 2144812397677350663
+    second: weapon_sycthe_1
+  - first:
+      213: -1947293525316306175
+    second: weapon_sycthe_2
+  - first:
+      213: -7846676365991469467
+    second: weapon_sycthe_3
+  - first:
+      213: 8819745358774855068
+    second: weapon_sycthe_4
+  - first:
+      213: -4294002183982165220
+    second: weapon_sycthe_5
+  - first:
+      213: 1999555038106641816
+    second: weapon_sycthe_6
+  - first:
+      213: -948012959936314777
+    second: weapon_sycthe_7
+  - first:
+      213: 1275520874429384723
+    second: weapon_sycthe_8
+  - first:
+      213: 3139220155727647746
+    second: weapon_sycthe_9
+  - first:
+      213: -3028612467869686647
+    second: weapon_sycthe_10
+  - first:
+      213: 3027384316812861672
+    second: weapon_sycthe_11
+  - first:
+      213: -4463461922082125233
+    second: weapon_sycthe_12
+  - first:
+      213: -6611899298521117164
+    second: weapon_sycthe_13
+  - first:
+      213: 7710878439433797212
+    second: weapon_sycthe_14
+  - first:
+      213: -6595110047303911909
+    second: weapon_sycthe_15
+  - first:
+      213: 2504285718240539418
+    second: weapon_sycthe_16
+  - first:
+      213: -1111965146448490300
+    second: weapon_sycthe_17
+  - first:
+      213: -2572146626887508382
+    second: weapon_sycthe_18
+  - first:
+      213: 5974924863746161625
+    second: weapon_sycthe_19
+  - first:
+      213: 6874843314895542813
+    second: weapon_sycthe_20
+  - first:
+      213: 2062535284386268880
+    second: weapon_sycthe_21
+  - first:
+      213: 4874451048550059787
+    second: weapon_sycthe_22
+  - first:
+      213: -7790708956419372521
+    second: weapon_sycthe_23
+  - first:
+      213: 939378273912962907
+    second: weapon_sycthe_24
+  - first:
+      213: 8581961877866333733
+    second: weapon_sycthe_25
+  - first:
+      213: 2314144547186037153
+    second: weapon_sycthe_26
+  - first:
+      213: 6155476596923630524
+    second: weapon_sycthe_27
+  - first:
+      213: 1323395181261460619
+    second: weapon_sycthe_28
+  - first:
+      213: 1862908196977371969
+    second: weapon_sycthe_29
+  - first:
+      213: 4635486463605478145
+    second: weapon_sycthe_30
+  - first:
+      213: -3973236784382905036
+    second: weapon_sycthe_31
+  - first:
+      213: -4361486870935426905
+    second: weapon_sycthe_32
+  - first:
+      213: 8425416980797178921
+    second: weapon_sycthe_33
+  - first:
+      213: 4880084905720555763
+    second: weapon_sycthe_34
+  - first:
+      213: -4406625181431634206
+    second: weapon_sycthe_35
+  - first:
+      213: 4416790970876039360
+    second: weapon_sycthe_36
+  - first:
+      213: 3682940576824082241
+    second: weapon_sycthe_37
+  - first:
+      213: -7517440242657943544
+    second: weapon_sycthe_38
+  - first:
+      213: -3155225590870575170
+    second: weapon_sycthe_39
+  - first:
+      213: 1925124151963585303
+    second: weapon_sycthe_40
+  - first:
+      213: -7746507771448440979
+    second: weapon_sycthe_41
+  - first:
+      213: -8820100077496730520
+    second: weapon_sycthe_42
+  - first:
+      213: -6657775342794316261
+    second: weapon_sycthe_43
+  - first:
+      213: 7999197516979850169
+    second: weapon_sycthe_44
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -401,6 +536,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -409,9 +545,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -432,9 +568,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -489,883 +628,883 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sycthe_0
+      name: weapon_sycthe_0
       rect:
         serializedVersion: 2
         x: 0
         y: 1728
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca9e45dad162f0da0800000000000000
-      internalID: -5976516271593428564
+      spriteID: 81878486dde5df170800000000000000
+      internalID: 8213825600424015896
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_1
+      name: weapon_sycthe_1
       rect:
         serializedVersion: 2
         x: 448
         y: 1728
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7062bb731bbb73870800000000000000
-      internalID: 8662598778089055751
+      spriteID: 70f89611387e3cd10800000000000000
+      internalID: 2144812397677350663
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_2
+      name: weapon_sycthe_2
       rect:
         serializedVersion: 2
         x: 896
         y: 1728
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6be3924020039a50800000000000000
-      internalID: 6526560423545924460
+      spriteID: 10b7a1e1bd2d9f4e0800000000000000
+      internalID: -1947293525316306175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_3
+      name: weapon_sycthe_3
       rect:
         serializedVersion: 2
         x: 1344
         y: 1728
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f91bcc272364a1b10800000000000000
-      internalID: 1952950570906857887
+      spriteID: 56e10a92b610b1390800000000000000
+      internalID: -7846676365991469467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_4
+      name: weapon_sycthe_4
       rect:
         serializedVersion: 2
         x: 1792
         y: 1728
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40a3f1a7d716ef9d0800000000000000
-      internalID: -2738644331847009788
+      spriteID: c95ec2fbca7066a70800000000000000
+      internalID: 8819745358774855068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_5
+      name: weapon_sycthe_5
       rect:
         serializedVersion: 2
         x: 2240
         y: 1728
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5e03c1dc35a6ee80800000000000000
-      internalID: -8149644795044491681
+      spriteID: c13ddf6a3c3a864c0800000000000000
+      internalID: -4294002183982165220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_6
+      name: weapon_sycthe_6
       rect:
         serializedVersion: 2
         x: 2688
         y: 1728
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b88aecdfc1bc67860800000000000000
-      internalID: 7527427152574064779
+      spriteID: 895603b86b8dfbb10800000000000000
+      internalID: 1999555038106641816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_7
+      name: weapon_sycthe_7
       rect:
         serializedVersion: 2
         x: 3136
         y: 1728
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 814a9e40a8eeb27f0800000000000000
-      internalID: -636152645787474920
+      spriteID: 76287885c3bf7d2f0800000000000000
+      internalID: -948012959936314777
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_8
+      name: weapon_sycthe_8
       rect:
         serializedVersion: 2
         x: 3584
         y: 1728
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03276bd5db2bb9e60800000000000000
-      internalID: 7970160491953025584
+      spriteID: 31885ff2a7f83b110800000000000000
+      internalID: 1275520874429384723
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_9
+      name: weapon_sycthe_9
       rect:
         serializedVersion: 2
         x: 0
         y: 1296
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd19dabc4696d71c0800000000000000
-      internalID: -4504328170665831972
+      spriteID: 20494ed6910c09b20800000000000000
+      internalID: 3139220155727647746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_10
+      name: weapon_sycthe_10
       rect:
         serializedVersion: 2
         x: 448
         y: 1296
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0ecf40d8651eb590800000000000000
-      internalID: -7656658776567591411
+      spriteID: 984ee4ab10538f5d0800000000000000
+      internalID: -3028612467869686647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_11
+      name: weapon_sycthe_11
       rect:
         serializedVersion: 2
         x: 896
         y: 1296
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b03c875dcd51575f0800000000000000
-      internalID: -759676923923610869
+      spriteID: 8e028321ffd630a20800000000000000
+      internalID: 3027384316812861672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_12
+      name: weapon_sycthe_12
       rect:
         serializedVersion: 2
         x: 1344
         y: 1296
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0915312247fe97420800000000000000
-      internalID: 2628395139614331280
+      spriteID: f4a00d1c7099e02c0800000000000000
+      internalID: -4463461922082125233
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_13
+      name: weapon_sycthe_13
       rect:
         serializedVersion: 2
         x: 1792
         y: 1296
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68b179def137dfad0800000000000000
-      internalID: -2666848823366182010
+      spriteID: 41e8efc8e90dd34a0800000000000000
+      internalID: -6611899298521117164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_14
+      name: weapon_sycthe_14
       rect:
         serializedVersion: 2
         x: 2240
         y: 1296
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7beb914ec44b9d50800000000000000
-      internalID: 6745060519572138876
+      spriteID: c5e7ba0361b820b60800000000000000
+      internalID: 7710878439433797212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_15
+      name: weapon_sycthe_15
       rect:
         serializedVersion: 2
         x: 2688
         y: 1296
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72102b367af3f7c00800000000000000
-      internalID: 900508438662086951
+      spriteID: b1637d7ba567974a0800000000000000
+      internalID: -6595110047303911909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_16
+      name: weapon_sycthe_16
       rect:
         serializedVersion: 2
         x: 3136
         y: 1296
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e737ea0d26eeebc70800000000000000
-      internalID: 8988884014453388158
+      spriteID: a13bfcba79201c220800000000000000
+      internalID: 2504285718240539418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_17
+      name: weapon_sycthe_17
       rect:
         serializedVersion: 2
         x: 3584
         y: 1296
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa4a0ab68d226f360800000000000000
-      internalID: 7202982966939657391
+      spriteID: 4c0925b37918190f0800000000000000
+      internalID: -1111965146448490300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_18
+      name: weapon_sycthe_18
       rect:
         serializedVersion: 2
         x: 0
         y: 864
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdc3448e749cb4c10800000000000000
-      internalID: 2038944566991928539
+      spriteID: 26e962a4546ed4cd0800000000000000
+      internalID: -2572146626887508382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_19
+      name: weapon_sycthe_19
       rect:
         serializedVersion: 2
         x: 448
         y: 864
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51f55fe52494fabb0800000000000000
-      internalID: -4922635318282854635
+      spriteID: 9db3d3fc1823be250800000000000000
+      internalID: 5974924863746161625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_20
+      name: weapon_sycthe_20
       rect:
         serializedVersion: 2
         x: 896
         y: 864
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2c209f32471fa5c0800000000000000
-      internalID: -4202114354011689938
+      spriteID: d1a51d60299586f50800000000000000
+      internalID: 6874843314895542813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_21
+      name: weapon_sycthe_21
       rect:
         serializedVersion: 2
         x: 1344
         y: 864
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5eb7a4b3bd89d81d0800000000000000
-      internalID: -3346850880706413595
+      spriteID: 0d68d82d9e89f9c10800000000000000
+      internalID: 2062535284386268880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_22
+      name: weapon_sycthe_22
       rect:
         serializedVersion: 2
         x: 1792
         y: 864
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 564a6d30a4baa1780800000000000000
-      internalID: -8711462194814475163
+      spriteID: b0f4bd7176785a340800000000000000
+      internalID: 4874451048550059787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_23
+      name: weapon_sycthe_23
       rect:
         serializedVersion: 2
         x: 2240
         y: 864
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e89995e65dbc86da0800000000000000
-      internalID: -5951282790030272114
+      spriteID: 71a4b282b77d1e390800000000000000
+      internalID: -7790708956419372521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_24
+      name: weapon_sycthe_24
       rect:
         serializedVersion: 2
         x: 2688
         y: 864
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc5652674cc43e880800000000000000
-      internalID: -8582932058158570037
+      spriteID: b5f3d462097590d00800000000000000
+      internalID: 939378273912962907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_25
+      name: weapon_sycthe_25
       rect:
         serializedVersion: 2
         x: 3136
         y: 864
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edd8744c8fd1a6060800000000000000
-      internalID: 6947398329454530014
+      spriteID: 526ca26dbd0491770800000000000000
+      internalID: 8581961877866333733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_26
+      name: weapon_sycthe_26
       rect:
         serializedVersion: 2
         x: 3584
         y: 864
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0ed0313b08e8e830800000000000000
-      internalID: 4100782595488407050
+      spriteID: 1a15eed643e7d1020800000000000000
+      internalID: 2314144547186037153
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_27
+      name: weapon_sycthe_27
       rect:
         serializedVersion: 2
         x: 0
         y: 432
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ed81077e763a0860800000000000000
-      internalID: 7496864446501981665
+      spriteID: cb30dde0a55ac6550800000000000000
+      internalID: 6155476596923630524
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_28
+      name: weapon_sycthe_28
       rect:
         serializedVersion: 2
         x: 448
         y: 432
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8c1d73fd9ef46c30800000000000000
-      internalID: 4351883094295125134
+      spriteID: b849d8cd7e4ad5210800000000000000
+      internalID: 1323395181261460619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_29
+      name: weapon_sycthe_29
       rect:
         serializedVersion: 2
         x: 896
         y: 432
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bc9670585c9154d0800000000000000
-      internalID: -3147562761434260297
+      spriteID: 14beff192216ad910800000000000000
+      internalID: 1862908196977371969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_30
+      name: weapon_sycthe_30
       rect:
         serializedVersion: 2
         x: 1344
         y: 432
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b9ebf62d5f272940800000000000000
-      internalID: 5271233965992962486
+      spriteID: 1031658f06e845040800000000000000
+      internalID: 4635486463605478145
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_31
+      name: weapon_sycthe_31
       rect:
         serializedVersion: 2
         x: 1792
         y: 432
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cb87c0434e8efef0800000000000000
-      internalID: -72464124490576953
+      spriteID: 435775a123a3cd8c0800000000000000
+      internalID: -3973236784382905036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_32
+      name: weapon_sycthe_32
       rect:
         serializedVersion: 2
         x: 2240
         y: 432
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ebd2263dd6708400800000000000000
-      internalID: 324389865638779872
+      spriteID: 7a82d5d8cc2e873c0800000000000000
+      internalID: -4361486870935426905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_33
+      name: weapon_sycthe_33
       rect:
         serializedVersion: 2
         x: 2688
         y: 432
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7c296f08407e2470800000000000000
-      internalID: 8371752212126837885
+      spriteID: 924c5f0ba181de470800000000000000
+      internalID: 8425416980797178921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_34
+      name: weapon_sycthe_34
       rect:
         serializedVersion: 2
         x: 3136
         y: 432
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b69d98638f0e9bec0800000000000000
-      internalID: -3550559474533410453
+      spriteID: 3f8283fad5b89b340800000000000000
+      internalID: 4880084905720555763
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_35
+      name: weapon_sycthe_35
       rect:
         serializedVersion: 2
         x: 3584
         y: 432
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfe924195b001b590800000000000000
-      internalID: -7660340711354360067
+      spriteID: 2e6e97aaeb588d2c0800000000000000
+      internalID: -4406625181431634206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_36
+      name: weapon_sycthe_36
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e5e721f4d1a9fe80800000000000000
-      internalID: -8144300515171768858
+      spriteID: 0c01832acf79b4d30800000000000000
+      internalID: 4416790970876039360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_37
+      name: weapon_sycthe_37
       rect:
         serializedVersion: 2
         x: 448
         y: 0
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5052e94417e184bb0800000000000000
-      internalID: -4951674318462507771
+      spriteID: 14fb87a01fe6c1330800000000000000
+      internalID: 3682940576824082241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_38
+      name: weapon_sycthe_38
       rect:
         serializedVersion: 2
         x: 896
         y: 0
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23f53022ec3dce6b0800000000000000
-      internalID: -5265600982015582414
+      spriteID: 800a52cadefaca790800000000000000
+      internalID: -7517440242657943544
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_39
+      name: weapon_sycthe_39
       rect:
         serializedVersion: 2
         x: 1344
         y: 0
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f84bbc5b200dfd990800000000000000
-      internalID: -7358934556041562993
+      spriteID: eb7ffedca036634d0800000000000000
+      internalID: -3155225590870575170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_40
+      name: weapon_sycthe_40
       rect:
         serializedVersion: 2
         x: 1792
         y: 0
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b95a70d5057699a0800000000000000
-      internalID: -6226660766960166479
+      spriteID: 71b805a673a67ba10800000000000000
+      internalID: 1925124151963585303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sycthe_41
+      name: weapon_sycthe_41
       rect:
         serializedVersion: 2
         x: 2240
         y: 0
         width: 448
         height: 432
-      alignment: 9
-      pivot: {x: 0.5, y: 0.295}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8483e45248a0b1ce0800000000000000
-      internalID: -1433540493709526968
+      spriteID: d6743018930ee7490800000000000000
+      internalID: -7746507771448440979
       vertices: []
       indices: 
       edges: []

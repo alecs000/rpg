@@ -30,7 +30,12 @@ public class RunningPlayerBehaviour : IPlayerBehaviour
         animator.SetInteger("Direction", 4);
     }
 
-    void IPlayerBehaviour.Update()
+    public void Update()
+    {
+        
+    }
+
+    void IPlayerBehaviour.FixedUpdate()
     {
         DefaultMovement.Move(joystickForMovment.vectorDirection, rb, animator, 0.5f, speed );
         if (joystickForMovment.vectorDirection == Vector2.zero)

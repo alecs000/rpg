@@ -3,25 +3,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public abstract class LongRangeWeapons : MonoBehaviour, IWeapon
 {
     [SerializeField] int poolCount = 2;
     [SerializeField] Missile prefab;
     [SerializeField] private JoystickForAttack joystickForAttack;
-    [SerializeField] private GameObject[] animatorsWeapons;
     [SerializeField] private GameObject[] weapons;
     [SerializeField] private Animator animatorBody;
     [SerializeField] private WeaponInfo weaponInfo;
     private PoolMono<Missile> pool;
+    private SpriteRenderer  playerSpriteRenderer;
+    public WeaponInfo _weaponInfo => weaponInfo;
     private void Start()
     {
          pool = new PoolMono<Missile>(prefab, poolCount, this.transform);
+        playerSpriteRenderer = animatorBody.GetComponent<SpriteRenderer>();
     }
     public virtual void StartAttack()
     {
         animatorBody.SetBool("IdleActive", false);
         Missile missile = pool.GetFreeElement();
+        missile.gameObject.layer = animatorBody.gameObject.layer;
+        missile.gameObject.GetComponent<SpriteRenderer>().sortingLayerID = playerSpriteRenderer.sortingLayerID;
         missile.transform.position = this.transform.position;
     }
     public virtual void Attack()

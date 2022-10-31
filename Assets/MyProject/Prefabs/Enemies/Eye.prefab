@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1259381009034484462}
   - component: {fileID: 1259381009034484460}
   - component: {fileID: 1259381009034484461}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Eye
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  distance: 1
+  distance: 1.2
   _hitPoints: 40
   damage: 5
 --- !u!50 &1259381009034484460

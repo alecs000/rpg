@@ -4,37 +4,43 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
 
-public class Missile : MonoBehaviour
+public abstract class Missile : MonoBehaviour
 {
     [SerializeField] WeaponInfo weapon;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float speed;
     private JoystickForAttack joystickForAttack;
-    private Vector2 direction;
+    private Vector2 _direction;//направление при появлении
     private void OnEnable()
     {
         joystickForAttack = GameObject.FindWithTag("JoystickForAttack").GetComponent<JoystickForAttack>();
-        direction = joystickForAttack.vectorAttack.normalized;
-        var rotation = joystickForAttack.GetAngle();
+        float rotation = joystickForAttack.GetAngle();
         transform.rotation = Quaternion.Euler(0, 0, rotation);
+        _direction = joystickForAttack.vectorAttack;
     }
-    private void Update()
+    private void FixedUpdate()
     {
-        DefaultMovement.Move(direction, rb, speed);
+        DefaultMovement.Move(_direction, rb, speed);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player")|| collision.gameObject.CompareTag("InvisibleZone"))
         {
             return;
         }
-        if (collision.gameObject.CompareTag("Enemy"))
+
+        MissleCollision(collision.gameObject);
+    }
+    protected virtual void MissleCollision(GameObject collisionGameObject)
+    {
+        if (collisionGameObject.CompareTag("Enemy"))
         {
-            collision.gameObject.GetComponent<IAlive>().GetDamage(weapon.damage);
+            collisionGameObject.GetComponent<IAlive>().GetDamage(weapon.damage);
         }
         else
         {
             gameObject.SetActive(false);
         }
     }
+
 }

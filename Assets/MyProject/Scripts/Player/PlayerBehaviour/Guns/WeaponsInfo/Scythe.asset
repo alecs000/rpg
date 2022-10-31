@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6214a843eddc1bb48ae6122e18df5291, type: 3}
   m_Name: Scythe
   m_EditorClassIdentifier: 
+  _index: 3
   _nameWeapon: Scythe
   _sprite: {fileID: 2144103145164238673, guid: 033a0dfc04c8a3b4a983baa72f41ec3e, type: 3}
   _damage: 70

@@ -96,5 +96,6 @@ public static class DefaultMovement
     public static void Move(Vector2 direction, Rigidbody2D rb, float speed = 2)
     {
         rb.velocity = speed * direction;
+
     }
 }

@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class IdlePlayerBehaviour : IPlayerBehaviour
 {
+    private Rigidbody2D rb;
+
+    public IdlePlayerBehaviour(Rigidbody2D rb)
+    {
+        this.rb = rb;
+    }
+
     public void Enter()
     {
         Debug.Log("Enter Idle State");
@@ -15,8 +22,13 @@ public class IdlePlayerBehaviour : IPlayerBehaviour
 
     }
 
+    public void FixedUpdate()
+    {
+        
+    }
+
     void IPlayerBehaviour.Update()
     {
-        Debug.Log("Update Idle State");
+        rb.velocity = Vector2.zero;
     }
 }

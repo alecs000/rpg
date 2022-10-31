@@ -23,9 +23,14 @@ public class AttackPlayerBehaviour : IPlayerBehaviour
         weapon.EndAttack();
     }
 
-    void IPlayerBehaviour.Update()
+    public void Update()
     {
         weapon.Attack();
+    }
+
+    void IPlayerBehaviour.FixedUpdate()
+    {
+
     }
 
 }

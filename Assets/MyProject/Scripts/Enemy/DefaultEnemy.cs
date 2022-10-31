@@ -32,7 +32,7 @@ public abstract class DefoultEnemy : AliveDefault
         isDie = false;
         isAttack=false;
     }
-    private void Update()
+    private void FixedUpdate()
     {
         if (isDie)
         {
@@ -42,7 +42,10 @@ public abstract class DefoultEnemy : AliveDefault
     }
     protected virtual void Behavior()
     {
-
+        if (isDie)
+        {
+            return;
+        }
         bool isMoving = false;
         if (!isAttack)
         {
@@ -55,13 +58,17 @@ public abstract class DefoultEnemy : AliveDefault
     }
     protected virtual void Attack()
     {
+        if (isDie)
+        {
+            return;
+        }
         rb.velocity = Vector2.zero;
         isAttack = true;
         anim.SetBool("IsAttack", true);
     }
     protected virtual void EndDie()
     {  
-     
+     this.gameObject.SetActive(false);
     }
     protected virtual void EndAttack()
     {
@@ -79,6 +86,10 @@ public abstract class DefoultEnemy : AliveDefault
 
     public override void Die() {
         anim.SetBool("IsDie", true);
+        anim.SetBool("IsAttack", false);
+        anim.SetInteger("Direction", 4);
+        rb.velocity = Vector2.zero;
+        isDie = true;
     }
     public override void GetDamage(float damage) {
         if (isDie)

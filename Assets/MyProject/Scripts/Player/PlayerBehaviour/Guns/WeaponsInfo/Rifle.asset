@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6214a843eddc1bb48ae6122e18df5291, type: 3}
   m_Name: Rifle
   m_EditorClassIdentifier: 
+  _index: 4
   _nameWeapon: Rifle
   _sprite: {fileID: 7475298369558532723, guid: c32e45283c8b0064dab78cce8e2d65e3, type: 3}
   _damage: 100

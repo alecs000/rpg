@@ -1,20 +1,30 @@
+using Cainos.PixelArtTopDown_Basic;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class PlayerController : AliveDefault
 {
+    [SerializeField] private GameObject[] weapons;
     [SerializeField] private Player player;
     [SerializeField] private JoystickForMovment joystickForMovment;
     [SerializeField] private JoystickForAttack JoystickForAttack;
-    [SerializeField] private Sword sword;
-    [SerializeField] private Pistol pistol;
-    [SerializeField] private Rifle rifle;
     [SerializeField] private float _hitPoints;
     public static bool isAttack;
     private void Awake()
     {
-        player.weapon = pistol;
+        foreach (var item in weapons)
+        {
+            var weapon = item.GetComponent<IWeapon>();
+            if (weapon._weaponInfo.index==PlayerPrefs.GetInt("GunIndex"))
+            {
+                LayerTrigger.item = item;
+                player.weapon = weapon;
+                item.SetActive(true);
+                break;
+            }
+        }
     }
     private void Start()
     {

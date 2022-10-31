@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2772565613741511913}
   - component: {fileID: 2772565613741511914}
   - component: {fileID: 2772565613741511915}
-  m_Layer: 20
+  m_Layer: 6
   m_Name: Elf
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  distance: 0.4
+  distance: 0.7
   _hitPoints: 15
   damage: 3
 --- !u!50 &2772565613741511914

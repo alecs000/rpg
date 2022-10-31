@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1170090898401174521}
   - component: {fileID: 1170090898401174525}
   - component: {fileID: 1170090898401174520}
-  m_Layer: 20
+  m_Layer: 6
   m_Name: GreenSlime
   m_TagString: Enemy
   m_Icon: {fileID: 0}

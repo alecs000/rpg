@@ -7,6 +7,10 @@ public class Eye : DefoultEnemy
 {
     protected override void Behavior()
     {
+        if (isDie)
+        {
+            return;
+        }
         bool isMoving = false;
         if (!isAttack)
         {
@@ -37,7 +41,7 @@ public class Eye : DefoultEnemy
             Attack();
         }
     }
-    private void Update()
+    private void FixedUpdate()
     {
         Behavior();
     }
