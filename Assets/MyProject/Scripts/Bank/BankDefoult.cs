@@ -6,21 +6,32 @@ using UnityEngine;
 public abstract class BankDefoult : MonoBehaviour
 {
     protected ObservableVariable<int> bankValue;
+    public int value => bankValue.Value;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        bankValue = new ObservableVariable<int>(0);
+        Initialize();
+    }
+    protected virtual void Initialize()
+    {
+        bankValue = new ObservableVariable<int>();
     }
 
     public virtual void Add(int value)
     {
         bankValue.Value += value;
+        Save();
     }
 
-    public virtual void Remove(int value)
+    public virtual bool Remove(int value)
     {
         if (bankValue.Value >= value)
+        {
             bankValue.Value -= value;
+            return true;
+        }
+        Save();
+        return false;
     }
 
     public virtual void Save()
@@ -30,5 +41,9 @@ public abstract class BankDefoult : MonoBehaviour
     public virtual void AddObserver(Action<object, object> OnChanged)
     {
         bankValue.OnChanged += OnChanged;
+    }
+    public virtual void RemoveObserver(Action<object, object> OnChanged)
+    {
+        bankValue.OnChanged -= OnChanged;
     }
 }

@@ -19,3 +19,4 @@ MonoBehaviour:
   _damage: 50
   _attackSpeed: 0
   _animationName: HammerAttack
+  _cost: 30

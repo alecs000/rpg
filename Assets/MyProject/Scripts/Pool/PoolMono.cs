@@ -31,25 +31,25 @@ public class PoolMono<T> where T : MonoBehaviour
         this.pool.Add(createdObject);
         return createdObject;
     }
-    public bool TryToGetFreeElement(out T element)
+    public bool TryToGetFreeElement(out T element, bool IsActiveByDefolt = true)
     {
         foreach (var mono in pool)
         {
             if (!mono.gameObject.activeInHierarchy)
             {
                 element = mono;
-                mono.gameObject.SetActive(true);
+                mono.gameObject.SetActive(IsActiveByDefolt);
                 return true;
             }
         }
         element = null;
         return false;
     }
-    public T GetFreeElement()
+    public T GetFreeElement(bool IsActiveByDefolt = true)
     {
-        if (this.TryToGetFreeElement(out var element))
+        if (this.TryToGetFreeElement(out var element, IsActiveByDefolt))
             return element;
-        return this.CreateObject(true);
+        return this.CreateObject();
     }
 }
 

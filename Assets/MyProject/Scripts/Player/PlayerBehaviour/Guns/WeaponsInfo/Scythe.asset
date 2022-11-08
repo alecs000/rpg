@@ -18,3 +18,4 @@ MonoBehaviour:
   _damage: 70
   _attackSpeed: 0
   _animationName: BraidAttack
+  _cost: 150

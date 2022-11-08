@@ -10,11 +10,12 @@ public class WeaponInfo : ScriptableObject
     [SerializeField] private float _damage;
     [SerializeField] private float _attackSpeed;
     [SerializeField] private string _animationName;
-
+    [SerializeField] private int _cost;
     public int index => _index;
     public string nameWeapon => _nameWeapon;
     public Sprite sprite => _sprite;
     public float damage => _damage;
     public float attackSpeed => _attackSpeed;
     public string animationName => _animationName;
+    public int cost => _cost;
 }

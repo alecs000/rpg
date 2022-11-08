@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class MeleeWeapon :MonoBehaviour,  IWeapon
+public abstract class MeleeWeapon :MonoBehaviour,  IWeapon, IDataPersistence
 {
     [SerializeField] private GameObject gameObjectCollider;
     [SerializeField] private WeaponCollider weaponCollider;
@@ -11,6 +11,8 @@ public abstract class MeleeWeapon :MonoBehaviour,  IWeapon
     [SerializeField] private GameObject[] animatorsWeapons;
     [SerializeField] private Animator animatorBody;
     [SerializeField] private WeaponInfo weaponInfo;
+    private float damage;
+
     public WeaponInfo _weaponInfo => weaponInfo;
     public virtual void StartAttack()
     {
@@ -30,7 +32,7 @@ public abstract class MeleeWeapon :MonoBehaviour,  IWeapon
     {
         foreach (var item in weaponCollider.alives)
         {
-            item.GetComponent<IAlive>().GetDamage(weaponInfo.damage);
+            item.GetComponent<IAlive>().GetDamage(damage);
         }
         animatorBody.SetBool("IdleActive", true);
         animatorBody.SetInteger(weaponInfo.animationName, 4);
@@ -86,5 +88,15 @@ public abstract class MeleeWeapon :MonoBehaviour,  IWeapon
             angle = 360 - angle;
         }
         gameObjectCollider.transform.rotation = Quaternion.Euler(0, 0, angle);
+    }
+
+    public void LoadData(GameData data)
+    {
+        damage = data.weaponsUpgrade[weaponInfo.name];
+    }
+
+    public void SaveData(GameData data)
+    {
+        
     }
 }

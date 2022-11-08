@@ -18,7 +18,7 @@ public class Eye : DefoultEnemy
             if (dis > distance)
             {
                 Vector2 dir = (playerTransform.position - this.transform.position).normalized;
-                DefaultMovement.Move(dir, rb, speed);
+                //DefaultMovement.Move(dir, rb, speed);
                 isMoving = true;
                 if (dir.x>0)
                 {

@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6214a843eddc1bb48ae6122e18df5291, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
+  _index: 0
   _nameWeapon: Sword
   _sprite: {fileID: -8070225327856036354, guid: b33f8c403f6c24c4c9b038b39d2dadda,
     type: 3}
   _damage: 30
   _attackSpeed: 0
   _animationName: SwordAttack
+  _cost: 0

@@ -18,3 +18,4 @@ MonoBehaviour:
   _damage: 100
   _attackSpeed: 0
   _animationName: RifleAttack
+  _cost: 220

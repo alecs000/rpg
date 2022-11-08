@@ -15,12 +15,11 @@ public class EnemySpawner : MonoBehaviour
     }
     public void RandomSpawn(Vector2 position, float deviationX, float deviationY, string layer = "Layer 1")
     {
-
         Spawn(new Vector2( position.x + Random.Range(-deviationX, deviationX), position.y + Random.Range(-deviationY, deviationY)), layer);
     } 
     public void Spawn(Vector2 position, string layer = "Layer 1")
     {
-        AliveDefault enemy = pool.GetFreeElement();
+        AliveDefault enemy = pool.GetFreeElement(false);
         enemy.transform.position = new Vector2(position.x, position.y);
         enemy.gameObject.layer = LayerMask.NameToLayer(layer);
         enemy.gameObject.GetComponent<SpriteRenderer>().sortingLayerName = layer;
@@ -29,5 +28,6 @@ public class EnemySpawner : MonoBehaviour
         {
             sr.sortingLayerName = layer;
         }
+        enemy.gameObject.SetActive(true);
     }
 }

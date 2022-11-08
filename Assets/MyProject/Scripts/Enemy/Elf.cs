@@ -14,7 +14,7 @@ public class Elf : DefoultEnemy
         bool isMoving = false;
         if (!isAttack)
         {
-            isMoving = DefaultMovement.TryMove(this.transform.position, playerTransform.position, rb, anim, distance, speed: speed, 0.5f);
+            isMoving = DefaultMovement.TryMove(this.transform.position, playerTransform.position, rb, anim, distance);
         }
         if (!isMoving)
         {

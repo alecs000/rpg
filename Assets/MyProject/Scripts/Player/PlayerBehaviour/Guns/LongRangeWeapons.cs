@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using static UnityEditor.Experimental.GraphView.GraphView;
 
-public abstract class LongRangeWeapons : MonoBehaviour, IWeapon
+public abstract class LongRangeWeapons : MonoBehaviour, IWeapon, IDataPersistence
 {
     [SerializeField] int poolCount = 2;
     [SerializeField] Missile prefab;
@@ -15,6 +15,7 @@ public abstract class LongRangeWeapons : MonoBehaviour, IWeapon
     [SerializeField] private WeaponInfo weaponInfo;
     private PoolMono<Missile> pool;
     private SpriteRenderer  playerSpriteRenderer;
+    private float damage;
     public WeaponInfo _weaponInfo => weaponInfo;
     private void Start()
     {
@@ -81,6 +82,14 @@ public abstract class LongRangeWeapons : MonoBehaviour, IWeapon
         animatorBody.SetInteger(weaponInfo.animationName, direction);
     }
 
+    public void LoadData(GameData data)
+    {
+        damage = data.weaponsUpgrade[weaponInfo.name];
+    }
 
+    public void SaveData(GameData data)
+    {
+        
+    }
 }
 

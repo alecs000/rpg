@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Tilemaps;
 using UnityEngine;
+using UnityEngine.AI;
+using UnityEngine.UIElements;
+using UnityEngine.XR;
 
 public abstract class DefoultEnemy : AliveDefault
 {
-    [SerializeField] protected float speed;
     [SerializeField] protected float distance;
     [SerializeField] protected float _hitPoints;
     [SerializeField] protected float damage;
@@ -16,6 +18,15 @@ public abstract class DefoultEnemy : AliveDefault
     protected Animator anim;
     protected bool isAttack;
     protected bool isDie;
+    protected NavMeshAgent agent;
+    protected bool spawn = true;
+    private void Awake()
+    {
+        agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
+        spawn = false;
+    }
     private void Start()
     {
         GameObject player = GameObject.FindWithTag("Player");
@@ -24,13 +35,19 @@ public abstract class DefoultEnemy : AliveDefault
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>(); 
         playerController = player.GetComponent<PlayerController>();
-            
     }
     private void OnEnable()
     {
         hitPoints = _hitPoints;
         isDie = false;
         isAttack=false;
+        if(!spawn)
+            agent.enabled = true;
+    }
+    private void OnDisable()
+    {
+        if (!spawn)
+            agent.enabled = false;
     }
     private void FixedUpdate()
     {
@@ -38,18 +55,55 @@ public abstract class DefoultEnemy : AliveDefault
         {
             return;
         }
+
         Behavior();
     }
     protected virtual void Behavior()
     {
+        Vector2 MoveTo = playerTransform.position;
+        Vector2 MoveFrom = transform.position;
+
         if (isDie)
         {
             return;
         }
         bool isMoving = false;
-        if (!isAttack)
+        float dis = Vector3.Distance(MoveTo, MoveFrom);
+        Vector2 direction = (MoveTo - MoveFrom).normalized;
+        if (dis > distance)
         {
-            isMoving = DefaultMovement.TryMove(this.transform.position, playerTransform.position, rb, anim, distance, speed: speed);
+            anim.SetBool("IsAttack", false);
+            if (direction.y > 0 || direction.x > 0 || direction.y < -0 || direction.x < -0)
+            {
+                agent.SetDestination(playerController.transform.position);
+            }
+            if (direction.y > 0 && direction.x > 0)
+            {
+                anim.SetInteger("Direction", 0);
+                return;
+            }
+            if (direction.y < 0 && direction.x > 0)
+            {
+                anim.SetInteger("Direction", 1);
+                return;
+            }
+            if (direction.y < 0 && direction.x < 0)
+            {
+                anim.SetInteger("Direction", 2);
+                return;
+            }
+            if (direction.x < 0 && direction.y > 0)
+            {
+                anim.SetInteger("Direction", 3);
+                return;
+            }
+            isMoving = true;
+        }
+        else
+        {
+            rb.velocity = Vector2.zero;
+            anim.SetInteger("Direction", 4);
+            isMoving = false;
         }
         if (!isMoving)
         {
