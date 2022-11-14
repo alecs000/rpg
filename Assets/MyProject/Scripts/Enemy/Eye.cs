@@ -5,44 +5,70 @@ using UnityEngine;
 
 public class Eye : DefoultEnemy
 {
-    protected override void Behavior()
+    protected override void AgentBehavior()
     {
         if (isDie)
         {
             return;
         }
-        bool isMoving = false;
-        if (!isAttack)
+        bool isMoving;
+        float dis = Vector3.Distance(playerTransform.position, this.transform.position);
+        if (dis > distance)
         {
-            float dis = Vector3.Distance(playerTransform.position, this.transform.position);
-            if (dis > distance)
+            Vector2 dir = (playerTransform.position - this.transform.position).normalized;
+            agent.SetDestination(playerTransform.position);
+            isMoving = true;
+            if (dir.x>0)
             {
-                Vector2 dir = (playerTransform.position - this.transform.position).normalized;
-                //DefaultMovement.Move(dir, rb, speed);
-                isMoving = true;
-                if (dir.x>0)
-                {
-                    anim.SetInteger("Direction", 1);
-                }
-                else
-                {
-                    anim.SetInteger("Direction", 0);
-                }
+                anim.SetInteger("Direction", 1);
             }
             else
             {
-                rb.velocity = Vector2.zero;
-                anim.SetInteger("Direction", 4);
-                isMoving = false;
+                anim.SetInteger("Direction", 0);
             }
+        }
+        else
+        {
+           rb.velocity = Vector2.zero;
+            anim.SetInteger("Direction", 4);
+            isMoving = false;
         }
         if (!isMoving)
         {
             Attack();
         }
     }
-    private void FixedUpdate()
+    protected override void Behavior()
     {
-        Behavior();
+        if (isDie)
+        {
+            return;
+        }
+        bool isMoving;
+        float dis = Vector3.Distance(playerTransform.position, this.transform.position);
+        if (dis > distance)
+        {
+            Vector2 dir = (playerTransform.position - this.transform.position).normalized;
+            DefaultMovement.Move(dir,rb, speed);
+            isMoving = true;
+            if (dir.x > 0)
+            {
+                anim.SetInteger("Direction", 1);
+            }
+            else
+            {
+                anim.SetInteger("Direction", 0);
+            }
+        }
+        else
+        {
+            rb.velocity = Vector2.zero;
+            anim.SetInteger("Direction", 4);
+            isMoving = false;
+        }
+        if (!isMoving)
+        {
+            Attack();
+        }
     }
 }

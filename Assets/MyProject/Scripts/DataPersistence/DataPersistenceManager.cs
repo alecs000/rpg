@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using Assets.MyProject.Scripts.DataPersistence;
 
 public class DataPersistenceManager : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class DataPersistenceManager : MonoBehaviour
 
     private GameData gameData;
     private List<IDataPersistence> dataPersistenceObjects;
-    private IDataHandler dataHandler;
+    private FileDataHandler dataHandler;
 
     public static DataPersistenceManager instance { get; private set; }
 

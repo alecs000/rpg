@@ -24,11 +24,10 @@ public class IdlePlayerBehaviour : IPlayerBehaviour
 
     public void FixedUpdate()
     {
-        
+        rb.velocity = Vector2.zero;
     }
 
     void IPlayerBehaviour.Update()
     {
-        rb.velocity = Vector2.zero;
     }
 }

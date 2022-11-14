@@ -8,6 +8,7 @@ public class GameData
     public SerializableDictionary<string, int> weaponsBought;
     public SerializableDictionary<string, float> weaponsUpgrade;
     public int moneyAmount;
+    public int moneyAmountOnLevel;
 
     // the values defined in this constructor will be the default values
     // the game starts with when there's no data to load

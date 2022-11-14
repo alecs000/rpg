@@ -8,9 +8,11 @@ using UnityEngine.XR;
 
 public abstract class DefoultEnemy : AliveDefault
 {
+    [SerializeField] protected bool NavMeshMovment;
     [SerializeField] protected float distance;
     [SerializeField] protected float _hitPoints;
     [SerializeField] protected float damage;
+    [SerializeField] protected float speed = 2;
     protected SpriteRenderer spriteRenderer;
     protected Transform playerTransform;
     protected Rigidbody2D rb;
@@ -22,10 +24,12 @@ public abstract class DefoultEnemy : AliveDefault
     protected bool spawn = true;
     private void Awake()
     {
-        agent = GetComponent<NavMeshAgent>();
-        agent.updateRotation = false;
-        agent.updateUpAxis = false;
-        spawn = false;
+        if (NavMeshMovment)
+        {
+            agent = GetComponent<NavMeshAgent>();
+            agent.updateRotation = false;
+            agent.updateUpAxis = false;
+        }
     }
     private void Start()
     {
@@ -41,13 +45,14 @@ public abstract class DefoultEnemy : AliveDefault
         hitPoints = _hitPoints;
         isDie = false;
         isAttack=false;
-        if(!spawn)
+        if(NavMeshMovment && !spawn)
             agent.enabled = true;
     }
     private void OnDisable()
     {
-        if (!spawn)
+        if (NavMeshMovment&&!spawn)
             agent.enabled = false;
+        spawn = false;
     }
     private void FixedUpdate()
     {
@@ -55,56 +60,41 @@ public abstract class DefoultEnemy : AliveDefault
         {
             return;
         }
-
-        Behavior();
+        if (NavMeshMovment)
+        {
+            AgentBehavior();
+        }
+        else
+        {
+            Behavior();
+        }
     }
-    protected virtual void Behavior()
+    protected virtual void AgentBehavior()
     {
-        Vector2 MoveTo = playerTransform.position;
-        Vector2 MoveFrom = transform.position;
-
         if (isDie)
         {
             return;
         }
-        bool isMoving = false;
-        float dis = Vector3.Distance(MoveTo, MoveFrom);
-        Vector2 direction = (MoveTo - MoveFrom).normalized;
-        if (dis > distance)
-        {
+        bool isMoving;
+        isMoving = DefaultMovement.TryMoveAgent(this.transform.position, playerTransform.position, anim, distance, agent);
+        isAttack = false;
+        if (isMoving)
             anim.SetBool("IsAttack", false);
-            if (direction.y > 0 || direction.x > 0 || direction.y < -0 || direction.x < -0)
-            {
-                agent.SetDestination(playerController.transform.position);
-            }
-            if (direction.y > 0 && direction.x > 0)
-            {
-                anim.SetInteger("Direction", 0);
-                return;
-            }
-            if (direction.y < 0 && direction.x > 0)
-            {
-                anim.SetInteger("Direction", 1);
-                return;
-            }
-            if (direction.y < 0 && direction.x < 0)
-            {
-                anim.SetInteger("Direction", 2);
-                return;
-            }
-            if (direction.x < 0 && direction.y > 0)
-            {
-                anim.SetInteger("Direction", 3);
-                return;
-            }
-            isMoving = true;
-        }
-        else
+        if (!isMoving)
         {
-            rb.velocity = Vector2.zero;
-            anim.SetInteger("Direction", 4);
-            isMoving = false;
+            Attack();
         }
+    }
+    protected virtual void Behavior()
+    {
+        if (isDie)
+        {
+            return;
+        }
+        bool isMoving;
+        isMoving = DefaultMovement.TryMove(this.transform.position, playerTransform.position,rb, anim, distance, speed);
+        if(isMoving)
+            anim.SetBool("IsAttack", false);
         if (!isMoving)
         {
             Attack();
@@ -121,8 +111,9 @@ public abstract class DefoultEnemy : AliveDefault
         anim.SetBool("IsAttack", true);
     }
     protected virtual void EndDie()
-    {  
-     this.gameObject.SetActive(false);
+    {
+        EnemyStatistic.KillAdd(this);
+        this.gameObject.SetActive(false);
     }
     protected virtual void EndAttack()
     {

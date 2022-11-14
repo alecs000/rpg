@@ -1,3 +1,4 @@
+using Assets.MyProject.Scripts.DataPersistence;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -93,6 +94,10 @@ public abstract class MeleeWeapon :MonoBehaviour,  IWeapon, IDataPersistence
     public void LoadData(GameData data)
     {
         damage = data.weaponsUpgrade[weaponInfo.name];
+        if (damage == 0)
+        {
+            damage = weaponInfo.damage;
+        }
     }
 
     public void SaveData(GameData data)

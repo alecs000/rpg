@@ -9,6 +9,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] int poolCount = 2;
     [SerializeField] AliveDefault prefab;
     private PoolMono<AliveDefault> pool;
+    private static List<IAlive> alive = new List<IAlive>();
     private void Awake()
     {
         pool = new PoolMono<AliveDefault>(prefab, poolCount, this.transform);
@@ -29,5 +30,6 @@ public class EnemySpawner : MonoBehaviour
             sr.sortingLayerName = layer;
         }
         enemy.gameObject.SetActive(true);
+        alive.Add(enemy);
     }
 }

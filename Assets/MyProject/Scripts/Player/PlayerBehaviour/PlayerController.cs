@@ -1,17 +1,24 @@
 using Cainos.PixelArtTopDown_Basic;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class PlayerController : AliveDefault
 {
+    public static bool isAttack;
+
     [SerializeField] private GameObject[] weapons;
     [SerializeField] private Player player;
     [SerializeField] private JoystickForMovment joystickForMovment;
     [SerializeField] private JoystickForAttack JoystickForAttack;
     [SerializeField] private float _hitPoints;
-    public static bool isAttack;
+    [SerializeField] private GameObject _loseMenu;
+
+    private SpriteRenderer _spriteRenderer;
+    private bool _isDie;
+
     private void Awake()
     {
         foreach (var item in weapons)
@@ -29,14 +36,23 @@ public class PlayerController : AliveDefault
     private void Start()
     {
         hitPoints = _hitPoints;
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
     public void AttackEnd()
     {
+        if (_isDie)
+            return;
         player.SetBehaviourIdle();
         isAttack = false;
     }
-    void Update()
+    public void DieEnd()
     {
+        _loseMenu.SetActive(true);
+    }
+    private void Update()
+    {
+        if (_isDie)
+            return;
         if (isAttack)
             return;
         if (joystickForMovment.vectorDirection!= Vector2.zero)
@@ -50,5 +66,21 @@ public class PlayerController : AliveDefault
             player.SetBehaviourAttack();
             return;
         }
+    }
+    public override void GetDamage(float damage)
+    {
+        if (_isDie)
+            return;
+        base.GetDamage(damage);
+        float colorValue = 1 / (_hitPoints / hitPoints);
+        if (colorValue >= 0)
+        {
+            _spriteRenderer.color = new Color(1, colorValue, colorValue, 1);
+        }
+    }
+    public override void Die()
+    {
+        _isDie = true;
+        player.SetBehaviourDie();
     }
 }

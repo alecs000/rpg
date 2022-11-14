@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2772565613741511918}
   - component: {fileID: 2772565613741511913}
   - component: {fileID: 2772565613741511914}
-  - component: {fileID: 2772565613741511915}
+  - component: {fileID: -1997809043674022131}
   m_Layer: 6
   m_Name: Elf
   m_TagString: Enemy
@@ -117,10 +117,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e72bcab4d7bb6dc429227280d73b40d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  distance: 0.7
+  NavMeshMovment: 0
+  distance: 1
   _hitPoints: 15
   damage: 3
+  speed: 2
 --- !u!50 &2772565613741511914
 Rigidbody2D:
   serializedVersion: 4
@@ -142,8 +143,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &2772565613741511915
-PolygonCollider2D:
+--- !u!58 &-1997809043674022131
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -155,42 +156,6 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.6, y: 1.6}
-    newSize: {x: 0.32, y: 0.32}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.15438461, y: 0.3541369}
-      - {x: -0.14162683, y: 0.35071152}
-      - {x: -0.14201231, y: 0.40887666}
-      - {x: -0.19290128, y: 0.40552267}
-      - {x: -0.2540779, y: 0.34280568}
-      - {x: -0.30641195, y: 0.20374447}
-      - {x: -0.30096602, y: -0.050112296}
-      - {x: -0.24816513, y: -0.102249295}
-      - {x: -0.19740343, y: -0.10471779}
-      - {x: -0.19788337, y: -0.14508337}
-      - {x: -0.24658632, y: -0.14788638}
-      - {x: -0.30365038, y: -0.20299771}
-      - {x: -0.3547134, y: -0.2941808}
-      - {x: -0.35181093, y: -0.4031082}
-      - {x: -0.24077845, y: -0.44782996}
-      - {x: -0.19313478, y: -0.501608}
-      - {x: -0.043677807, y: -0.5440935}
-      - {x: -0.0013526976, y: -0.63991845}
-      - {x: 0.05516453, y: -0.70471334}
-      - {x: 0.20065403, y: -0.6970509}
-      - {x: 0.25516406, y: -0.6390165}
-      - {x: 0.2716305, y: -0.4386855}
-      - {x: 0.21233702, y: -0.42954254}
-      - {x: 0.2086935, y: -0.16511963}
-      - {x: 0.28182364, y: -0.10443488}
-      - {x: 0.35579273, y: 0.12217666}
-      - {x: 0.31074905, y: 0.18521026}
+  m_Offset: {x: 0, y: -0.14499348}
+  serializedVersion: 2
+  m_Radius: 0.34689564

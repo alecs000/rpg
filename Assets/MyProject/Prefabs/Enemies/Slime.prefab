@@ -13,8 +13,7 @@ GameObject:
   - component: {fileID: 14303643697583873}
   - component: {fileID: 14303643697583884}
   - component: {fileID: 14303643697583885}
-  - component: {fileID: 14303643697583882}
-  - component: {fileID: 1724982256849964965}
+  - component: {fileID: -3137111934161218979}
   m_Layer: 6
   m_Name: Slime
   m_TagString: Enemy
@@ -119,9 +118,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d995afb3ef558364f83aa15990eaefa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 1.2
+  NavMeshMovment: 0
+  distance: 1
   _hitPoints: 15
   damage: 3
+  speed: 2
 --- !u!50 &14303643697583885
 Rigidbody2D:
   serializedVersion: 4
@@ -143,8 +144,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &14303643697583882
-PolygonCollider2D:
+--- !u!58 &-3137111934161218979
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -156,53 +157,6 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.2}
-    oldSize: {x: 0.8, y: 0.8}
-    newSize: {x: 0.8, y: 0.8}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.10152888, y: 0.3930664}
-      - {x: -0.14148732, y: 0.34371853}
-      - {x: -0.19897994, y: 0.2856327}
-      - {x: -0.2174282, y: 0.18513298}
-      - {x: -0.2465396, y: 0.14402962}
-      - {x: -0.25200024, y: 0.04938808}
-      - {x: -0.3511734, y: -0.014192581}
-      - {x: -0.35825014, y: -0.11590123}
-      - {x: -0.29730645, y: -0.16906086}
-      - {x: 0.32187366, y: -0.15612912}
-      - {x: 0.36375514, y: -0.030122906}
-      - {x: 0.27936983, y: 0.043712616}
-      - {x: 0.21105877, y: 0.15907183}
-      - {x: 0.20514035, y: 0.29162526}
-      - {x: 0.14470458, y: 0.3381648}
-      - {x: 0.097756535, y: 0.39178228}
---- !u!195 &1724982256849964965
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 14303643697583872}
-  m_Enabled: 0
-  m_AgentTypeID: 0
-  m_Radius: 0.4
-  m_Speed: 2
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1.28
-  m_BaseOffset: 0.64
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_Offset: {x: 0, y: 0.07545771}
+  serializedVersion: 2
+  m_Radius: 0.23545773

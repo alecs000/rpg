@@ -1,3 +1,4 @@
+using Assets.MyProject.Scripts.DataPersistence;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -41,7 +42,7 @@ public class WeaponsShopBehavior : MonoBehaviour, IDataPersistence
     }
     public void WeaponBuy()
     {
-        if (Money.instance.Remove(weaponInfo.cost))
+        if (Money.instance.TryRemove(weaponInfo.cost))
         {
             weaponUpgradeButton.SetActive(true);
             weaponEquipButton.SetActive(true);
@@ -54,7 +55,7 @@ public class WeaponsShopBehavior : MonoBehaviour, IDataPersistence
     }
     public void WeaponUpgrade()
     {
-        if (Money.instance.Remove(weaponInfo.cost+1 / 10 * weaponsBought[weaponInfo.name]))
+        if (Money.instance.TryRemove(weaponInfo.cost+1 / 10 * weaponsBought[weaponInfo.name]))
         {
             weaponsBought[weaponInfo.nameWeapon] += 1;
             weaponsUpgrade[weaponInfo.nameWeapon] += weaponsUpgrade[weaponInfo.nameWeapon] / 10;

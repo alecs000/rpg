@@ -5,14 +5,17 @@ using UnityEngine;
 public class PortalActive : MonoBehaviour
 {
     [SerializeField] private ParticleSystem _particleSystem;
-    [SerializeField] private GameObject[] runes;
+    [SerializeField] private GameObject runes;
+    [SerializeField] private GameObject menu;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        foreach (var rune in runes)
-        {
-            rune.SetActive(true);
-        }
+        runes.SetActive(true);
         _particleSystem.Play();
+        StartCoroutine(ShowMenu());
     }
-
+    IEnumerator ShowMenu()
+    {
+        yield return new WaitForSeconds(0.4f);
+        menu.SetActive(true );
+    }
 }

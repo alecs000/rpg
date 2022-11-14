@@ -5,24 +5,26 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public IWeapon weapon; // Изменять оружие на нужное в этой переменной
+    // Изменять оружие на нужное в этой переменной
+    public IWeapon weapon;
     [SerializeField] private float speed;
     [SerializeField] private JoystickForMovment joystickForMovment;
     private Dictionary<Type, IPlayerBehaviour> behaviorsMap;
     private IPlayerBehaviour currentBehaviour;
-    private Animator animatorBody;
+    private Animator playerBodyAnimator;
     private Rigidbody2D rb;
     private void InitBehaviors()
     {
         behaviorsMap = new Dictionary<Type, IPlayerBehaviour>();
         behaviorsMap[typeof(IdlePlayerBehaviour)] = new IdlePlayerBehaviour(rb);
-        behaviorsMap[typeof(RunningPlayerBehaviour)] = new RunningPlayerBehaviour(rb, speed, animatorBody, joystickForMovment, this);
+        behaviorsMap[typeof(RunningPlayerBehaviour)] = new RunningPlayerBehaviour(rb, speed, playerBodyAnimator, joystickForMovment, this);
         behaviorsMap[typeof(AttackPlayerBehaviour)] = new AttackPlayerBehaviour(weapon);
+        behaviorsMap[typeof(DiePlayerBehavior)] = new DiePlayerBehavior(playerBodyAnimator);
 
     }
     private void Start()
     {
-        animatorBody = GetComponent<Animator>();
+        playerBodyAnimator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         InitBehaviors();
         SetBehaviourByDefoult();
@@ -70,6 +72,13 @@ public class Player : MonoBehaviour
     public void SetBehaviourAttack()
     {
         var behavior = GetBehaviour<AttackPlayerBehaviour>();
+        if (currentBehaviour == behavior)
+            return;
+        SetBehaviour(behavior);
+    }
+    public void SetBehaviourDie()
+    {
+        var behavior = GetBehaviour<DiePlayerBehavior>();
         if (currentBehaviour == behavior)
             return;
         SetBehaviour(behavior);

@@ -4,8 +4,4 @@ using UnityEngine;
 
 public class AbilityPoints : BankDefoult
 {
-    public override void Save()
-    {
-        PlayerPrefs.SetInt("AbilityPoints", bankValue.Value);
-    }
 }

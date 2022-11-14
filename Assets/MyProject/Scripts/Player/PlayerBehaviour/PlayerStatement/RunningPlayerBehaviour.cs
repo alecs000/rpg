@@ -37,7 +37,12 @@ public class RunningPlayerBehaviour : IPlayerBehaviour
 
     void IPlayerBehaviour.FixedUpdate()
     {
-        DefaultMovement.Move(joystickForMovment.vectorDirection, rb, animator, 0.5f, speed );
+        Vector2 dir = joystickForMovment.vectorDirection;
+        if (dir.y > 0.5 || dir.x > 0.5 || dir.y < -0.5 || dir.x < -0.5)
+        {
+            DefaultMovement.Move(dir, rb, speed);
+        }
+        DefaultMovement.MoveAnimation(joystickForMovment.vectorDirection,animator, 0.5f);
         if (joystickForMovment.vectorDirection == Vector2.zero)
         {
             player.SetBehaviourIdle();

@@ -2,11 +2,42 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.UIElements;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public static class DefaultMovement
 {
+    /// <summary>
+    /// Try to move agent. If trigger set by default, then "Movement in 4 corners" is called, otherwise the "Movement in 4 direction" is called.
+    /// </summary>
+    /// <param name="trigger">If trigger set by default, then "Movement in 4 corners" is called, otherwise the "Movement in 4 direction" is called.</param>
+    public static bool TryMoveAgent(Vector2 MoveFrom, Vector2 MoveTo, Animator anim, float distance, NavMeshAgent agent, bool trigger = true)
+    {
+        float dis = Vector3.Distance(MoveTo, MoveFrom);
+        Vector2 direction = (MoveTo - MoveFrom).normalized;
+        if (dis > distance)
+        {
+            if (trigger)
+            {
+                if (direction.y > 0 || direction.x > 0 || direction.y < -0 || direction.x < -0)
+                {
+                    agent.SetDestination(MoveTo);
+                }
+            }
+            if (direction.y > 0.5 || direction.x > 0.5 || direction.y < -0.5 || direction.x < -0.5)
+            {
+                agent.SetDestination(MoveTo);
+            }
+            MoveAnimation(direction, anim, 0.5f);
+            return true;
+        }
+        else
+        {
+            anim.SetInteger("Direction", 4);
+            return false;
+        }
+    }
     /// <summary>
     /// Try to move. If trigger set by default, then "Movement in 4 corners" is called, otherwise the "Movement in 4 direction" is called.
     /// </summary>
@@ -19,10 +50,18 @@ public static class DefaultMovement
         {
             if (trigger == -10)
             {
-                Move(dir, rb, anim, speed);
+                if (dir.y > 0 || dir.x > 0 || dir.y < -0 || dir.x < -0)
+                {
+                    Move(dir, rb, speed);
+                }
+                MoveAnimation(dir, anim);
                 return true;
             }
-            Move(dir, rb, anim, trigger, speed);
+            if (dir.y > trigger || dir.x > trigger || dir.y < -trigger || dir.x < -trigger)
+            {
+                Move(dir, rb, speed);
+            }
+            MoveAnimation(dir, anim, trigger);
             return true;
         }
         else
@@ -33,14 +72,10 @@ public static class DefaultMovement
         }
     }
     ///<summary>
-    /// Movement in 4 corners
+    /// Animation in 4 corners
     /// </summary>
-    public static void Move(Vector2 direction, Rigidbody2D rb, Animator anim, float speed = 2)
+    public static void MoveAnimation(Vector2 direction, Animator anim)
     {
-        if (direction.y > 0 || direction.x > 0 || direction.y < -0 || direction.x < -0)
-        {
-            Move(direction, rb, speed);
-        }
         if (direction.y > 0 && direction.x > 0)
         {
             anim.SetInteger("Direction", 0);
@@ -63,14 +98,10 @@ public static class DefaultMovement
         }
     }
     ///<summary>
-    /// Movement in 4 direction
+    /// Animation in 4 direction
     /// </summary>
-    public static void Move(Vector2 direction, Rigidbody2D rb, Animator anim, float trigger, float speed = 2)
+    public static void MoveAnimation(Vector2 direction, Animator anim, float trigger)
     {
-        if (direction.y > trigger|| direction.x > trigger|| direction.y < -trigger|| direction.x < -trigger)
-        {
-            Move(direction, rb, speed);
-        }
             if (direction.y > trigger)
             {
                 anim.SetInteger("Direction", 0);

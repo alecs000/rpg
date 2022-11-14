@@ -20,23 +20,18 @@ public abstract class BankDefoult : MonoBehaviour
     public virtual void Add(int value)
     {
         bankValue.Value += value;
-        Save();
     }
 
-    public virtual bool Remove(int value)
+    public virtual bool TryRemove(int value)
     {
         if (bankValue.Value >= value)
         {
             bankValue.Value -= value;
             return true;
         }
-        Save();
         return false;
     }
 
-    public virtual void Save()
-    {
-    }
 
     public virtual void AddObserver(Action<object, object> OnChanged)
     {

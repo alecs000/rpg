@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class ChestBehaviour : MonoBehaviour
 {
     [SerializeField] private ChestInfo chestInfo;
-    [SerializeField] private Money money;
     [SerializeField] private GameObject openedChest;
     [SerializeField] private GameObject closedChest;
     [SerializeField] private GameObject notification;
@@ -23,7 +22,8 @@ public class ChestBehaviour : MonoBehaviour
         sender.SetActive(false);
         closedChest.SetActive(true);
         openedChest.SetActive(false);
-        money.Add(moneyAmount);
+        Money.instance.Add(moneyAmount);
+        notificationText.color = "DDCC7A".ToColor();
         notificationText.text = $"+{moneyAmount} gold";
         notification.SetActive(true);
         StartCoroutine(CloseNotification());

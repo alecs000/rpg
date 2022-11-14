@@ -13,8 +13,7 @@ GameObject:
   - component: {fileID: 1259381009034484457}
   - component: {fileID: 1259381009034484462}
   - component: {fileID: 1259381009034484460}
-  - component: {fileID: 1259381009034484461}
-  - component: {fileID: 8975280377616119336}
+  - component: {fileID: -5935973275152790577}
   m_Layer: 6
   m_Name: Eye
   m_TagString: Enemy
@@ -119,10 +118,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07db27c66f81ddf46bc972d849520a58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  distance: 1.2
+  NavMeshMovment: 0
+  distance: 1.5
   _hitPoints: 40
   damage: 5
+  speed: 2
 --- !u!50 &1259381009034484460
 Rigidbody2D:
   serializedVersion: 4
@@ -144,8 +144,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &1259381009034484461
-PolygonCollider2D:
+--- !u!58 &-5935973275152790577
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -157,54 +157,6 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5, y: 5}
-    newSize: {x: 1.5, y: 1.5}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.48624736, y: 0.2908098}
-      - {x: 0.36498567, y: 0.26492023}
-      - {x: 0.21589148, y: 0.20475861}
-      - {x: 0.07129449, y: 0.20744374}
-      - {x: 0.044169024, y: 0.20727685}
-      - {x: -0.06495085, y: 0.18144274}
-      - {x: -0.24003825, y: 0.15087394}
-      - {x: -0.13446814, y: 0.022200424}
-      - {x: -0.018707424, y: -0.035276026}
-      - {x: -0.12689364, y: -0.17504907}
-      - {x: -0.049094055, y: -0.37417588}
-      - {x: 0.24171568, y: -0.31401426}
-      - {x: 0.41669935, y: -0.409321}
-      - {x: 0.46579343, y: -0.3018773}
-      - {x: 0.36304298, y: -0.20181191}
-      - {x: 0.41525492, y: 0.14454558}
-      - {x: 0.5649201, y: 0.21757264}
---- !u!195 &8975280377616119336
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259381009034484458}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 2.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 5
-  m_BaseOffset: 2.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_Offset: {x: 0.12674546, y: -0.12228805}
+  serializedVersion: 2
+  m_Radius: 0.41615307
