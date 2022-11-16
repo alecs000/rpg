@@ -1,4 +1,3 @@
-using Assets.MyProject.Scripts.DataPersistence;
 using UnityEngine;
 using UnityEngine.UI;
 

@@ -1,4 +1,3 @@
-using Assets.MyProject.Scripts.DataPersistence;
 using System;
 using System.Collections;
 using System.Collections.Generic;

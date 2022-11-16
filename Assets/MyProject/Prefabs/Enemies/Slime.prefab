@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 14303643697583884}
   - component: {fileID: 14303643697583885}
   - component: {fileID: -3137111934161218979}
+  - component: {fileID: -723044875638252731}
+  - component: {fileID: -4877408793900668983}
   m_Layer: 6
   m_Name: Slime
   m_TagString: Enemy
@@ -119,6 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NavMeshMovment: 0
+  SimpleMovment: 0
   distance: 1
   _hitPoints: 15
   damage: 3
@@ -160,3 +163,37 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.07545771}
   serializedVersion: 2
   m_Radius: 0.23545773
+--- !u!195 &-723044875638252731
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14303643697583872}
+  m_Enabled: 0
+  m_AgentTypeID: 0
+  m_Radius: 0.4
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.28
+  m_BaseOffset: 0.64
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 1
+--- !u!114 &-4877408793900668983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14303643697583872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b111663fd01d5cb4bb24af287c9c9b9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

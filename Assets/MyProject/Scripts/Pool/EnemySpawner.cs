@@ -6,8 +6,10 @@ using static UnityEditor.PlayerSettings;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] int poolCount = 2;
-    [SerializeField] AliveDefault prefab;
+    [SerializeField] private int poolCount = 2;
+    [SerializeField] private AliveDefault prefab;
+    [SerializeField] private bool _navMeshMovment;
+    [SerializeField] private bool _simpleMovment;
     private PoolMono<AliveDefault> pool;
     private static List<IAlive> alive = new List<IAlive>();
     private void Awake()
@@ -20,7 +22,9 @@ public class EnemySpawner : MonoBehaviour
     } 
     public void Spawn(Vector2 position, string layer = "Layer 1")
     {
-        AliveDefault enemy = pool.GetFreeElement(false);
+        DefoultEnemy enemy = pool.GetFreeElement(false) as DefoultEnemy;
+        enemy.NavMeshMovment = _navMeshMovment;
+        enemy.SimpleMovment = _simpleMovment;
         enemy.transform.position = new Vector2(position.x, position.y);
         enemy.gameObject.layer = LayerMask.NameToLayer(layer);
         enemy.gameObject.GetComponent<SpriteRenderer>().sortingLayerName = layer;

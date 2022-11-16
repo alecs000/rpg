@@ -8,7 +8,8 @@ using UnityEngine.XR;
 
 public abstract class DefoultEnemy : AliveDefault
 {
-    [SerializeField] protected bool NavMeshMovment;
+    public bool NavMeshMovment;
+    public bool SimpleMovment;
     [SerializeField] protected float distance;
     [SerializeField] protected float _hitPoints;
     [SerializeField] protected float damage;
@@ -21,16 +22,7 @@ public abstract class DefoultEnemy : AliveDefault
     protected bool isAttack;
     protected bool isDie;
     protected NavMeshAgent agent;
-    protected bool spawn = true;
-    private void Awake()
-    {
-        if (NavMeshMovment)
-        {
-            agent = GetComponent<NavMeshAgent>();
-            agent.updateRotation = false;
-            agent.updateUpAxis = false;
-        }
-    }
+    protected bool _isSpawn = true;
     private void Start()
     {
         GameObject player = GameObject.FindWithTag("Player");
@@ -38,21 +30,28 @@ public abstract class DefoultEnemy : AliveDefault
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>(); 
-        playerController = player.GetComponent<PlayerController>();
+        playerController = player.GetComponent<PlayerController>(); 
+        if (NavMeshMovment)
+        {
+            agent = GetComponent<NavMeshAgent>();
+            agent.enabled = true;
+            agent.updateRotation = false;
+            agent.updateUpAxis = false;
+            _isSpawn = false;
+        }
     }
     private void OnEnable()
     {
         hitPoints = _hitPoints;
         isDie = false;
         isAttack=false;
-        if(NavMeshMovment && !spawn)
+        if(NavMeshMovment && !_isSpawn)
             agent.enabled = true;
     }
     private void OnDisable()
     {
-        if (NavMeshMovment&&!spawn)
+        if (NavMeshMovment && !_isSpawn)
             agent.enabled = false;
-        spawn = false;
     }
     private void FixedUpdate()
     {
@@ -64,9 +63,13 @@ public abstract class DefoultEnemy : AliveDefault
         {
             AgentBehavior();
         }
-        else
+        else if (!SimpleMovment)
         {
             Behavior();
+        }
+        else
+        {
+            SimpleBehavior();
         }
     }
     protected virtual void AgentBehavior()
@@ -96,6 +99,25 @@ public abstract class DefoultEnemy : AliveDefault
         if(isMoving)
             anim.SetBool("IsAttack", false);
         if (!isMoving)
+        {
+            Attack();
+        }
+    }
+    protected virtual void SimpleBehavior()
+    {
+        if (isDie)
+        {
+            return;
+        }
+        if (!isAttack)
+        {
+            DefaultMovement.Move(Vector2.left, rb, speed);
+            DefaultMovement.MoveAnimation(new Vector2(-0.5f, -0.5f), anim);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (SimpleMovment&&collision.CompareTag("AttackTrigger"))
         {
             Attack();
         }

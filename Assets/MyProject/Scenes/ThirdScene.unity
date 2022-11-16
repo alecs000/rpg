@@ -40925,8 +40925,13 @@ PrefabInstance:
         type: 3}
       propertyPath: prefab
       value: 
-      objectReference: {fileID: 2560300257579272258, guid: 5d3c9ef1cebecc541a3112ed201302f3,
+      objectReference: {fileID: 14303643697583884, guid: 56525d3437c212243af4a1368bebce66,
         type: 3}
+    - target: {fileID: 1674802639228259947, guid: deaaf775303f25b409e84d4a669415b9,
+        type: 3}
+      propertyPath: _navMeshMovment
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3572688912647779345, guid: deaaf775303f25b409e84d4a669415b9,
         type: 3}
       propertyPath: m_Name
@@ -41424,7 +41429,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolCount: 5
-  prefab: {fileID: 7039252095727775308, guid: c7302888feb98df429fbe6dd20ab9911, type: 3}
+  prefab: {fileID: 2772565613741511913, guid: 53174d4392b6eb8488316080118807f6, type: 3}
+  _navMeshMovment: 1
+  _simpleMovment: 0
 --- !u!1001 &2109530885
 PrefabInstance:
   m_ObjectHideFlags: 0
