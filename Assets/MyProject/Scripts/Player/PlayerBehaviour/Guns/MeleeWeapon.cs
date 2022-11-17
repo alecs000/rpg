@@ -92,8 +92,12 @@ public abstract class MeleeWeapon :MonoBehaviour,  IWeapon, IDataPersistence
 
     public void LoadData(GameData data)
     {
-        damage = data.weaponsUpgrade[weaponInfo.name];
-        if (damage == 0)
+        if (data.weaponsUpgrade.ContainsKey(weaponInfo.name))
+        {
+            damage = data.weaponsUpgrade[weaponInfo.name];
+            damage = weaponInfo.damage;
+        }
+        else
         {
             damage = weaponInfo.damage;
         }

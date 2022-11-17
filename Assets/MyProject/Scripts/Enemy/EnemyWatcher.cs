@@ -4,12 +4,8 @@ using UnityEngine;
 
 public class EnemyWatcher : MonoBehaviour
 {
-    private static int _enemyAlive;
+    private static int _enemyAlive = 0;
     public static int EnemyAlive => _enemyAlive;
-    private void Awake()
-    {
-        _enemyAlive = 0;    
-    }
     public void OnEnable()
     {
         _enemyAlive++;

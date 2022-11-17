@@ -92692,6 +92692,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: SwitchScene
       objectReference: {fileID: 0}
+    - target: {fileID: 8267811751513988040, guid: 2213acfcf5afb9848b5ab8cd427c3b35,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267811752261100726, guid: 2213acfcf5afb9848b5ab8cd427c3b35,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267811752261100726, guid: 2213acfcf5afb9848b5ab8cd427c3b35,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267811752261100726, guid: 2213acfcf5afb9848b5ab8cd427c3b35,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267811752261100726, guid: 2213acfcf5afb9848b5ab8cd427c3b35,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2213acfcf5afb9848b5ab8cd427c3b35, type: 3}
 --- !u!1001 &8839959732103773217

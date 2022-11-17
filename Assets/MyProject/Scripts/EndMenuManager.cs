@@ -9,16 +9,22 @@ public class EndMenuManager : MonoBehaviour
     public void ClickShop()
     {
         anim.Play();
-        SceneManager.LoadScene(0);
+        StartCoroutine(SwitchScene(0));
     }
     public void ClickNextLevel()
     {
         anim.Play();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+        StartCoroutine(SwitchScene(SceneManager.GetActiveScene().buildIndex+1));
     }
     public void ClickRestart()
     {
         anim.Play();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        StartCoroutine(SwitchScene(SceneManager.GetActiveScene().buildIndex));
+    }
+    IEnumerator SwitchScene(int sceneIndex)
+    {
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene(sceneIndex);
+
     }
 }

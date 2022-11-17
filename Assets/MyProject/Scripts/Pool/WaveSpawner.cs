@@ -50,7 +50,7 @@ public class WaveSpawner : MonoBehaviour, IDataPersistence
             _enemySpawners[j].RandomSpawn(_spawnPositon, 0, _yDiviasion);
         }
     }
-    IEnumerator EndWave()
+    IEnumerator EndWave()  
     {
         _isSpawned = false;
         ShopButton.SetActive(true);
