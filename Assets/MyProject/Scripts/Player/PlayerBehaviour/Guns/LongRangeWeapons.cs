@@ -7,84 +7,84 @@ using static UnityEditor.Experimental.GraphView.GraphView;
 
 public abstract class LongRangeWeapons : MonoBehaviour, IWeapon, IDataPersistence
 {
-    [SerializeField] int poolCount = 2;
-    [SerializeField] Missile prefab;
-    [SerializeField] private JoystickForAttack joystickForAttack;
-    [SerializeField] private GameObject[] weapons;
-    [SerializeField] private Animator animatorBody;
-    [SerializeField] private WeaponInfo weaponInfo;
-    private PoolMono<Missile> pool;
-    private SpriteRenderer  playerSpriteRenderer;
-    private float damage;
-    public WeaponInfo _weaponInfo => weaponInfo;
+    [SerializeField] private int _poolCount = 2;
+    [SerializeField] private Missile _prefab;
+    [SerializeField] private JoystickForAttack _joystickForAttack;
+    [SerializeField] private GameObject[] _weapons;
+    [SerializeField] private Animator _animatorBody;
+    [SerializeField] private WeaponInfo _weaponInfo;
+    private PoolMono<Missile> _pool;
+    private SpriteRenderer  _playerSpriteRenderer;
+    private float _damage;
+    public WeaponInfo WeaponInfo => _weaponInfo;
     private void Start()
     {
-         pool = new PoolMono<Missile>(prefab, poolCount, this.transform);
-        playerSpriteRenderer = animatorBody.GetComponent<SpriteRenderer>();
+         _pool = new PoolMono<Missile>(_prefab, _poolCount, this.transform);
+        _playerSpriteRenderer = _animatorBody.GetComponent<SpriteRenderer>();
     }
     public virtual void StartAttack()
     {
-        animatorBody.SetBool("IdleActive", false);
-        Missile missile = pool.GetFreeElement();
-        missile.gameObject.layer = animatorBody.gameObject.layer;
-        missile.gameObject.GetComponent<SpriteRenderer>().sortingLayerID = playerSpriteRenderer.sortingLayerID;
+        _animatorBody.SetBool("IdleActive", false);
+        Missile missile = _pool.GetFreeElement();
+        missile.gameObject.layer = _animatorBody.gameObject.layer;
+        missile.gameObject.GetComponent<SpriteRenderer>().sortingLayerID = _playerSpriteRenderer.sortingLayerID;
         missile.transform.position = this.transform.position;
     }
     public virtual void Attack()
     {
-        if (joystickForAttack.vectorAttack == Vector2.zero)
+        if (_joystickForAttack.VectorAttack == Vector2.zero)
             return;
-        if (PlayerController.isAttack)
+        if (PlayerController.IsAttack)
             return;
         WeaponAttack();
-        PlayerController.isAttack = true;
+        PlayerController.IsAttack = true;
     }
     public virtual void EndAttack()
     {
-        animatorBody.SetBool("IdleActive", true);
-        animatorBody.SetInteger(weaponInfo.animationName, 4);
-        weapons[0].SetActive(false);
-        weapons[1].SetActive(false);
-        weapons[2].SetActive(false);
-        weapons[3].SetActive(false);
+        _animatorBody.SetBool("IdleActive", true);
+        _animatorBody.SetInteger(_weaponInfo.animationName, 4);
+        _weapons[0].SetActive(false);
+        _weapons[1].SetActive(false);
+        _weapons[2].SetActive(false);
+        _weapons[3].SetActive(false);
     }
     private void WeaponAttack()
     {
-        float angle = joystickForAttack.GetAngle();
-        if (joystickForAttack.vectorAttack.y > 0.5)
+        float angle = _joystickForAttack.GetAngle();
+        if (_joystickForAttack.VectorAttack.y > 0.5)
         {
             AttackAnimation(0);
-            weapons[0].transform.rotation = Quaternion.Euler(0, 0, angle-90);
+            _weapons[0].transform.rotation = Quaternion.Euler(0, 0, angle-90);
             return;
         }
-        if (joystickForAttack.vectorAttack.x > 0.5)
+        if (_joystickForAttack.VectorAttack.x > 0.5)
         {
             AttackAnimation(1);
-            weapons[1].transform.rotation = Quaternion.Euler(0, 0, angle);
+            _weapons[1].transform.rotation = Quaternion.Euler(0, 0, angle);
             return;
         }
-        if (joystickForAttack.vectorAttack.y < -0.5)
+        if (_joystickForAttack.VectorAttack.y < -0.5)
         {
             AttackAnimation(2);
-            weapons[2].transform.rotation = Quaternion.Euler(0, 0, angle - 270);
+            _weapons[2].transform.rotation = Quaternion.Euler(0, 0, angle - 270);
             return;
         }
-        if (joystickForAttack.vectorAttack.x < -0.5)
+        if (_joystickForAttack.VectorAttack.x < -0.5)
         {
             AttackAnimation(3);
-            weapons[3].transform.rotation = Quaternion.Euler(0, 0, angle - 180);
+            _weapons[3].transform.rotation = Quaternion.Euler(0, 0, angle - 180);
             return;
         }
     }
     private void AttackAnimation(int direction)
     {
-        weapons[direction].SetActive(true);
-        animatorBody.SetInteger(weaponInfo.animationName, direction);
+        _weapons[direction].SetActive(true);
+        _animatorBody.SetInteger(_weaponInfo.animationName, direction);
     }
 
     public void LoadData(GameData data)
     {
-        damage = data.weaponsUpgrade[weaponInfo.name];
+        _damage = data.WeaponsUpgrade[_weaponInfo.name];
     }
 
     public void SaveData(GameData data)

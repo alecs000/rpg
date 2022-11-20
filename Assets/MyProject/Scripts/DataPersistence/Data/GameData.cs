@@ -5,17 +5,17 @@ using UnityEngine;
 [System.Serializable]
 public class GameData
 {
-    public SerializableDictionary<string, int> weaponsBought;
-    public SerializableDictionary<string, float> weaponsUpgrade;
-    public int moneyAmount;
-    public int moneyAmountOnLevel;
+    public SerializableDictionary<string, int> WeaponsBought;
+    public SerializableDictionary<string, float> WeaponsUpgrade;
+    public int MoneyAmount;
+    public int MoneyAmountOnLevel;
     public int LevelsAmount;
 
-    // the values defined in this constructor will be the default values
+    // the _values defined in this constructor will be the default _values
     // the game starts with when there's no data to load
     public GameData() 
     {
-        weaponsBought = new SerializableDictionary<string, int>();
-        weaponsUpgrade = new SerializableDictionary<string, float>();
+        WeaponsBought = new SerializableDictionary<string, int>();
+        WeaponsUpgrade = new SerializableDictionary<string, float>();
     }
 }

@@ -6,21 +6,22 @@ using UnityEngine.SocialPlatforms;
 
 public abstract class Missile : MonoBehaviour
 {
-    [SerializeField] WeaponInfo weapon;
-    [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private float speed;
-    private JoystickForAttack joystickForAttack;
-    private Vector2 _direction;//направление при появлении
+    [SerializeField] private WeaponInfo _weapon;
+    [SerializeField] private Rigidbody2D _missleRigidbody;
+    [SerializeField] private float _speed;
+    private JoystickForAttack _joystickForAttack;
+    // Направление при появлении.
+    private Vector2 _direction;
     private void OnEnable()
     {
-        joystickForAttack = GameObject.FindWithTag("JoystickForAttack").GetComponent<JoystickForAttack>();
-        float rotation = joystickForAttack.GetAngle();
+        _joystickForAttack = GameObject.FindWithTag("_joystickForAttack").GetComponent<JoystickForAttack>();
+        float rotation = _joystickForAttack.GetAngle();
         transform.rotation = Quaternion.Euler(0, 0, rotation);
-        _direction = joystickForAttack.vectorAttack;
+        _direction = _joystickForAttack.VectorAttack;
     }
     private void FixedUpdate()
     {
-        DefaultMovement.Move(_direction, rb, speed);
+        DefaultMovement.Move(_direction, _missleRigidbody, _speed);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -35,7 +36,7 @@ public abstract class Missile : MonoBehaviour
     {
         if (collisionGameObject.CompareTag("Enemy"))
         {
-            collisionGameObject.GetComponent<IAlive>().GetDamage(weapon.damage);
+            collisionGameObject.GetComponent<IAlive>().GetDamage(_weapon.damage);
         }
         else
         {

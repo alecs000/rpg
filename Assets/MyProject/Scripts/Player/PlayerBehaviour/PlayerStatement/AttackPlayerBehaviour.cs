@@ -7,25 +7,25 @@ using static UnityEngine.Networking.UnityWebRequest;
 
 public class AttackPlayerBehaviour : IPlayerBehaviour
 {
-    private IWeapon weapon;
+    private IWeapon _weapon;
     public AttackPlayerBehaviour(IWeapon weapon)
     {
-        this.weapon = weapon;
+        this._weapon = weapon;
     }
 
     public void Enter()
     {
-        weapon.StartAttack();
+        _weapon.StartAttack();
     }
 
     public void Exit()
     {
-        weapon.EndAttack();
+        _weapon.EndAttack();
     }
 
     public void Update()
     {
-        weapon.Attack();
+        _weapon.Attack();
     }
 
     void IPlayerBehaviour.FixedUpdate()

@@ -22538,10 +22538,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11edef0b2810b1488746e6c2cc01aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  count: 5
-  layer: Layer 1
-  enemySpawner: {fileID: 1946127775}
-  diviation: {x: 8, y: 2}
+  _count: 5
+  _layer: Layer 1
+  _enemySpawner: {fileID: 1946127775}
+  _diviation: {x: 8, y: 2}
 --- !u!61 &493815891
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22580,10 +22580,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11edef0b2810b1488746e6c2cc01aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  count: 2
-  layer: Layer 1
-  enemySpawner: {fileID: 1597856264}
-  diviation: {x: 8, y: 2}
+  _count: 2
+  _layer: Layer 1
+  _enemySpawner: {fileID: 698796477}
+  _diviation: {x: 8, y: 2}
 --- !u!1001 &505444899
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23394,8 +23394,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b624436bfde389439518530d06a50c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolCount: 3
-  prefab: {fileID: 1170090898401174525, guid: e47401bf725b1b748bd03ae19c1dd7b6, type: 3}
+  _poolCount: 2
+  _prefab: {fileID: 1170090898401174525, guid: e47401bf725b1b748bd03ae19c1dd7b6, type: 3}
+  _navMeshMovment: 0
+  _simpleMovment: 0
 --- !u!1001 &709794686
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27284,10 +27286,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11edef0b2810b1488746e6c2cc01aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  count: 5
-  layer: Layer 1
-  enemySpawner: {fileID: 698796477}
-  diviation: {x: 8, y: 2}
+  _count: 5
+  _layer: Layer 1
+  _enemySpawner: {fileID: 698796477}
+  _diviation: {x: 8, y: 2}
 --- !u!61 &1018531519
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29516,10 +29518,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11edef0b2810b1488746e6c2cc01aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  count: 3
-  layer: Layer 1
-  enemySpawner: {fileID: 1946127775}
-  diviation: {x: 8, y: 2}
+  _count: 4
+  _layer: Layer 1
+  _enemySpawner: {fileID: 1946127775}
+  _diviation: {x: 8, y: 2}
 --- !u!61 &1420223080
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29558,10 +29560,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11edef0b2810b1488746e6c2cc01aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  count: 2
-  layer: Layer 1
-  enemySpawner: {fileID: 698796477}
-  diviation: {x: 5, y: 3}
+  _count: 3
+  _layer: Layer 1
+  _enemySpawner: {fileID: 698796477}
+  _diviation: {x: 7, y: 3}
 --- !u!114 &1420223082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29574,10 +29576,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11edef0b2810b1488746e6c2cc01aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  count: 4
-  layer: Layer 1
-  enemySpawner: {fileID: 1597856264}
-  diviation: {x: 7, y: 3}
+  _count: 3
+  _layer: Layer 1
+  _enemySpawner: {fileID: 1597856264}
+  _diviation: {x: 8, y: 3}
 --- !u!1001 &1421369895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31751,8 +31753,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b624436bfde389439518530d06a50c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolCount: 3
-  prefab: {fileID: 1259381009034484462, guid: 2a47c3d571763a449a7e882f85a4ec64, type: 3}
+  _poolCount: 2
+  _prefab: {fileID: 1259381009034484462, guid: 2a47c3d571763a449a7e882f85a4ec64, type: 3}
+  _navMeshMovment: 0
+  _simpleMovment: 0
 --- !u!1001 &1635474241
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32798,10 +32802,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11edef0b2810b1488746e6c2cc01aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  count: 7
-  layer: Layer 1
-  enemySpawner: {fileID: 1946127775}
-  diviation: {x: 8, y: 2}
+  _count: 7
+  _layer: Layer 1
+  _enemySpawner: {fileID: 1946127775}
+  _diviation: {x: 8, y: 2}
 --- !u!61 &1822198727
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33173,6 +33177,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1674802639228259947, guid: deaaf775303f25b409e84d4a669415b9,
         type: 3}
+      propertyPath: _prefab
+      value: 
+      objectReference: {fileID: 14303643697583884, guid: 56525d3437c212243af4a1368bebce66,
+        type: 3}
+    - target: {fileID: 1674802639228259947, guid: deaaf775303f25b409e84d4a669415b9,
+        type: 3}
       propertyPath: poolCount
       value: 5
       objectReference: {fileID: 0}
@@ -33248,7 +33258,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3572688914240968207, guid: deaaf775303f25b409e84d4a669415b9,
         type: 3}
+      propertyPath: _count
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3572688914240968207, guid: deaaf775303f25b409e84d4a669415b9,
+        type: 3}
+      propertyPath: _diviation.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3572688914240968207, guid: deaaf775303f25b409e84d4a669415b9,
+        type: 3}
+      propertyPath: _diviation.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3572688914240968207, guid: deaaf775303f25b409e84d4a669415b9,
+        type: 3}
       propertyPath: enemySpawner
+      value: 
+      objectReference: {fileID: 1946127775}
+    - target: {fileID: 3572688914240968207, guid: deaaf775303f25b409e84d4a669415b9,
+        type: 3}
+      propertyPath: _enemySpawner
       value: 
       objectReference: {fileID: 1946127775}
     m_RemovedComponents: []

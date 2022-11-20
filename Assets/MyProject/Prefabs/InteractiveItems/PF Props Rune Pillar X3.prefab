@@ -290,10 +290,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b84d316553608b4db2160f93ebb7d4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glow: {fileID: 7147313477120842763}
-  notification: {fileID: 0}
-  notificationText: {fileID: 0}
-  boxCollider2D: {fileID: 8201330896951348079}
+  _glow: {fileID: 7147313477120842763}
+  _notification: {fileID: 0}
+  _notificationText: {fileID: 0}
+  _boxCollider2D: {fileID: 8201330896951348079}
 --- !u!114 &8201330896944189117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -380,4 +380,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0731db997aa60904e92a4490c48f01d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  notice: {fileID: 0}
+  _notice: {fileID: 0}

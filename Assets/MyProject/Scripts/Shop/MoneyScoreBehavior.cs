@@ -6,12 +6,12 @@ using UnityEngine.UI;
 
 public class MoneyScoreBehavior : MonoBehaviour, IDisposable
 {
-    private Text textMoney;
+    private Text _textMoney;
     private void Start()
     { 
         Money.instance.AddObserver(OnChangedMoney);
-        textMoney = GetComponent<Text>();
-        textMoney.text = Money.instance.value.ToString();
+        _textMoney = GetComponent<Text>();
+        _textMoney.text = Money.instance.Value.ToString();
     }
 
     public void Dispose()
@@ -21,6 +21,6 @@ public class MoneyScoreBehavior : MonoBehaviour, IDisposable
 
     private void OnChangedMoney(object oldValue, object newValue)
     {
-        textMoney.text = newValue.ToString();
+        _textMoney.text = newValue.ToString();
     }
 }

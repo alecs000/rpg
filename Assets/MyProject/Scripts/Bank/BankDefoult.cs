@@ -5,8 +5,8 @@ using UnityEngine;
 
 public abstract class BankDefoult : MonoBehaviour
 {
-    protected ObservableVariable<int> bankValue;
-    public int value => bankValue.Value;
+    protected ObservableVariable<int> _bankValue;
+    public int Value => _bankValue.Value;
     // Start is called before the first frame update
     void Awake()
     {
@@ -14,19 +14,19 @@ public abstract class BankDefoult : MonoBehaviour
     }
     protected virtual void Initialize()
     {
-        bankValue = new ObservableVariable<int>();
+        _bankValue = new ObservableVariable<int>(0);
     }
 
     public virtual void Add(int value)
     {
-        bankValue.Value += value;
+        _bankValue.Value += value;
     }
 
     public virtual bool TryRemove(int value)
     {
-        if (bankValue.Value >= value)
+        if (_bankValue.Value >= value)
         {
-            bankValue.Value -= value;
+            _bankValue.Value -= value;
             return true;
         }
         return false;
@@ -35,10 +35,10 @@ public abstract class BankDefoult : MonoBehaviour
 
     public virtual void AddObserver(Action<object, object> OnChanged)
     {
-        bankValue.OnChanged += OnChanged;
+        _bankValue.OnChanged += OnChanged;
     }
     public virtual void RemoveObserver(Action<object, object> OnChanged)
     {
-        bankValue.OnChanged -= OnChanged;
+        _bankValue.OnChanged -= OnChanged;
     }
 }

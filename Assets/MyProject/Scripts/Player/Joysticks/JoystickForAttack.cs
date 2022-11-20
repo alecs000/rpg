@@ -5,27 +5,27 @@ using UnityEngine;
 
 public class JoystickForAttack : JoysticDefault
 {
-    public Vector2 vectorAttack => inputPosition.normalized;
+    public Vector2 VectorAttack => _inputPosition.normalized;
     public float GetAngle()
     {
-        if (vectorAttack.x==0)
+        if (VectorAttack.x==0)
         {
-            if (vectorAttack.y > 0)
+            if (VectorAttack.y > 0)
                 return 90;
             else
                 return 270;
         }
-        double radians = Math.Atan(vectorAttack.y / vectorAttack.x);
+        double radians = Math.Atan(VectorAttack.y / VectorAttack.x);
         float angle = (float)Math.Abs(radians * (180 / Math.PI));
-        if (vectorAttack.x < 0 && vectorAttack.y < 0)
+        if (VectorAttack.x < 0 && VectorAttack.y < 0)
         {
             angle += 180;
         }
-        else if (vectorAttack.x < 0)
+        else if (VectorAttack.x < 0)
         {
             angle = 180 - angle;
         }
-        else if (vectorAttack.y < 0)
+        else if (VectorAttack.y < 0)
         {
             angle = 360 - angle;
         }

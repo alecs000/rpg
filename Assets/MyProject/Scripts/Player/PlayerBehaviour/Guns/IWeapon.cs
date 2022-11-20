@@ -4,7 +4,7 @@ using UnityEngine;
 
 public interface IWeapon
 {
-    WeaponInfo _weaponInfo { get; }
+    WeaponInfo WeaponInfo { get; }
     void Attack();
     void StartAttack();
     void EndAttack();

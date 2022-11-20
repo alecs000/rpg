@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class BossBehavior : MonoBehaviour
 {
-    [SerializeField] private GameObject endMenu;
+    [SerializeField] private GameObject _endMenu;
     public void EndDie()
     {
-        endMenu.SetActive(true);
+        _endMenu.SetActive(true);
     }
 }

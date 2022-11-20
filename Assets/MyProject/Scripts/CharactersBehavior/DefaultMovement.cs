@@ -9,7 +9,7 @@ using static UnityEngine.RuleTile.TilingRuleOutput;
 public static class DefaultMovement
 {
     /// <summary>
-    /// Try to move agent. If trigger set by default, then "Movement in 4 corners" is called, otherwise the "Movement in 4 direction" is called.
+    /// Try to move _agent. If trigger set by default, then "Movement in 4 corners" is called, otherwise the "Movement in 4 direction" is called.
     /// </summary>
     /// <param name="trigger">If trigger set by default, then "Movement in 4 corners" is called, otherwise the "Movement in 4 direction" is called.</param>
     public static bool TryMoveAgent(Vector2 MoveFrom, Vector2 MoveTo, Animator anim, float distance, NavMeshAgent agent, bool trigger = true)

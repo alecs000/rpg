@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class AliveDefault : MonoBehaviour, IAlive
 {
-    protected float hitPoints { get; set; }
+    protected float _hitPoints { get; set; }
     public virtual void Die() { }
     public virtual void GetDamage(float damage)
     {
-        hitPoints -= damage;
-        if (hitPoints <= 0)
+        _hitPoints -= damage;
+        if (_hitPoints <= 0)
             Die();
     }
 }

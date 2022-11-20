@@ -143,21 +143,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1e67bc5f96a6cc47b9472eca23b0514, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hitPoints: 49
-  _damage: 50
-  countEnemyInSpawn: 3
-  maxMinValueArea:
-  - 16
-  - 30
-  - -1
-  - -25
-  throns:
-  - {fileID: 7057551824479066153}
-  - {fileID: 4570696782057293482}
-  - {fileID: 5491675286078850163}
-  enemySpawner: {fileID: 0}
-  spawnDeviationX: 3
-  spawnDeviationY: 3
+  _enemyInfo: {fileID: 11400000, guid: 282fc8283ff92e24b84d524e3b0f1d21, type: 2}
+  _countEnemyInSpawn: 3
+  _maxMinValueArea: []
+  _throns: []
+  _enemySpawner: {fileID: 0}
+  _spawnDeviationX: 3
+  _spawnDeviationY: 3
 --- !u!60 &1236419055
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -219,7 +211,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 11.52
-  m_BaseOffset: 5.76
+  m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 1
 --- !u!114 &-4109653516139218320
@@ -294,7 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95fbb63ea2587444aa84dbb149db792e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 4640428603013853957}
+  _character: {fileID: 0}
 --- !u!1 &5491675286078850163
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,7 +347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95fbb63ea2587444aa84dbb149db792e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 4640428603013853957}
+  _character: {fileID: 0}
 --- !u!1 &7057551824479066153
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,4 +408,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95fbb63ea2587444aa84dbb149db792e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 4640428603013853957}
+  _character: {fileID: 0}

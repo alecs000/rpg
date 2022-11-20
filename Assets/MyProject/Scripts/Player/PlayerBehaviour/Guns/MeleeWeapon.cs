@@ -5,60 +5,60 @@ using UnityEngine;
 
 public abstract class MeleeWeapon :MonoBehaviour,  IWeapon, IDataPersistence
 {
-    [SerializeField] private GameObject gameObjectCollider;
-    [SerializeField] private WeaponCollider weaponCollider;
-    [SerializeField] private JoystickForAttack joystickForAttack;
-    [SerializeField] private GameObject[] animatorsWeapons;
-    [SerializeField] private Animator animatorBody;
-    [SerializeField] private WeaponInfo weaponInfo;
-    private float damage;
+    [SerializeField] private GameObject _gameObjectCollider;
+    [SerializeField] private WeaponCollider _weaponCollider;
+    [SerializeField] private JoystickForAttack _joystickForAttack;
+    [SerializeField] private GameObject[] _animatorsWeapons;
+    [SerializeField] private Animator _animatorBody;
+    [SerializeField] private WeaponInfo _weaponInfo;
+    private float _damage;
 
-    public WeaponInfo _weaponInfo => weaponInfo;
+    public WeaponInfo WeaponInfo => _weaponInfo;
     public virtual void StartAttack()
     {
-        animatorBody.SetBool("IdleActive", false);
+        _animatorBody.SetBool("IdleActive", false);
     }
     public virtual void Attack()
     {
-        if (joystickForAttack.vectorAttack == Vector2.zero)
+        if (_joystickForAttack.VectorAttack == Vector2.zero)
             return;
-        if (PlayerController.isAttack)
+        if (PlayerController.IsAttack)
             return;
         RotateCollider();
         WeaponAnimation();
-        PlayerController.isAttack = true;
+        PlayerController.IsAttack = true;
     }
     public virtual void EndAttack()
     {
-        foreach (var item in weaponCollider.alives)
+        foreach (var item in _weaponCollider.Alives)
         {
-            item.GetComponent<IAlive>().GetDamage(damage);
+            item.GetComponent<IAlive>().GetDamage(_damage);
         }
-        animatorBody.SetBool("IdleActive", true);
-        animatorBody.SetInteger(weaponInfo.animationName, 4);
-        animatorsWeapons[0].SetActive(false);
-        animatorsWeapons[1].SetActive(false);
-        animatorsWeapons[2].SetActive(false);
-        animatorsWeapons[3].SetActive(false);
+        _animatorBody.SetBool("IdleActive", true);
+        _animatorBody.SetInteger(_weaponInfo.animationName, 4);
+        _animatorsWeapons[0].SetActive(false);
+        _animatorsWeapons[1].SetActive(false);
+        _animatorsWeapons[2].SetActive(false);
+        _animatorsWeapons[3].SetActive(false);
     }
         private void WeaponAnimation()
     {
-        if (joystickForAttack.vectorAttack.y > 0.5)
+        if (_joystickForAttack.VectorAttack.y > 0.5)
         {
             AttackAnimation(0);
             return;
         }
-        if (joystickForAttack.vectorAttack.x > 0.5)
+        if (_joystickForAttack.VectorAttack.x > 0.5)
         {
             AttackAnimation(1);
             return;
         }
-        if (joystickForAttack.vectorAttack.y < -0.5)
+        if (_joystickForAttack.VectorAttack.y < -0.5)
         {
             AttackAnimation(2);
             return;
         }
-        if (joystickForAttack.vectorAttack.x < -0.5)
+        if (_joystickForAttack.VectorAttack.x < -0.5)
         {
             AttackAnimation(3);
             return;
@@ -66,40 +66,40 @@ public abstract class MeleeWeapon :MonoBehaviour,  IWeapon, IDataPersistence
     }
     private void AttackAnimation(int direction)
     {
-        animatorsWeapons[direction].SetActive(true);
-        animatorBody.SetInteger(weaponInfo.animationName, direction);
+        _animatorsWeapons[direction].SetActive(true);
+        _animatorBody.SetInteger(_weaponInfo.animationName, direction);
     }
 
         private void RotateCollider()
     {
-        float radians = (float)Math.Atan(joystickForAttack.vectorAttack.y / joystickForAttack.vectorAttack.x);
+        float radians = (float)Math.Atan(_joystickForAttack.VectorAttack.y / _joystickForAttack.VectorAttack.x);
         float angle = (float)Math.Abs(radians * (180 / Math.PI));
         Debug.Log(angle);
-        if (joystickForAttack.vectorAttack.x < 0 && joystickForAttack.vectorAttack.y < 0)
+        if (_joystickForAttack.VectorAttack.x < 0 && _joystickForAttack.VectorAttack.y < 0)
         {
             angle += 180;
         }
-        else if (joystickForAttack.vectorAttack.x < 0)
+        else if (_joystickForAttack.VectorAttack.x < 0)
         {
             angle = 180 - angle;
         }
-        else if (joystickForAttack.vectorAttack.y < 0)
+        else if (_joystickForAttack.VectorAttack.y < 0)
         {
             angle = 360 - angle;
         }
-        gameObjectCollider.transform.rotation = Quaternion.Euler(0, 0, angle);
+        _gameObjectCollider.transform.rotation = Quaternion.Euler(0, 0, angle);
     }
 
     public void LoadData(GameData data)
     {
-        if (data.weaponsUpgrade.ContainsKey(weaponInfo.name))
+        if (data.WeaponsUpgrade.ContainsKey(_weaponInfo.name))
         {
-            damage = data.weaponsUpgrade[weaponInfo.name];
-            damage = weaponInfo.damage;
+            _damage = data.WeaponsUpgrade[_weaponInfo.name];
+            _damage = _weaponInfo.damage;
         }
         else
         {
-            damage = weaponInfo.damage;
+            _damage = _weaponInfo.damage;
         }
     }
 

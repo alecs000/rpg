@@ -3,31 +3,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
+using UnityEngine.UI;
 
 public class PlayerController : AliveDefault
 {
-    public static bool isAttack;
+    public static bool IsAttack;
 
-    [SerializeField] private GameObject[] weapons;
-    [SerializeField] private Player player;
-    [SerializeField] private JoystickForMovment joystickForMovment;
-    [SerializeField] private JoystickForAttack JoystickForAttack;
-    [SerializeField] private float _hitPoints;
+    [SerializeField] private GameObject[] _weapons;
+    [SerializeField] private Player _player;
+    [SerializeField] private JoystickForMovment _joystickForMovment;
+    [SerializeField] private JoystickForAttack _joystickForAttack;
+    [SerializeField] private float _hitPointsStartValue;
     [SerializeField] private GameObject _loseMenu;
+    [SerializeField] private Text _loseTextMoney;
 
     private SpriteRenderer _spriteRenderer;
     private bool _isDie;
 
     private void Awake()
     {
-        foreach (var item in weapons)
+        foreach (var item in _weapons)
         {
             var weapon = item.GetComponent<IWeapon>();
-            if (weapon._weaponInfo.index==PlayerPrefs.GetInt("GunIndex"))
+            if (weapon.WeaponInfo.index==PlayerPrefs.GetInt("GunIndex"))
             {
                 LayerTrigger.item = item;
-                player.weapon = weapon;
+                _player.Weapon = weapon;
                 item.SetActive(true);
                 break;
             }
@@ -35,15 +36,16 @@ public class PlayerController : AliveDefault
     }
     private void Start()
     {
-        hitPoints = _hitPoints;
+        base._hitPoints = _hitPointsStartValue;
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        IsAttack = false;
     }
     public void AttackEnd()
     {
         if (_isDie)
             return;
-        player.SetBehaviourIdle();
-        isAttack = false;
+        _player.SetBehaviourIdle();
+        IsAttack = false;
     }
     public void DieEnd()
     {
@@ -53,17 +55,17 @@ public class PlayerController : AliveDefault
     {
         if (_isDie)
             return;
-        if (isAttack)
+        if (IsAttack)
             return;
-        if (joystickForMovment.vectorDirection!= Vector2.zero)
+        if (_joystickForMovment.VectorDirection!= Vector2.zero)
         {
-            player.SetBehaviourRunning();
+            _player.SetBehaviourRunning();
             return;
         }
 
-        if (JoystickForAttack.vectorAttack.x>0.5||JoystickForAttack.vectorAttack.x < -0.5 || JoystickForAttack.vectorAttack.y > 0.5 || JoystickForAttack.vectorAttack.y < -0.5)
+        if (_joystickForAttack.VectorAttack.x>0.5||_joystickForAttack.VectorAttack.x < -0.5 || _joystickForAttack.VectorAttack.y > 0.5 || _joystickForAttack.VectorAttack.y < -0.5)
         {
-            player.SetBehaviourAttack();
+            _player.SetBehaviourAttack();
             return;
         }
     }
@@ -72,7 +74,7 @@ public class PlayerController : AliveDefault
         if (_isDie)
             return;
         base.GetDamage(damage);
-        float colorValue = 1 / (_hitPoints / hitPoints);
+        float colorValue = 1 / (_hitPointsStartValue / base._hitPoints);
         if (colorValue >= 0)
         {
             _spriteRenderer.color = new Color(1, colorValue, colorValue, 1);
@@ -81,6 +83,7 @@ public class PlayerController : AliveDefault
     public override void Die()
     {
         _isDie = true;
-        player.SetBehaviourDie();
+        _loseTextMoney.text = $"+{Money.instance.GetMoneyOnLavel().ToString()} coins";
+        _player.SetBehaviourDie();
     }
 }

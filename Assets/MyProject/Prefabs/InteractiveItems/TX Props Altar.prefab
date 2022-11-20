@@ -474,8 +474,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particleSystem: {fileID: 6645387305829509507}
-  runes: {fileID: 8120825424537449975}
-  menu: {fileID: 0}
+  _runes: {fileID: 8120825424537449975}
+  _menu: {fileID: 0}
 --- !u!1 &6645387305829509630
 GameObject:
   m_ObjectHideFlags: 0

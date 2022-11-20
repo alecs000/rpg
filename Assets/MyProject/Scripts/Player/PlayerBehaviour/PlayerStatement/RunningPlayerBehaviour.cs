@@ -4,30 +4,30 @@ using UnityEngine;
 
 public class RunningPlayerBehaviour : IPlayerBehaviour
 {
-    private Rigidbody2D rb;
-    private float speed;
-    private Animator animator;
-    private JoystickForMovment joystickForMovment;
-    private Player player;
-    public RunningPlayerBehaviour(Rigidbody2D rb, float speed, Animator animator, JoystickForMovment joystickForMovment, Player player)
+    private Rigidbody2D _playerRididbody;
+    private float _speed;
+    private Animator _playerAnimator;
+    private JoystickForMovment _joystickForMovment;
+    private Player _player;
+    public RunningPlayerBehaviour(Rigidbody2D playerRididbody, float speed, Animator animator, JoystickForMovment joystickForMovment, Player player)
     {
-        this.rb = rb;
-        this.speed = speed;
-        this.animator = animator;
-        this.joystickForMovment = joystickForMovment;
-        this.player = player;
+        this._playerRididbody = playerRididbody;
+        this._speed = speed;
+        this._playerAnimator = animator;
+        this._joystickForMovment = joystickForMovment;
+        this._player = player;
     }
 
     public void Enter()
     {
-        animator.SetBool("IdleActive", false);
+        _playerAnimator.SetBool("IdleActive", false);
     }
 
     public void Exit()
     {
-        rb.velocity = Vector3.zero; 
-        animator.SetBool("IdleActive", true);
-        animator.SetInteger("Direction", 4);
+        _playerRididbody.velocity = Vector3.zero; 
+        _playerAnimator.SetBool("IdleActive", true);
+        _playerAnimator.SetInteger("Direction", 4);
     }
 
     public void Update()
@@ -37,15 +37,15 @@ public class RunningPlayerBehaviour : IPlayerBehaviour
 
     void IPlayerBehaviour.FixedUpdate()
     {
-        Vector2 dir = joystickForMovment.vectorDirection;
+        Vector2 dir = _joystickForMovment.VectorDirection;
         if (dir.y > 0.5 || dir.x > 0.5 || dir.y < -0.5 || dir.x < -0.5)
         {
-            DefaultMovement.Move(dir, rb, speed);
+            DefaultMovement.Move(dir, _playerRididbody, _speed);
         }
-        DefaultMovement.MoveAnimation(joystickForMovment.vectorDirection,animator, 0.5f);
-        if (joystickForMovment.vectorDirection == Vector2.zero)
+        DefaultMovement.MoveAnimation(_joystickForMovment.VectorDirection,_playerAnimator, 0.5f);
+        if (_joystickForMovment.VectorDirection == Vector2.zero)
         {
-            player.SetBehaviourIdle();
+            _player.SetBehaviourIdle();
         }
     }
 }

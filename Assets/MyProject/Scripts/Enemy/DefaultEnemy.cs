@@ -10,52 +10,52 @@ public abstract class DefoultEnemy : AliveDefault
 {
     public bool NavMeshMovment;
     public bool SimpleMovment;
-    [SerializeField] protected float distance;
-    [SerializeField] protected float _hitPoints;
-    [SerializeField] protected float damage;
-    [SerializeField] protected float speed = 2;
-    protected SpriteRenderer spriteRenderer;
-    protected Transform playerTransform;
-    protected Rigidbody2D rb;
+
+    [SerializeField] protected float _distance;
+    [SerializeField] protected EnemiesInfo _enemyInfo;
+
+    protected SpriteRenderer _enemySpriteRenderer;
+    protected Transform _playerTransform;
+    protected Rigidbody2D _enemyRigidbody;
     protected PlayerController playerController;
-    protected Animator anim;
-    protected bool isAttack;
-    protected bool isDie;
-    protected NavMeshAgent agent;
+    protected Animator _enemyAnimator;
+    protected bool _isAttack;
+    protected bool _isDie;
+    protected NavMeshAgent _agent;
     protected bool _isSpawn = true;
     private void Start()
     {
         GameObject player = GameObject.FindWithTag("Player");
-        playerTransform = player.transform;
-        rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
-        spriteRenderer = GetComponent<SpriteRenderer>(); 
+        _playerTransform = player.transform;
+        _enemyRigidbody = GetComponent<Rigidbody2D>();
+        _enemyAnimator = GetComponent<Animator>();
+        _enemySpriteRenderer = GetComponent<SpriteRenderer>(); 
         playerController = player.GetComponent<PlayerController>(); 
         if (NavMeshMovment)
         {
-            agent = GetComponent<NavMeshAgent>();
-            agent.enabled = true;
-            agent.updateRotation = false;
-            agent.updateUpAxis = false;
+            _agent = GetComponent<NavMeshAgent>();
+            _agent.enabled = true;
+            _agent.updateRotation = false;
+            _agent.updateUpAxis = false;
             _isSpawn = false;
         }
     }
     private void OnEnable()
     {
-        hitPoints = _hitPoints;
-        isDie = false;
-        isAttack=false;
+        base._hitPoints = _enemyInfo.HP;
+        _isDie = false;
+        _isAttack=false;
         if(NavMeshMovment && !_isSpawn)
-            agent.enabled = true;
+            _agent.enabled = true;
     }
     private void OnDisable()
     {
         if (NavMeshMovment && !_isSpawn)
-            agent.enabled = false;
+            _agent.enabled = false;
     }
     private void FixedUpdate()
     {
-        if (isDie)
+        if (_isDie)
         {
             return;
         }
@@ -74,15 +74,15 @@ public abstract class DefoultEnemy : AliveDefault
     }
     protected virtual void AgentBehavior()
     {
-        if (isDie)
+        if (_isDie)
         {
             return;
         }
         bool isMoving;
-        isMoving = DefaultMovement.TryMoveAgent(this.transform.position, playerTransform.position, anim, distance, agent);
-        isAttack = false;
+        isMoving = DefaultMovement.TryMoveAgent(this.transform.position, _playerTransform.position, _enemyAnimator, _distance, _agent);
+        _isAttack = false;
         if (isMoving)
-            anim.SetBool("IsAttack", false);
+            _enemyAnimator.SetBool("IsAttack", false);
         if (!isMoving)
         {
             Attack();
@@ -90,14 +90,14 @@ public abstract class DefoultEnemy : AliveDefault
     }
     protected virtual void Behavior()
     {
-        if (isDie)
+        if (_isDie)
         {
             return;
         }
         bool isMoving;
-        isMoving = DefaultMovement.TryMove(this.transform.position, playerTransform.position,rb, anim, distance, speed);
+        isMoving = DefaultMovement.TryMove(this.transform.position, _playerTransform.position,_enemyRigidbody, _enemyAnimator, _distance, _enemyInfo.Speed);
         if(isMoving)
-            anim.SetBool("IsAttack", false);
+            _enemyAnimator.SetBool("IsAttack", false);
         if (!isMoving)
         {
             Attack();
@@ -105,14 +105,14 @@ public abstract class DefoultEnemy : AliveDefault
     }
     protected virtual void SimpleBehavior()
     {
-        if (isDie)
+        if (_isDie)
         {
             return;
         }
-        if (!isAttack)
+        if (!_isAttack)
         {
-            DefaultMovement.Move(Vector2.left, rb, speed);
-            DefaultMovement.MoveAnimation(new Vector2(-0.5f, -0.5f), anim);
+            DefaultMovement.Move(Vector2.left, _enemyRigidbody, _enemyInfo.Speed);
+            _enemyAnimator.SetInteger("Direction", 3);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -124,13 +124,13 @@ public abstract class DefoultEnemy : AliveDefault
     }
     protected virtual void Attack()
     {
-        if (isDie)
+        if (_isDie)
         {
             return;
         }
-        rb.velocity = Vector2.zero;
-        isAttack = true;
-        anim.SetBool("IsAttack", true);
+        _enemyRigidbody.velocity = Vector2.zero;
+        _isAttack = true;
+        _enemyAnimator.SetBool("IsAttack", true);
     }
     protected virtual void EndDie()
     {
@@ -139,37 +139,38 @@ public abstract class DefoultEnemy : AliveDefault
     }
     protected virtual void EndAttack()
     {
-        if (isDie)
+        if (_isDie)
         {
             return;
         }
-        if (Vector3.Distance(playerTransform.position, this.transform.position) < distance)
+        if (Vector3.Distance(_playerTransform.position, this.transform.position) < _distance)
         {
-            playerController.GetDamage(damage);
+            playerController.GetDamage(_enemyInfo.Damage);
         }
-        isAttack = false;
-        anim.SetBool("IsAttack", false);
+        _isAttack = false;
+        _enemyAnimator.SetBool("IsAttack", false);
     }
 
     public override void Die() {
-        anim.SetBool("IsDie", true);
-        anim.SetBool("IsAttack", false);
-        anim.SetInteger("Direction", 4);
-        rb.velocity = Vector2.zero;
-        isDie = true;
+        _enemyAnimator.SetBool("IsDie", true);
+        _enemyAnimator.SetBool("IsAttack", false);
+        _enemyAnimator.SetInteger("Direction", 4);
+        _enemyRigidbody.velocity = Vector2.zero;
+        Money.instance.Add(_enemyInfo.RewardForMurder);
+        _isDie = true;
     }
     public override void GetDamage(float damage) {
-        if (isDie)
+        if (_isDie)
         {
             return;
         }
         base.GetDamage(damage);
-        spriteRenderer.color = "FF0000".ToColor();
+        _enemySpriteRenderer.color = "FF0000".ToColor();
         StartCoroutine(ReturnToNormalColor());
     }
     IEnumerator ReturnToNormalColor()
     {
         yield return new WaitForSeconds(0.2f);
-        spriteRenderer.color = "ffffffff".ToColor();
+        _enemySpriteRenderer.color = "ffffffff".ToColor();
     }
 }

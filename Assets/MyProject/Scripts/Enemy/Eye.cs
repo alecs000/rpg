@@ -7,32 +7,34 @@ public class Eye : DefoultEnemy
 {
     protected override void AgentBehavior()
     {
-        if (isDie)
+        if (_isDie)
         {
             return;
         }
         bool isMoving;
-        float dis = Vector3.Distance(playerTransform.position, this.transform.position);
-        if (dis > distance)
+        float dis = Vector3.Distance(_playerTransform.position, this.transform.position);
+        if (dis > _distance)
         {
-            Vector2 dir = (playerTransform.position - this.transform.position).normalized;
-            agent.SetDestination(playerTransform.position);
+            Vector2 dir = (_playerTransform.position - this.transform.position).normalized;
+            _agent.SetDestination(_playerTransform.position);
             isMoving = true;
             if (dir.x>0)
             {
-                anim.SetInteger("Direction", 1);
+                _enemyAnimator.SetInteger("Direction", 1);
             }
             else
             {
-                anim.SetInteger("Direction", 0);
+                _enemyAnimator.SetInteger("Direction", 0);
             }
         }
         else
         {
-           rb.velocity = Vector2.zero;
-            anim.SetInteger("Direction", 4);
+           _enemyRigidbody.velocity = Vector2.zero;
+            _enemyAnimator.SetInteger("Direction", 4);
             isMoving = false;
         }
+        if (isMoving)
+            _enemyAnimator.SetBool("IsAttack", false);
         if (!isMoving)
         {
             Attack();
@@ -40,32 +42,34 @@ public class Eye : DefoultEnemy
     }
     protected override void Behavior()
     {
-        if (isDie)
+        if (_isDie)
         {
             return;
         }
         bool isMoving;
-        float dis = Vector3.Distance(playerTransform.position, this.transform.position);
-        if (dis > distance)
+        float dis = Vector3.Distance(_playerTransform.position, this.transform.position);
+        if (dis > _distance)
         {
-            Vector2 dir = (playerTransform.position - this.transform.position).normalized;
-            DefaultMovement.Move(dir,rb, speed);
+            Vector2 dir = (_playerTransform.position - this.transform.position).normalized;
+            DefaultMovement.Move(dir,_enemyRigidbody, _enemyInfo.Speed);
             isMoving = true;
             if (dir.x > 0)
             {
-                anim.SetInteger("Direction", 1);
+                _enemyAnimator.SetInteger("Direction", 1);
             }
             else
             {
-                anim.SetInteger("Direction", 0);
+                _enemyAnimator.SetInteger("Direction", 0);
             }
         }
         else
         {
-            rb.velocity = Vector2.zero;
-            anim.SetInteger("Direction", 4);
+            _enemyRigidbody.velocity = Vector2.zero;
+            _enemyAnimator.SetInteger("Direction", 4);
             isMoving = false;
         }
+        if (isMoving)
+            _enemyAnimator.SetBool("IsAttack", false);
         if (!isMoving)
         {
             Attack();

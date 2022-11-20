@@ -6,6 +6,6 @@ public class ChestInfo : ScriptableObject
 {
     [SerializeField] private int _moneyAmount;
     [SerializeField] private int _diviation;
-    public int moneyAmount => _moneyAmount;
-    public int diviation => _diviation;
+    public int MoneyAmount => _moneyAmount;
+    public int Diviation => _diviation;
 }

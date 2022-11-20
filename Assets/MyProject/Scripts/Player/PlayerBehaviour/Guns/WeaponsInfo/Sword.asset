@@ -19,4 +19,4 @@ MonoBehaviour:
   _damage: 30
   _attackSpeed: 0
   _animationName: SwordAttack
-  _cost: 0
+  _cost: 20

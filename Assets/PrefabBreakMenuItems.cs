@@ -35,17 +35,17 @@ public static class PrefabBreakMenuItems
     // Записываем в "undo" для отката
     public static void BreakInstancesDefinitive(GameObject[] targets)
     {
-        Undo.RegisterCompleteObjectUndo(targets, "Breaking multiple prefab instances definitively");
+        Undo.RegisterCompleteObjectUndo(targets, "Breaking multiple _prefab instances definitively");
 
-        Object prefab = PrefabUtility.CreateEmptyPrefab("Assets/dummy.prefab");
+        Object prefab = PrefabUtility.CreateEmptyPrefab("Assets/dummy._prefab");
         foreach (var target in targets)
         {
             PrefabUtility.ReplacePrefab(target, prefab, ReplacePrefabOptions.ConnectToPrefab);
             PrefabUtility.DisconnectPrefabInstance(target);
         }
-        AssetDatabase.DeleteAsset("Assets/dummy.prefab");
+        AssetDatabase.DeleteAsset("Assets/dummy._prefab");
 
-        Undo.RecordObjects(targets, "Breaking multiple prefab instances definitively");
+        Undo.RecordObjects(targets, "Breaking multiple _prefab instances definitively");
     }
 
 
@@ -53,14 +53,14 @@ public static class PrefabBreakMenuItems
     // Записываем в "undo" для отката
     public static void BreakInstanceDefinitive(GameObject target)
     {
-        Undo.RegisterCompleteObjectUndo(target, "Breaking single prefab instance definitively");
+        Undo.RegisterCompleteObjectUndo(target, "Breaking single _prefab instance definitively");
 
-        Object prefab = PrefabUtility.CreateEmptyPrefab("Assets/dummy.prefab");
+        Object prefab = PrefabUtility.CreateEmptyPrefab("Assets/dummy._prefab");
 
         PrefabUtility.ReplacePrefab(target, prefab, ReplacePrefabOptions.ConnectToPrefab);
         PrefabUtility.DisconnectPrefabInstance(target);
 
-        AssetDatabase.DeleteAsset("Assets/dummy.prefab");
+        AssetDatabase.DeleteAsset("Assets/dummy._prefab");
     }
 
     #endregion

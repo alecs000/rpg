@@ -71,7 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0731db997aa60904e92a4490c48f01d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  notice: {fileID: 0}
+  _notice: {fileID: 0}
 --- !u!1 &4050790916038468278
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,11 +117,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31ea0767f5cd3984aac47f27fcc9b39d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chestInfo: {fileID: 11400000, guid: 1c34fbf65ed5ebd4299a683bd1f13469, type: 2}
-  openedChest: {fileID: 151822906081216971}
-  closedChest: {fileID: 5824328641683718922}
-  notification: {fileID: 0}
-  notificationText: {fileID: 0}
+  _chestInfo: {fileID: 11400000, guid: 1c34fbf65ed5ebd4299a683bd1f13469, type: 2}
+  _openedChest: {fileID: 5824328641683718922}
+  _closedChest: {fileID: 0}
+  _notification: {fileID: 0}
+  _notificationText: {fileID: 0}
 --- !u!1 &8839959732570798982
 GameObject:
   m_ObjectHideFlags: 0

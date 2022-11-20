@@ -6,15 +6,15 @@ using static UnityEditor.PlayerSettings;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] private int poolCount = 2;
-    [SerializeField] private AliveDefault prefab;
+    [SerializeField] private int _poolCount = 2;
+    [SerializeField] private AliveDefault _prefab;
     [SerializeField] private bool _navMeshMovment;
     [SerializeField] private bool _simpleMovment;
-    private PoolMono<AliveDefault> pool;
-    private static List<IAlive> alive = new List<IAlive>();
+    private PoolMono<AliveDefault> _pool;
+    private static List<IAlive> _alive = new List<IAlive>();
     private void Awake()
     {
-        pool = new PoolMono<AliveDefault>(prefab, poolCount, this.transform);
+        _pool = new PoolMono<AliveDefault>(_prefab, _poolCount, this.transform);
     }
     public void RandomSpawn(Vector2 position, float deviationX, float deviationY, string layer = "Layer 1")
     {
@@ -22,7 +22,7 @@ public class EnemySpawner : MonoBehaviour
     } 
     public void Spawn(Vector2 position, string layer = "Layer 1")
     {
-        DefoultEnemy enemy = pool.GetFreeElement(false) as DefoultEnemy;
+        DefoultEnemy enemy = _pool.GetFreeElement(false) as DefoultEnemy;
         enemy.NavMeshMovment = _navMeshMovment;
         enemy.SimpleMovment = _simpleMovment;
         enemy.transform.position = new Vector2(position.x, position.y);
@@ -34,6 +34,6 @@ public class EnemySpawner : MonoBehaviour
             sr.sortingLayerName = layer;
         }
         enemy.gameObject.SetActive(true);
-        alive.Add(enemy);
+        _alive.Add(enemy);
     }
 }

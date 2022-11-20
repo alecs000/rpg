@@ -4,26 +4,25 @@ using UnityEngine;
 
 public class DarkCharacter : AliveDefault
 {
-    public float damage => _damage;
+    public float Damage => _enemyInfo.Damage;
 
-    [SerializeField] private float _hitPoints;
-    [SerializeField] private float _damage;
-    [SerializeField] private float countEnemyInSpawn = 3;
-    [SerializeField] private float[] maxMinValueArea;
-    [SerializeField] private GameObject[] throns;
-    [SerializeField] private EnemySpawner enemySpawner;
-    [SerializeField] float spawnDeviationX = 3;
-    [SerializeField] float spawnDeviationY = 3;
+    [SerializeField] private EnemiesInfo _enemyInfo;
+    [SerializeField] private float _countEnemyInSpawn = 3;
+    [SerializeField] private float[] _maxMinValueArea;
+    [SerializeField] private GameObject[] _throns;
+    [SerializeField] private EnemySpawner _enemySpawner;
+    [SerializeField] private float _spawnDeviationX = 3;
+    [SerializeField] private float _spawnDeviationY = 3;
 
-    private Animator anim;
+    private Animator _characterAnimator;
     private bool _isDie;
-    private SpriteRenderer characterSpriteRenderer;
+    private SpriteRenderer _characterSpriteRenderer;
 
     private void Start()
     {
-        hitPoints = _hitPoints;
-        anim = GetComponent<Animator>();
-        characterSpriteRenderer = GetComponent<SpriteRenderer>();
+        base._hitPoints = _enemyInfo.HP;
+        _characterAnimator = GetComponent<Animator>();
+        _characterSpriteRenderer = GetComponent<SpriteRenderer>();
 
     }
     private void Update()
@@ -41,21 +40,21 @@ public class DarkCharacter : AliveDefault
             return;
         }
         base.GetDamage(damage);
-        characterSpriteRenderer.color = "FF0000".ToColor();
+        _characterSpriteRenderer.color = "FF0000".ToColor();
         StartCoroutine(ReturnToNormalColor());
     }
     IEnumerator ReturnToNormalColor()
     {
         yield return new WaitForSeconds(0.2f);
-        characterSpriteRenderer.color = "ffffffff".ToColor();
+        _characterSpriteRenderer.color = "ffffffff".ToColor();
     }
     private void Spawn()
     {
-        enemySpawner.Spawn(GetAvalibleArea(spawnDeviationX, spawnDeviationY));
+        _enemySpawner.Spawn(GetAvalibleArea(_spawnDeviationX, _spawnDeviationY));
     }
     private void Attack()
     {
-        for (int i = 0; i < countEnemyInSpawn; i++)
+        for (int i = 0; i < _countEnemyInSpawn; i++)
         {
             Spawn();
         }
@@ -63,27 +62,27 @@ public class DarkCharacter : AliveDefault
     }
     private void ActiveFirstThron()
     {
-        throns[0].SetActive(true);
+        _throns[0].SetActive(true);
     }
     private void ActiveSecondThron()
     {
-        throns[1].SetActive(true);
+        _throns[1].SetActive(true);
     }
     private void ActiveThirdThron()
     {
-        throns[2].SetActive(true);
+        _throns[2].SetActive(true);
     }
     private void DisctiveFirstThron()
     {
-        throns[0].SetActive(false);
+        _throns[0].SetActive(false);
     }
     private void DisctiveSecondThron()
     {
-        throns[1].SetActive(false);
+        _throns[1].SetActive(false);
     }
     private void DisctiveThirdThron()
     {
-        throns[2].SetActive(false);
+        _throns[2].SetActive(false);
     }
 
 
@@ -96,19 +95,20 @@ public class DarkCharacter : AliveDefault
 
         float numX = Random.Range(DeviationX, -DeviationX);
         float numY = Random.Range(DeviationY, -DeviationY);
-        if (numY + transform.position.y > maxMinValueArea[0])
+        if (numY + transform.position.y > _maxMinValueArea[0])
             numY = -numY;
-        if (numX + transform.position.x > maxMinValueArea[1])
+        if (numX + transform.position.x > _maxMinValueArea[1])
             numX = -numX;
-        if (numY + transform.position.y < maxMinValueArea[2])
+        if (numY + transform.position.y < _maxMinValueArea[2])
             numY = -numY;
-        if (numX + transform.position.x < maxMinValueArea[3])
+        if (numX + transform.position.x < _maxMinValueArea[3])
             numX = -numX;
         return new Vector2(numX + transform.position.x, numY + transform.position.y);
     }
     public override void Die()
     {
         _isDie = true;
-        anim.SetBool("IsDie", true);
+        Money.instance.Add(_enemyInfo.RewardForMurder);
+        _characterAnimator.SetBool("IsDie", true);
     }
 }

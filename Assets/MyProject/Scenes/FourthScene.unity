@@ -168,10 +168,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11edef0b2810b1488746e6c2cc01aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  count: 2
-  layer: Layer 2
-  enemySpawner: {fileID: 2119436845}
-  diviation: {x: 1.7, y: 2}
+  _count: 5
+  _layer: Layer 1
+  _enemySpawner: {fileID: 2119436845}
+  _diviation: {x: 2, y: 4}
 --- !u!61 &15504797
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -210,10 +210,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11edef0b2810b1488746e6c2cc01aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  count: 5
-  layer: Layer 1
-  enemySpawner: {fileID: 0}
-  diviation: {x: 0, y: 0}
+  _count: 7
+  _layer: Layer 1
+  _enemySpawner: {fileID: 169968280}
+  _diviation: {x: 2, y: 4}
 --- !u!4 &26733158 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4581918338887155568, guid: 4800845c2c4caa84eb6194552ae9c841,
@@ -6337,8 +6337,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b624436bfde389439518530d06a50c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolCount: 3
-  prefab: {fileID: 1259381009034484462, guid: 2a47c3d571763a449a7e882f85a4ec64, type: 3}
+  _poolCount: 2
+  _prefab: {fileID: 1259381009034484462, guid: 2a47c3d571763a449a7e882f85a4ec64, type: 3}
   _navMeshMovment: 1
   _simpleMovment: 0
 --- !u!1 &172719019
@@ -33875,10 +33875,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11edef0b2810b1488746e6c2cc01aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  count: 4
-  layer: Layer 2
-  enemySpawner: {fileID: 2119436845}
-  diviation: {x: 1.7, y: 2}
+  _count: 4
+  _layer: Layer 1
+  _enemySpawner: {fileID: 2119436845}
+  _diviation: {x: 2, y: 2}
 --- !u!61 &468865675
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34202,10 +34202,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11edef0b2810b1488746e6c2cc01aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  count: 1
-  layer: Layer 2
-  enemySpawner: {fileID: 2119436845}
-  diviation: {x: 1.7, y: 2}
+  _count: 3
+  _layer: Layer 1
+  _enemySpawner: {fileID: 2119436845}
+  _diviation: {x: 2, y: 2}
 --- !u!61 &585682685
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37792,7 +37792,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.023333333
+  m_VoxelSize: 0.016666668
   m_BuildHeightMesh: 0
   m_HideEditorLogs: 0
   m_NavMeshData: {fileID: 23800000, guid: 2430418ca751a3b4fa58c2f39db8a03d, type: 2}
@@ -37804,7 +37804,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070014087}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -5.908842, y: 17.047438, z: -3.79182}
+  m_LocalPosition: {x: -5.908842, y: 17.047438, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -40594,6 +40594,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1674802639228259947, guid: deaaf775303f25b409e84d4a669415b9,
         type: 3}
+      propertyPath: _prefab
+      value: 
+      objectReference: {fileID: 14303643697583884, guid: 56525d3437c212243af4a1368bebce66,
+        type: 3}
+    - target: {fileID: 1674802639228259947, guid: deaaf775303f25b409e84d4a669415b9,
+        type: 3}
       propertyPath: _navMeshMovment
       value: 1
       objectReference: {fileID: 0}
@@ -40620,7 +40626,7 @@ PrefabInstance:
     - target: {fileID: 3572688912647779347, guid: deaaf775303f25b409e84d4a669415b9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.359605
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3572688912647779347, guid: deaaf775303f25b409e84d4a669415b9,
         type: 3}
@@ -40669,7 +40675,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3572688914240968207, guid: deaaf775303f25b409e84d4a669415b9,
         type: 3}
+      propertyPath: _count
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3572688914240968207, guid: deaaf775303f25b409e84d4a669415b9,
+        type: 3}
+      propertyPath: _diviation.x
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3572688914240968207, guid: deaaf775303f25b409e84d4a669415b9,
+        type: 3}
+      propertyPath: _diviation.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3572688914240968207, guid: deaaf775303f25b409e84d4a669415b9,
+        type: 3}
       propertyPath: enemySpawner
+      value: 
+      objectReference: {fileID: 2119436845}
+    - target: {fileID: 3572688914240968207, guid: deaaf775303f25b409e84d4a669415b9,
+        type: 3}
+      propertyPath: _enemySpawner
       value: 
       objectReference: {fileID: 2119436845}
     m_RemovedComponents: []
@@ -47481,8 +47507,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c79abdd58458b449934030d8162803c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  notification: {fileID: 1762729825}
-  chestNotification: {fileID: 1011754610}
+  _notification: {fileID: 0}
+  _chestNotification: {fileID: 0}
 --- !u!60 &2019009528
 PolygonCollider2D:
   m_ObjectHideFlags: 0

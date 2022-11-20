@@ -5,30 +5,30 @@ using UnityEngine.UI;
 
 public class ActivateRune : MonoBehaviour
 {
-    [SerializeField] private GameObject glow;
-    [SerializeField] private GameObject notification;
-    [SerializeField] private Text notificationText;
-    [SerializeField] private BoxCollider2D boxCollider2D;
-    private Animation anim;
+    [SerializeField] private GameObject _glow;
+    [SerializeField] private GameObject _notification;
+    [SerializeField] private Text _notificationText;
+    [SerializeField] private BoxCollider2D _boxCollider2D;
+    private Animation _notificationAnimator;
     private void Start()
     {
-        anim = notification.GetComponent<Animation>();
+        _notificationAnimator = _notification.GetComponent<Animation>();
     }
     public void Activate(GameObject sender)
     {
-        boxCollider2D.enabled = false;
+        _boxCollider2D.enabled = false;
         sender.SetActive(false);
-        glow.SetActive(true);
-        notificationText.text = "+ 1 magic eye";
-        notificationText.color = "7ADBDD".ToColor();
-        notification.SetActive(true);
+        _glow.SetActive(true);
+        _notificationText.text = "+ 1 magic eye";
+        _notificationText.color = "7ADBDD".ToColor();
+        _notification.SetActive(true);
         StartCoroutine(CloseNotification());
     }
     IEnumerator CloseNotification()
     {
         yield return new WaitForSeconds(3);
-        anim.Play();
+        _notificationAnimator.Play();
         yield return new WaitForSeconds(1);
-        notification.SetActive(false);
+        _notification.SetActive(false);
     }
 }

@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class InteractiveItem : MonoBehaviour
 {
-    [SerializeField] private GameObject notice;
+    [SerializeField] private GameObject _notice;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            notice.SetActive(true);
+            _notice.SetActive(true);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            notice.SetActive(false);
+            _notice.SetActive(false);
         }
     }
 }

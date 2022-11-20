@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    [SerializeField] Transform playerTransform;
-    [SerializeField] float movingSpeed;
+    [SerializeField] Transform _playerTransform;
+    [SerializeField] float _movingSpeed;
     private void FixedUpdate()
     {
-        if (playerTransform)
+        if (_playerTransform)
         {
-            Vector3 target = new Vector3(playerTransform.position.x, playerTransform.position.y, -10f);
-            Vector3 pos = Vector3.Lerp(this.transform.position, target, movingSpeed * Time.deltaTime);
+            Vector3 target = new Vector3(_playerTransform.position.x, _playerTransform.position.y, -10f);
+            Vector3 pos = Vector3.Lerp(this.transform.position, target, _movingSpeed * Time.deltaTime);
             transform.position = pos;
         }
     }

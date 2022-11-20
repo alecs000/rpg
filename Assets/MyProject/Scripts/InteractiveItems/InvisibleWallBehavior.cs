@@ -5,19 +5,19 @@ using UnityEngine.UI;
 
 public class InvisibleWallBehavior : MonoBehaviour
 {
-    [SerializeField] private GameObject notification;
-    [SerializeField] private Text chestNotification;
+    [SerializeField] private GameObject _notification;
+    [SerializeField] private Text _chestNotification;
     private bool _keyReceived;
     private Animator _notificationAnim;
     private void Start()
     {
-        _notificationAnim = notification.GetComponent<Animator>();   
+        _notificationAnim = _notification.GetComponent<Animator>();   
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!_keyReceived)
         {
-            notification.SetActive(true);
+            _notification.SetActive(true);
         }
         else
         {
@@ -35,11 +35,11 @@ public class InvisibleWallBehavior : MonoBehaviour
     {
         _notificationAnim.SetBool("Disappear", true);
         yield return new WaitForSeconds(1);
-        notification.SetActive(false);
+        _notification.SetActive(false);
     }
     public void FindKey()
     {
         _keyReceived = true;
-        chestNotification.text += " +1 Key";
+        _chestNotification.text += " +1 Key";
     }
 }

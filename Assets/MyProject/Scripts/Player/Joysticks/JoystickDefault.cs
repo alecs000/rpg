@@ -6,26 +6,26 @@ using UnityEngine.EventSystems;
 
 public abstract class JoysticDefault : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
 {
-    [SerializeField] private Image joystick;
-    [SerializeField] private Image joystickZone;
-    [SerializeField] private Image joystickBackground;
-    private bool isJoystickActive =false;
-    protected Vector2 inputPosition;
+    [SerializeField] private Image _joystick;
+    [SerializeField] private Image _joystickZone;
+    [SerializeField] private Image _joystickBackground;
+    private bool _isJoystickActive =false;
+    protected Vector2 _inputPosition;
     // Start is called before the first frame update
     private void SwitchJoystick()
     {
-        if (isJoystickActive)
+        if (_isJoystickActive)
         {
-            joystickBackground.enabled = false;
-            joystick.enabled = false;
-            isJoystickActive = false;
+            _joystickBackground.enabled = false;
+            _joystick.enabled = false;
+            _isJoystickActive = false;
             return;
         }
         else
         {
-            joystickBackground.enabled = true;
-            joystick.enabled = true;
-            isJoystickActive = true;    
+            _joystickBackground.enabled = true;
+            _joystick.enabled = true;
+            _isJoystickActive = true;    
             return;
         }
     }
@@ -33,28 +33,28 @@ public abstract class JoysticDefault : MonoBehaviour, IPointerDownHandler, IPoin
     {
         SwitchJoystick();
         Vector2 backgroundAreaPosition;
-        if (RectTransformUtility.ScreenPointToLocalPointInRectangle(joystickZone.rectTransform, eventData.position, null, out backgroundAreaPosition))
+        if (RectTransformUtility.ScreenPointToLocalPointInRectangle(_joystickZone.rectTransform, eventData.position, null, out backgroundAreaPosition))
         {
-            joystickBackground.rectTransform.anchoredPosition = new Vector2(backgroundAreaPosition.x, backgroundAreaPosition.y); ;
+            _joystickBackground.rectTransform.anchoredPosition = new Vector2(backgroundAreaPosition.x, backgroundAreaPosition.y); ;
         }
     }
     public void OnDrag(PointerEventData eventData)
     {
         Vector2 joystickPosition;
-        if (RectTransformUtility.ScreenPointToLocalPointInRectangle(joystickBackground.rectTransform, eventData.position, null, out joystickPosition))
+        if (RectTransformUtility.ScreenPointToLocalPointInRectangle(_joystickBackground.rectTransform, eventData.position, null, out joystickPosition))
         {
-            joystickPosition.x = joystickPosition.x * 2 / joystickBackground.rectTransform.sizeDelta.x;
-            joystickPosition.y = joystickPosition.y * 2 / joystickBackground.rectTransform.sizeDelta.y;
-            inputPosition = new Vector2(joystickPosition.x, joystickPosition.y);
-            if (inputPosition.magnitude > 1)
-                inputPosition = inputPosition.normalized;
-            joystick.rectTransform.anchoredPosition = new Vector2(inputPosition.x *( joystickBackground.rectTransform.sizeDelta.x / 2), inputPosition.y * (joystickBackground.rectTransform.sizeDelta.y / 2));
+            joystickPosition.x = joystickPosition.x * 2 / _joystickBackground.rectTransform.sizeDelta.x;
+            joystickPosition.y = joystickPosition.y * 2 / _joystickBackground.rectTransform.sizeDelta.y;
+            _inputPosition = new Vector2(joystickPosition.x, joystickPosition.y);
+            if (_inputPosition.magnitude > 1)
+                _inputPosition = _inputPosition.normalized;
+            _joystick.rectTransform.anchoredPosition = new Vector2(_inputPosition.x *( _joystickBackground.rectTransform.sizeDelta.x / 2), _inputPosition.y * (_joystickBackground.rectTransform.sizeDelta.y / 2));
         }
     }
     public void OnPointerUp(PointerEventData eventData)
     {
-        joystick.rectTransform.anchoredPosition = Vector2.zero;
-        inputPosition = Vector2.zero;
+        _joystick.rectTransform.anchoredPosition = Vector2.zero;
+        _inputPosition = Vector2.zero;
         SwitchJoystick();
     }
 

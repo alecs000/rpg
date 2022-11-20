@@ -9,7 +9,6 @@ public class WaveSpawner : MonoBehaviour, IDataPersistence
     [SerializeField] private GameObject ShopButton;
     private int _levelsAmount = 1;
     private bool _isSpawned;
-    private bool _allDie;
     private int _enemyOnLevel;
     public void LoadData(GameData data)
     {

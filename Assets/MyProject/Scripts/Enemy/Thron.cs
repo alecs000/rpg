@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Thron : MonoBehaviour
 {
-    [SerializeField] DarkCharacter character;
+    [SerializeField] DarkCharacter _character;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponent<PlayerController>().GetDamage(character.damage);
+            collision.GetComponent<PlayerController>().GetDamage(_character.Damage);
         }
     }
 }

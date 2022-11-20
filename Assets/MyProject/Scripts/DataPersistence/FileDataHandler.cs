@@ -6,22 +6,22 @@ using System.IO;
 
 public class FileDataHandler
 {
-    private string dataDirPath = "";
-    private string dataFileName = "";
-    private bool useEncryption = false;
-    private readonly string encryptionCodeWord = "word";
+    private string _dataDirPath = "";
+    private string _dataFileName = "";
+    private bool _useEncryption = false;
+    private readonly string _encryptionCodeWord = "word";
 
     public FileDataHandler(string dataDirPath, string dataFileName, bool useEncryption) 
     {
-        this.dataDirPath = dataDirPath;
-        this.dataFileName = dataFileName;
-        this.useEncryption = useEncryption;
+        this._dataDirPath = dataDirPath;
+        this._dataFileName = dataFileName;
+        this._useEncryption = useEncryption;
     }
 
     public GameData Load() 
     {
         // use Path.Combine to account for different OS's having different path separators
-        string fullPath = Path.Combine(dataDirPath, dataFileName);
+        string fullPath = Path.Combine(_dataDirPath, _dataFileName);
         GameData loadedData = null;
         if (File.Exists(fullPath)) 
         {
@@ -38,7 +38,7 @@ public class FileDataHandler
                 }
 
                 // optionally decrypt the data
-                if (useEncryption) 
+                if (_useEncryption) 
                 {
                     dataToLoad = EncryptDecrypt(dataToLoad);
                 }
@@ -57,7 +57,7 @@ public class FileDataHandler
     public void Save(GameData data) 
     {
         // use Path.Combine to account for different OS's having different path separators
-        string fullPath = Path.Combine(dataDirPath, dataFileName);
+        string fullPath = Path.Combine(_dataDirPath, _dataFileName);
         try 
         {
             // create the directory the file will be written to if it doesn't already exist
@@ -67,7 +67,7 @@ public class FileDataHandler
             string dataToStore = JsonUtility.ToJson(data, true);
 
             // optionally encrypt the data
-            if (useEncryption) 
+            if (_useEncryption) 
             {
                 dataToStore = EncryptDecrypt(dataToStore);
             }
@@ -93,7 +93,7 @@ public class FileDataHandler
         string modifiedData = "";
         for (int i = 0; i < data.Length; i++) 
         {
-            modifiedData += (char) (data[i] ^ encryptionCodeWord[i % encryptionCodeWord.Length]);
+            modifiedData += (char) (data[i] ^ _encryptionCodeWord[i % _encryptionCodeWord.Length]);
         }
         return modifiedData;
     }

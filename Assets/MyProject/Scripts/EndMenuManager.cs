@@ -5,20 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class EndMenuManager : MonoBehaviour
 {
-    [SerializeField] Animation anim;
+    [SerializeField] Animation endMenuAnimation;
     public void ClickShop()
     {
-        anim.Play();
+        endMenuAnimation.Play();
         StartCoroutine(SwitchScene(0));
     }
     public void ClickNextLevel()
     {
-        anim.Play();
+        endMenuAnimation.Play();
         StartCoroutine(SwitchScene(SceneManager.GetActiveScene().buildIndex+1));
     }
     public void ClickRestart()
     {
-        anim.Play();
+        endMenuAnimation.Play();
         StartCoroutine(SwitchScene(SceneManager.GetActiveScene().buildIndex));
     }
     IEnumerator SwitchScene(int sceneIndex)

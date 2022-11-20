@@ -6,33 +6,33 @@ using UnityEngine.UI;
 
 public class ChestBehaviour : MonoBehaviour
 {
-    [SerializeField] private ChestInfo chestInfo;
-    [SerializeField] private GameObject openedChest;
-    [SerializeField] private GameObject closedChest;
-    [SerializeField] private GameObject notification;
-    [SerializeField] private Text notificationText;
-    private Animation anim;
+    [SerializeField] private ChestInfo _chestInfo;
+    [SerializeField] private GameObject _openedChest;
+    [SerializeField] private GameObject _closedChest;
+    [SerializeField] private GameObject _notification;
+    [SerializeField] private Text _notificationText;
+    private Animation _notificationAnimator;
     private void Start()
     {
-        anim = notification.GetComponent<Animation>();
+        _notificationAnimator = _notification.GetComponent<Animation>();
     }
     public void Open(GameObject sender)
     {
-        int moneyAmount = Random.Range(chestInfo.moneyAmount - chestInfo.diviation, chestInfo.moneyAmount + chestInfo.diviation);
+        int moneyAmount = Random.Range(_chestInfo.MoneyAmount - _chestInfo.Diviation, _chestInfo.MoneyAmount + _chestInfo.Diviation);
         sender.SetActive(false);
-        closedChest.SetActive(true);
-        openedChest.SetActive(false);
+        _closedChest.SetActive(true);
+        _openedChest.SetActive(false);
         Money.instance.Add(moneyAmount);
-        notificationText.color = "DDCC7A".ToColor();
-        notificationText.text = $"+{moneyAmount} gold";
-        notification.SetActive(true);
+        _notificationText.color = "DDCC7A".ToColor();
+        _notificationText.text = $"+{moneyAmount} gold";
+        _notification.SetActive(true);
         StartCoroutine(CloseNotification());
     }
     IEnumerator CloseNotification()
     {
         yield return new WaitForSeconds(3);
-        anim.Play();
+        _notificationAnimator.Play();
         yield return new WaitForSeconds(1);
-        notification.SetActive(false);
+        _notification.SetActive(false);
     }
 }

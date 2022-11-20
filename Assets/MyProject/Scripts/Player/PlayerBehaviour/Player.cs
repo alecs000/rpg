@@ -6,35 +6,35 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     // Изменять оружие на нужное в этой переменной
-    public IWeapon weapon;
-    [SerializeField] private float speed;
-    [SerializeField] private JoystickForMovment joystickForMovment;
-    private Dictionary<Type, IPlayerBehaviour> behaviorsMap;
-    private IPlayerBehaviour currentBehaviour;
-    private Animator playerBodyAnimator;
-    private Rigidbody2D rb;
+    public IWeapon Weapon;
+    [SerializeField] private float _speed;
+    [SerializeField] private JoystickForMovment _joystickForMovment;
+    private Dictionary<Type, IPlayerBehaviour> _behaviorsMap;
+    private IPlayerBehaviour _currentBehaviour;
+    private Animator _playerBodyAnimator;
+    private Rigidbody2D _playerRigidbody;
     private void InitBehaviors()
     {
-        behaviorsMap = new Dictionary<Type, IPlayerBehaviour>();
-        behaviorsMap[typeof(IdlePlayerBehaviour)] = new IdlePlayerBehaviour(rb);
-        behaviorsMap[typeof(RunningPlayerBehaviour)] = new RunningPlayerBehaviour(rb, speed, playerBodyAnimator, joystickForMovment, this);
-        behaviorsMap[typeof(AttackPlayerBehaviour)] = new AttackPlayerBehaviour(weapon);
-        behaviorsMap[typeof(DiePlayerBehavior)] = new DiePlayerBehavior(playerBodyAnimator);
+        _behaviorsMap = new Dictionary<Type, IPlayerBehaviour>();
+        _behaviorsMap[typeof(IdlePlayerBehaviour)] = new IdlePlayerBehaviour(_playerRigidbody);
+        _behaviorsMap[typeof(RunningPlayerBehaviour)] = new RunningPlayerBehaviour(_playerRigidbody, _speed, _playerBodyAnimator, _joystickForMovment, this);
+        _behaviorsMap[typeof(AttackPlayerBehaviour)] = new AttackPlayerBehaviour(Weapon);
+        _behaviorsMap[typeof(DiePlayerBehavior)] = new DiePlayerBehavior(_playerBodyAnimator);
 
     }
     private void Start()
     {
-        playerBodyAnimator = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
+        _playerBodyAnimator = GetComponent<Animator>();
+        _playerRigidbody = GetComponent<Rigidbody2D>();
         InitBehaviors();
         SetBehaviourByDefoult();
     }
     private void SetBehaviour(IPlayerBehaviour newBehavior)
     {
-        if (currentBehaviour != null)
-            currentBehaviour.Exit();
-        currentBehaviour = newBehavior;
-        currentBehaviour.Enter();
+        if (_currentBehaviour != null)
+            _currentBehaviour.Exit();
+        _currentBehaviour = newBehavior;
+        _currentBehaviour.Enter();
     }
     private void SetBehaviourByDefoult()
     {
@@ -43,43 +43,43 @@ public class Player : MonoBehaviour
     private IPlayerBehaviour GetBehaviour<T>() where T : IPlayerBehaviour
     {
        var type = typeof(T);
-        return  this.behaviorsMap[type];
+        return  this._behaviorsMap[type];
     }
     private void Update()
     {
-        if (currentBehaviour != null)
-            currentBehaviour.Update();
+        if (_currentBehaviour != null)
+            _currentBehaviour.Update();
     }
     private void FixedUpdate()
     {
-        if (currentBehaviour != null)
-            currentBehaviour.FixedUpdate();
+        if (_currentBehaviour != null)
+            _currentBehaviour.FixedUpdate();
     }
     public void SetBehaviourIdle()
     { 
         var behavior = GetBehaviour<IdlePlayerBehaviour>();
-        if (currentBehaviour == behavior)
+        if (_currentBehaviour == behavior)
             return;
         SetBehaviour(behavior);
     }
     public void SetBehaviourRunning()
     {
         var behavior = GetBehaviour<RunningPlayerBehaviour>();
-        if (currentBehaviour == behavior)
+        if (_currentBehaviour == behavior)
             return;
         SetBehaviour(behavior);
     }
     public void SetBehaviourAttack()
     {
         var behavior = GetBehaviour<AttackPlayerBehaviour>();
-        if (currentBehaviour == behavior)
+        if (_currentBehaviour == behavior)
             return;
         SetBehaviour(behavior);
     }
     public void SetBehaviourDie()
     {
         var behavior = GetBehaviour<DiePlayerBehavior>();
-        if (currentBehaviour == behavior)
+        if (_currentBehaviour == behavior)
             return;
         SetBehaviour(behavior);
     }

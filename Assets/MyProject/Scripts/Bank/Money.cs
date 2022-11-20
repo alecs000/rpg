@@ -3,12 +3,14 @@ using UnityEngine.UI;
 
 public class Money : BankDefoult, IDataPersistence
 {
-    [SerializeField] GameObject notice;
-    [SerializeField] Text noticeText;
+    [SerializeField] private GameObject _notice;
+    [SerializeField] private Text _noticeText;
     public static Money instance = null;
-
-    private int _moneyAmountOnLevel;
-
+    private int _moneyAmountOnStart;
+    public int GetMoneyOnLavel()
+    {
+        return Value - _moneyAmountOnStart;
+    }
     private void Awake()
     {
         Initialize();
@@ -20,27 +22,26 @@ public class Money : BankDefoult, IDataPersistence
         {
             Destroy(gameObject);
         }
-        DontDestroyOnLoad(this); 
+        DontDestroyOnLoad(this);
     }
     public void LoadData(GameData data)
     {
-        bankValue.Value = data.moneyAmount;
+        _moneyAmountOnStart = data.MoneyAmount;
+        _bankValue.Value = data.MoneyAmount;
         if (PlayerPrefs.GetInt("MoneyInLasLevel") > 0)
         {
-            noticeText.text = "+" + PlayerPrefs.GetInt("MoneyInLasLevel").ToString() + " coins in the last attempt";
-            notice.SetActive(true);
+            _noticeText.text = "+" + PlayerPrefs.GetInt("MoneyInLasLevel").ToString() + " coins in the last attempt";
+            _notice.SetActive(true);
         }
-        data.moneyAmountOnLevel = 0;
+        data.MoneyAmountOnLevel = 0;
     }
 
     public void SaveData(GameData data)
     {
-        if(_moneyAmountOnLevel==0)
-            _moneyAmountOnLevel = bankValue.Value - data.moneyAmount;
-        data.moneyAmount = bankValue.Value;
+        data.MoneyAmount = _bankValue.Value;
     }
     private void OnDisable()
     {
-        PlayerPrefs.SetInt("MoneyInLasLevel", _moneyAmountOnLevel);
+        PlayerPrefs.SetInt("MoneyInLasLevel", GetMoneyOnLavel());
     }
 }

@@ -6,12 +6,12 @@ using System.Linq;
 public class DataPersistenceManager : MonoBehaviour
 {
     [Header("File Storage Config")]
-    [SerializeField] private string fileName;
-    [SerializeField] private bool useEncryption;
+    [SerializeField] private string _fileName;
+    [SerializeField] private bool _useEncryption;
 
-    private GameData gameData;
-    private List<IDataPersistence> dataPersistenceObjects;
-    private FileDataHandler dataHandler;
+    private GameData _gameData;
+    private List<IDataPersistence> _dataPersistenceObjects;
+    private FileDataHandler _dataHandler;
 
     public static DataPersistenceManager instance { get; private set; }
 
@@ -26,52 +26,47 @@ public class DataPersistenceManager : MonoBehaviour
 
     private void Start() 
     {
-        this.dataHandler = new FileDataHandler(Application.persistentDataPath, fileName, useEncryption);
-        this.dataPersistenceObjects = FindAllDataPersistenceObjects();
+        this._dataHandler = new FileDataHandler(Application.persistentDataPath, _fileName, _useEncryption);
+        this._dataPersistenceObjects = FindAllDataPersistenceObjects();
         LoadGame();
     }
 
     public void NewGame() 
     {
-        this.gameData = new GameData();
+        this._gameData = new GameData();
     }
 
     public void LoadGame()
     {
         // load any saved data from a file using the data handler
-        this.gameData = dataHandler.Load();
+        this._gameData = _dataHandler.Load();
         
         // if no data can be loaded, initialize to a new game
-        if (this.gameData == null) 
+        if (this._gameData == null) 
         {
             Debug.Log("No data was found. Initializing data to defaults.");
             NewGame();
         }
 
         // push the loaded data to all other scripts that need it
-        foreach (IDataPersistence dataPersistenceObj in dataPersistenceObjects) 
+        foreach (IDataPersistence dataPersistenceObj in _dataPersistenceObjects) 
         {
-            dataPersistenceObj.LoadData(gameData);
+            dataPersistenceObj.LoadData(_gameData);
         }
     }
 
     public void SaveGame()
     {
         // pass the data to other scripts so they can update it
-        foreach (IDataPersistence dataPersistenceObj in dataPersistenceObjects) 
+        foreach (IDataPersistence dataPersistenceObj in _dataPersistenceObjects) 
         {
-            dataPersistenceObj.SaveData(gameData);
+            dataPersistenceObj.SaveData(_gameData);
         }
 
         // save that data to a file using the data handler
-        dataHandler.Save(gameData);
+        _dataHandler.Save(_gameData);
     }
     private void OnDisable()
-    {
-        SaveGame();
-    }
-
-    private void OnApplicationQuit() 
     {
         SaveGame();
     }

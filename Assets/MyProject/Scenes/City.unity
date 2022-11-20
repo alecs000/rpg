@@ -921,13 +921,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e888abe26e86ecf4cbf9738c39521f83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameWeapon: {fileID: 2016697283}
-  characteristic: {fileID: 59643176}
-  weaponImage: {fileID: 1690929010}
-  weaponBuyButton: {fileID: 804173335}
-  weaponEquipButton: {fileID: 1798157866}
-  weaponUpgradeButton: {fileID: 38091828}
-  weaponInfo: {fileID: 11400000, guid: 9e33f986428fe8e4bb65ad12373c20f8, type: 2}
+  _nameWeapon: {fileID: 2016697283}
+  _characteristic: {fileID: 59643176}
+  _weaponImage: {fileID: 1690929010}
+  _weaponBuyButton: {fileID: 804173335}
+  _weaponEquipButton: {fileID: 1798157866}
+  _weaponUpgradeButton: {fileID: 38091828}
+  _weaponInfo: {fileID: 11400000, guid: 9e33f986428fe8e4bb65ad12373c20f8, type: 2}
 --- !u!1 &549658536
 GameObject:
   m_ObjectHideFlags: 0
@@ -1186,6 +1186,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 711f0dd899831d94383ddcd91edeb073, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _notice: {fileID: 0}
+  _noticeText: {fileID: 0}
 --- !u!4 &742977606
 Transform:
   m_ObjectHideFlags: 0
@@ -30143,6 +30145,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2016697281}
   m_CullTransparentMesh: 1
+--- !u!4 &2019904616 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9075938227818432533, guid: 6dc2b95c8393908488241683028d5585,
+    type: 3}
+  m_PrefabInstance: {fileID: 6040700937592885284}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2033164274
 GameObject:
   m_ObjectHideFlags: 0
@@ -30499,6 +30507,16 @@ PrefabInstance:
       propertyPath: orthographic size
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4009800119753914101, guid: 6dc2b95c8393908488241683028d5585,
+        type: 3}
+      propertyPath: _movingSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009800119753914101, guid: 6dc2b95c8393908488241683028d5585,
+        type: 3}
+      propertyPath: _playerTransform
+      value: 
+      objectReference: {fileID: 2019904616}
     - target: {fileID: 8098602327591621634, guid: 6dc2b95c8393908488241683028d5585,
         type: 3}
       propertyPath: m_Name
