@@ -99,7 +99,7 @@ TextureImporter:
       213: 3293387010204728675
     second: imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_31
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -120,6 +120,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -158,6 +159,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -197,6 +199,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -892,6 +906,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_26: -6317213649356003730
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_24: 6244156925665447582
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_6: 6476990945033989661
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_23: -9086167397423297349
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_29: -8115963677228002323
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_27: -3774979103764128626
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_19: 6497144967281111479
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_30: -2841298508164841218
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_31: 3293387010204728675
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_0: 4079839963831541143
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_5: -9172347640232107840
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_12: -6079297150429543994
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_8: 5438859336178046787
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_21: 1862356146342551358
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_4: -3216939722685337764
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_28: 6117411630651072011
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_1: 1994863597929147839
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_11: 4196331793137076114
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_13: -7346975726188232580
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_17: -8104953492104350244
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_15: -5800072543995155893
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_18: -8987286535716398264
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_22: -8841396670182572029
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_3: 2329717942166982147
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_10: -6755132163267002893
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_7: -3521808580144873913
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_14: -3547164196757861192
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_16: 7116777526169533290
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_9: 9189541081696161759
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_20: -62167388894678816
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_2: 6637445558319918210
+      imgonline-com-ua-Replace-color-zvaeFWeJ3ts3WZS-PhotoRoom_25: 2507670775669905080
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

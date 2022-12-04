@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class PlayerController : AliveDefault
 {
     public static bool IsAttack;
+    public int MoneyOnLevel;
 
     [SerializeField] private GameObject[] _weapons;
     [SerializeField] private Player _player;
@@ -15,7 +16,8 @@ public class PlayerController : AliveDefault
     [SerializeField] private JoystickForAttack _joystickForAttack;
     [SerializeField] private float _hitPointsStartValue;
     [SerializeField] private GameObject _loseMenu;
-    [SerializeField] private Text _loseTextMoney;
+    [SerializeField] private HeadBehavior _headBehavior;
+    [SerializeField] private Vector2 _startPosition;
 
     private SpriteRenderer _spriteRenderer;
     private bool _isDie;
@@ -40,17 +42,6 @@ public class PlayerController : AliveDefault
         _spriteRenderer = GetComponent<SpriteRenderer>();
         IsAttack = false;
     }
-    public void AttackEnd()
-    {
-        if (_isDie)
-            return;
-        _player.SetBehaviourIdle();
-        IsAttack = false;
-    }
-    public void DieEnd()
-    {
-        _loseMenu.SetActive(true);
-    }
     private void Update()
     {
         if (_isDie)
@@ -62,7 +53,6 @@ public class PlayerController : AliveDefault
             _player.SetBehaviourRunning();
             return;
         }
-
         if (_joystickForAttack.VectorAttack.x>0.5||_joystickForAttack.VectorAttack.x < -0.5 || _joystickForAttack.VectorAttack.y > 0.5 || _joystickForAttack.VectorAttack.y < -0.5)
         {
             _player.SetBehaviourAttack();
@@ -77,13 +67,35 @@ public class PlayerController : AliveDefault
         float colorValue = 1 / (_hitPointsStartValue / base._hitPoints);
         if (colorValue >= 0)
         {
-            _spriteRenderer.color = new Color(1, colorValue, colorValue, 1);
+            Color color = new Color(1, colorValue, colorValue, 1);
+            _spriteRenderer.color = color;
+            _headBehavior.SwitchColor(color);
         }
     }
     public override void Die()
     {
         _isDie = true;
-        _loseTextMoney.text = $"+{Money.instance.GetMoneyOnLavel().ToString()} coins";
+        MoneyOnLevel = Money.instance.GetMoneyOnLevel();
+        PlayerPrefs.SetInt("MoneyInLastLevel", -1);
         _player.SetBehaviourDie();
+    }
+    public void AttackEnd()
+    {
+        IsAttack = false;
+        if (_isDie)
+            return;
+        _player.SetBehaviourIdle();
+    }
+    public void DieEnd()
+    {
+        _loseMenu.SetActive(true);
+    }
+    public void Revival()
+    {
+        _hitPoints = _hitPointsStartValue;
+        _isDie = false;
+        IsAttack=false;
+        GetDamage(0);
+        _player.SetBehaviourIdle();
     }
 }

@@ -26,7 +26,6 @@ public class RunningPlayerBehaviour : IPlayerBehaviour
     public void Exit()
     {
         _playerRididbody.velocity = Vector3.zero; 
-        _playerAnimator.SetBool("IdleActive", true);
         _playerAnimator.SetInteger("Direction", 4);
     }
 

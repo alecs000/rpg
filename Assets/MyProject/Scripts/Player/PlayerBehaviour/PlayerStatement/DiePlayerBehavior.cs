@@ -17,8 +17,7 @@ public class DiePlayerBehavior : IPlayerBehaviour
 
     public void Exit()
     {
-        Debug.Log("Exit Die State");
-
+        _playerAnimator.SetBool("IsDie", false);
     }
 
     public void FixedUpdate()

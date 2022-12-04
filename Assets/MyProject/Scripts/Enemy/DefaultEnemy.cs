@@ -114,6 +114,10 @@ public abstract class DefoultEnemy : AliveDefault
             DefaultMovement.Move(Vector2.left, _enemyRigidbody, _enemyInfo.Speed);
             _enemyAnimator.SetInteger("Direction", 3);
         }
+        else
+        {
+            _enemyAnimator.SetInteger("Direction", 4);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -143,11 +147,16 @@ public abstract class DefoultEnemy : AliveDefault
         {
             return;
         }
+        if (SimpleMovment)
+        {
+            playerController.Die();
+            return;
+        }
         if (Vector3.Distance(_playerTransform.position, this.transform.position) < _distance)
         {
             playerController.GetDamage(_enemyInfo.Damage);
         }
-        _isAttack = false;
+            _isAttack = false;
         _enemyAnimator.SetBool("IsAttack", false);
     }
 

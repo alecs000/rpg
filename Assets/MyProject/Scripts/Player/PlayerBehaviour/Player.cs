@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     private void InitBehaviors()
     {
         _behaviorsMap = new Dictionary<Type, IPlayerBehaviour>();
-        _behaviorsMap[typeof(IdlePlayerBehaviour)] = new IdlePlayerBehaviour(_playerRigidbody);
+        _behaviorsMap[typeof(IdlePlayerBehaviour)] = new IdlePlayerBehaviour(_playerRigidbody, _playerBodyAnimator);
         _behaviorsMap[typeof(RunningPlayerBehaviour)] = new RunningPlayerBehaviour(_playerRigidbody, _speed, _playerBodyAnimator, _joystickForMovment, this);
         _behaviorsMap[typeof(AttackPlayerBehaviour)] = new AttackPlayerBehaviour(Weapon);
         _behaviorsMap[typeof(DiePlayerBehavior)] = new DiePlayerBehavior(_playerBodyAnimator);

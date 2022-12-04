@@ -516,7 +516,7 @@ TextureImporter:
       213: 7999197516979850169
     second: weapon_sycthe_44
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -537,6 +537,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -575,6 +576,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -614,6 +616,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1519,6 +1545,49 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      weapon_sycthe_4: 8819745358774855068
+      weapon_sycthe_21: 2062535284386268880
+      weapon_sycthe_39: -3155225590870575170
+      weapon_sycthe_30: 4635486463605478145
+      weapon_sycthe_20: 6874843314895542813
+      weapon_sycthe_3: -7846676365991469467
+      weapon_sycthe_16: 2504285718240539418
+      weapon_sycthe_37: 3682940576824082241
+      weapon_sycthe_29: 1862908196977371969
+      weapon_sycthe_8: 1275520874429384723
+      weapon_sycthe_35: -4406625181431634206
+      weapon_sycthe_7: -948012959936314777
+      weapon_sycthe_23: -7790708956419372521
+      weapon_sycthe_6: 1999555038106641816
+      weapon_sycthe_15: -6595110047303911909
+      weapon_sycthe_25: 8581961877866333733
+      weapon_sycthe_33: 8425416980797178921
+      weapon_sycthe_5: -4294002183982165220
+      weapon_sycthe_9: 3139220155727647746
+      weapon_sycthe_31: -3973236784382905036
+      weapon_sycthe_13: -6611899298521117164
+      weapon_sycthe_28: 1323395181261460619
+      weapon_sycthe_18: -2572146626887508382
+      weapon_sycthe_2: -1947293525316306175
+      weapon_sycthe_17: -1111965146448490300
+      weapon_sycthe_14: 7710878439433797212
+      weapon_sycthe_11: 3027384316812861672
+      weapon_sycthe_38: -7517440242657943544
+      weapon_sycthe_12: -4463461922082125233
+      weapon_sycthe_41: -7746507771448440979
+      weapon_sycthe_10: -3028612467869686647
+      weapon_sycthe_26: 2314144547186037153
+      weapon_sycthe_1: 2144812397677350663
+      weapon_sycthe_22: 4874451048550059787
+      weapon_sycthe_0: 8213825600424015896
+      weapon_sycthe_36: 4416790970876039360
+      weapon_sycthe_40: 1925124151963585303
+      weapon_sycthe_34: 4880084905720555763
+      weapon_sycthe_27: 6155476596923630524
+      weapon_sycthe_32: -4361486870935426905
+      weapon_sycthe_24: 939378273912962907
+      weapon_sycthe_19: 5974924863746161625
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

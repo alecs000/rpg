@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: ShopTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 9f09d7f1f5e2afd429f46e2cb98dba4a, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 3404895690790010928
+  m_TableData:
+  - m_Id: 6172680192
+    m_Localized: Sword
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76997697536
+    m_Localized: Hammer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79942098944
+    m_Localized: Pistol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83721166848
+    m_Localized: Scythe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86619430912
+    m_Localized: Rifle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 742319169536
+    m_Localized: Upgrade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 678427336704
+    m_Localized: Equip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 677190017024
+    m_Localized: Buy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 674233032704
+    m_Localized: 'Cost:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95989506048
+    m_Localized: 'Attack speed:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 92772474880
+    m_Localized: 'Damage:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14736752877568
+    m_Localized: '{name}'
+    m_Metadata:
+      m_Items:
+      - rid: 3404895690790010928
+  - m_Id: 408822215319552
+    m_Localized: Runes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 423092932026368
+    m_Localized: '{Rewards.NumberAd:choose(0|1|2|3):The number of magic eyes|I don''t
+      know. Find out how many magic eyes ARE SERIOUS:|I seriously don''t know. Find
+      out how many magic eyes without jokes|They were stolen from you, so there are
+      none ( well, take 100 coins, don''t worry|Aren''t you greedy?}'
+    m_Metadata:
+      m_Items:
+      - rid: 3404895690790010928
+  - m_Id: 632373677629440
+    m_Localized: Unlock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1008239205130240
+    m_Localized: Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1008303218597888
+    m_Localized: Sounds
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 3404895690790010928
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00a0ebdf1400000000a0eb2a670d000000a0ebffcc800100

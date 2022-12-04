@@ -1161,7 +1161,7 @@ TextureImporter:
       213: -2028415849592283938
     second: character_hammer_155
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -1182,6 +1182,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1220,6 +1221,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1259,6 +1261,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
@@ -3697,6 +3723,122 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      character_hammer_52: -5261245056576367211
+      character_hammer_34: 7466978546425114582
+      character_hammer_64: 3222876582633509652
+      character_hammer_105: 2901035181976585588
+      character_hammer_73: -1770562419336596749
+      character_hammer_32: 7880508240806026626
+      character_hammer_85: -3624403304797332815
+      character_hammer_87: 2637574485522760611
+      character_hammer_0: -3719944151290509195
+      character_hammer_48: 8033970329728212326
+      character_hammer_19: -5133050929478190500
+      character_hammer_42: 9004067111697892059
+      character_hammer_79: -5132440252208123938
+      character_hammer_13: 1646734680694346152
+      character_hammer_39: -4852455290442196085
+      character_hammer_12: -6424501619851770085
+      character_hammer_97: 2188007056872188475
+      character_hammer_20: -8635470111608094834
+      character_hammer_44: 3891335012396760930
+      character_hammer_62: 8213814950396241426
+      character_hammer_74: 5070371334812327214
+      character_hammer_7: -7882085106441997028
+      character_hammer_99: 3041528527708048916
+      character_hammer_55: -2381489159338970899
+      character_hammer_1: -4452300563582177385
+      character_hammer_4: -561313420766858347
+      character_hammer_11: 1850323157180811946
+      character_hammer_36: 5141473522733341908
+      character_hammer_93: -2544157389942160232
+      character_hammer_94: 4479513785775090590
+      character_hammer_82: -7854061125171172268
+      character_hammer_89: -2397162158984411204
+      character_hammer_10: 3855816484201434284
+      character_hammer_100: 5209361544956731733
+      character_hammer_56: -72353135004042890
+      character_hammer_77: -4205906481042074650
+      character_hammer_72: 1408686542930597540
+      character_hammer_16: 605202106274153104
+      character_hammer_61: -8442098987671248611
+      character_hammer_15: -1495444257756841660
+      character_hammer_25: 6798399449258298401
+      character_hammer_26: -7493327682885422842
+      character_hammer_30: 1948066430546387032
+      character_hammer_102: 523763451432617046
+      character_hammer_92: 5448363599949725914
+      character_hammer_104: -1246807139825914236
+      character_hammer_95: -2275660962420137125
+      character_hammer_63: -2159485820971986185
+      character_hammer_114: 3072728400248228088
+      character_hammer_66: -3867948986708332401
+      character_hammer_96: -3790424655612232104
+      character_hammer_86: 8298091579416879818
+      character_hammer_59: -3393903358295483679
+      character_hammer_45: -3278390980092136409
+      character_hammer_76: -2716231869192032200
+      character_hammer_80: -4422468564569045358
+      character_hammer_109: 1076881038019688647
+      character_hammer_83: 496406374098330716
+      character_hammer_68: -4119776401620389431
+      character_hammer_108: -1568056939333389381
+      character_hammer_75: 7069329621634669698
+      character_hammer_113: 5933232398276640230
+      character_hammer_6: 6721665287323644067
+      character_hammer_91: -4457080555765379233
+      character_hammer_27: 100394462977456150
+      character_hammer_101: -3947294142224057329
+      character_hammer_37: 3040695062022650303
+      character_hammer_84: 322411311252465047
+      character_hammer_33: 487430637229468931
+      character_hammer_23: -4159182172243501046
+      character_hammer_31: -4452914684711625556
+      character_hammer_57: -6544127310573274748
+      character_hammer_81: 7135599372760024395
+      character_hammer_35: -1446803395211938731
+      character_hammer_22: -978275768746888805
+      character_hammer_65: -6978104616664555332
+      character_hammer_90: 2654485708684431030
+      character_hammer_18: -3135293743998164017
+      character_hammer_50: 4591879792026093106
+      character_hammer_60: -796838941050747106
+      character_hammer_71: -2150055078732135588
+      character_hammer_54: -8171732666469683065
+      character_hammer_88: 5113482912082255975
+      character_hammer_69: -2615647183889981806
+      character_hammer_78: -5213604435074025414
+      character_hammer_47: 5564327386707756283
+      character_hammer_3: -8308559867305230257
+      character_hammer_49: -8569602539990690158
+      character_hammer_111: 271115026504986422
+      character_hammer_110: 8668511610820238468
+      character_hammer_46: -6198106559595690499
+      character_hammer_14: -3121844139315690511
+      character_hammer_67: 6823101503843567940
+      character_hammer_98: -8368736723511842863
+      character_hammer_106: 2048911916457710250
+      character_hammer_107: 2198071247978925852
+      character_hammer_103: 5852969726519584489
+      character_hammer_21: -6915807362902725841
+      character_hammer_17: 4216201987643955849
+      character_hammer_28: -6705826482241328557
+      character_hammer_51: 7128613508691014028
+      character_hammer_58: -44662495738030845
+      character_hammer_40: 6120012007470013876
+      character_hammer_43: 6754272249593773265
+      character_hammer_29: -5523664948613378268
+      character_hammer_41: -178759536944206497
+      character_hammer_5: -4773942522155041131
+      character_hammer_2: 4102383532685315836
+      character_hammer_9: 1552758740903847014
+      character_hammer_70: -5789921122684468026
+      character_hammer_8: -805327735669342990
+      character_hammer_24: 8940011836309114164
+      character_hammer_53: -7391792813187042364
+      character_hammer_112: -7939028828215436518
+      character_hammer_38: 4204205633180404862
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

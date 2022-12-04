@@ -84,7 +84,10 @@ public abstract class LongRangeWeapons : MonoBehaviour, IWeapon, IDataPersistenc
 
     public void LoadData(GameData data)
     {
-        _damage = data.WeaponsUpgrade[_weaponInfo.name];
+        if (data.WeaponsUpgrade.ContainsKey(_weaponInfo.name))
+        {
+            _damage = data.WeaponsUpgrade[_weaponInfo.name];
+        }
     }
 
     public void SaveData(GameData data)

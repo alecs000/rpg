@@ -138,7 +138,7 @@ TextureImporter:
       213: -1692773829945554998
     second: "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_44"
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -159,6 +159,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -197,6 +198,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -236,6 +238,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1204,6 +1218,52 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_37": -2900007498738681408
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_3": -2608557834150947683
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_43": -1155545582362593786
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_35": 67560270881791008
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_44": -1692773829945554998
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_40": -4718556055192480938
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_29": 4215623523073534512
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_33": 5360662624495471969
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_7": -5403259265223075808
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_24": -6605472044938569650
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_28": 8128444575700946362
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_23": -3827636799942900258
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_30": -8102046227291741022
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_5": -4992375844114099315
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_32": -5582334988006529972
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_9": 812316709806369592
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_26": 2821802717512761906
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_15": -2944478578133201358
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_19": 5462388814119843618
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_42": 90456431752607285
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_34": 7176191684042151510
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_20": -3856150550747234037
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_41": -8013083558770006443
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_18": 1444626299740343633
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_21": 3023634682322251591
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_12": -7620139670314493342
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_13": 2298130709339518366
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_36": 1000752505328920347
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_39": 967950784976445365
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_2": -3012252936496716413
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_4": 2144103145164238673
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_25": 497178630784753075
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_1": 5801247946966374754
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_11": 2382627185550901408
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_17": -4770676539048096048
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_14": -7211924150498955682
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_0": 143189650431241672
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_22": 5589193570714834531
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_27": -4819657295973729738
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_38": -6851413750579237734
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_31": 8375698000092074927
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_8": -2413752575354162651
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_6": -3643018844612324524
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_10": 1593950906870187229
+      "weapon_sycthe \u2014 \u043A\u043E\u043F\u0438\u044F_16": -5104749056250341377
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

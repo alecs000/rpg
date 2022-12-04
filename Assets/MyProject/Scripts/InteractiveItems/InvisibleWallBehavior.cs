@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class InvisibleWallBehavior : MonoBehaviour
 {
     [SerializeField] private GameObject _notification;
-    [SerializeField] private Text _chestNotification;
     private bool _keyReceived;
     private Animator _notificationAnim;
     private void Start()
@@ -40,6 +39,5 @@ public class InvisibleWallBehavior : MonoBehaviour
     public void FindKey()
     {
         _keyReceived = true;
-        _chestNotification.text += " +1 Key";
     }
 }

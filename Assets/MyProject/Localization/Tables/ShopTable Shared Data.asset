@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: ShopTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: ShopTable
+  m_TableCollectionNameGuidString: 9f09d7f1f5e2afd429f46e2cb98dba4a
+  m_Entries:
+  - m_Id: 6172680192
+    m_Key: SwordKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76997697536
+    m_Key: HammerKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79942098944
+    m_Key: PistolKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83721166848
+    m_Key: ScytheKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86619430912
+    m_Key: RifleKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 92772474880
+    m_Key: DamageKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95989506048
+    m_Key: AttackSpeedKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 674233032704
+    m_Key: CostKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 677190017024
+    m_Key: BuyKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 678427336704
+    m_Key: EquipKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 742319169536
+    m_Key: UpgradeKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14736752877568
+    m_Key: NameKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 408822215319552
+    m_Key: RunesKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 423092932026368
+    m_Key: JokeKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 632373677629440
+    m_Key: RevealKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1008239205130240
+    m_Key: MusicKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1008303218597888
+    m_Key: SoundsKey
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 3404895690790010906
+  references:
+    version: 2
+    RefIds:
+    - rid: 3404895690790010906
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1669663188521

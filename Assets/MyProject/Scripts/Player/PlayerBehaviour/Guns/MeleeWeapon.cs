@@ -1,9 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class MeleeWeapon :MonoBehaviour,  IWeapon, IDataPersistence
+public abstract class MeleeWeapon : MonoBehaviour, IWeapon, IDataPersistence
 {
     [SerializeField] private GameObject _gameObjectCollider;
     [SerializeField] private WeaponCollider _weaponCollider;
@@ -34,14 +31,13 @@ public abstract class MeleeWeapon :MonoBehaviour,  IWeapon, IDataPersistence
         {
             item.GetComponent<IAlive>().GetDamage(_damage);
         }
-        _animatorBody.SetBool("IdleActive", true);
         _animatorBody.SetInteger(_weaponInfo.animationName, 4);
         _animatorsWeapons[0].SetActive(false);
         _animatorsWeapons[1].SetActive(false);
         _animatorsWeapons[2].SetActive(false);
         _animatorsWeapons[3].SetActive(false);
     }
-        private void WeaponAnimation()
+    private void WeaponAnimation()
     {
         if (_joystickForAttack.VectorAttack.y > 0.5)
         {
@@ -70,24 +66,9 @@ public abstract class MeleeWeapon :MonoBehaviour,  IWeapon, IDataPersistence
         _animatorBody.SetInteger(_weaponInfo.animationName, direction);
     }
 
-        private void RotateCollider()
+    private void RotateCollider()
     {
-        float radians = (float)Math.Atan(_joystickForAttack.VectorAttack.y / _joystickForAttack.VectorAttack.x);
-        float angle = (float)Math.Abs(radians * (180 / Math.PI));
-        Debug.Log(angle);
-        if (_joystickForAttack.VectorAttack.x < 0 && _joystickForAttack.VectorAttack.y < 0)
-        {
-            angle += 180;
-        }
-        else if (_joystickForAttack.VectorAttack.x < 0)
-        {
-            angle = 180 - angle;
-        }
-        else if (_joystickForAttack.VectorAttack.y < 0)
-        {
-            angle = 360 - angle;
-        }
-        _gameObjectCollider.transform.rotation = Quaternion.Euler(0, 0, angle);
+        _gameObjectCollider.transform.rotation = Quaternion.Euler(0, 0, _joystickForAttack.GetAngle());
     }
 
     public void LoadData(GameData data)
@@ -105,6 +86,6 @@ public abstract class MeleeWeapon :MonoBehaviour,  IWeapon, IDataPersistence
 
     public void SaveData(GameData data)
     {
-        
+
     }
 }

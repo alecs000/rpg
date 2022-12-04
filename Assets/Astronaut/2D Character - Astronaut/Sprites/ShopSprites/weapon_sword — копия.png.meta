@@ -120,7 +120,7 @@ TextureImporter:
       213: 4166892087425539057
     second: "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_38"
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -141,6 +141,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -179,6 +180,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -218,6 +220,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1060,6 +1074,46 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_36": 65387604140074419
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_28": 7609260306805304656
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_31": -7012457473222732887
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_26": 7982257702844229494
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_6": 8811619128967214907
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_18": -6599296828909418493
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_4": 5398663706724618139
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_12": 3270408159476344736
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_7": -129643533127766226
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_17": 9180494231020438646
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_32": -6384235857341699471
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_10": 8087302174016880240
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_25": 8534764703060929636
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_2": 8591566784209973755
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_3": -8070225327856036354
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_16": -2219191517237600500
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_0": 6474647373904826364
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_34": -307496798258635060
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_13": -5824423266232154507
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_15": -8514132031639469354
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_14": -3450910408505004094
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_5": -3975533654486635235
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_37": -1055487925892498474
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_38": 4166892087425539057
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_29": -2669261339695917837
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_33": -5912696886017675973
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_9": 7472366462008696765
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_1": 5092861845751065504
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_19": 1090713026725631409
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_35": -3225345887471022911
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_20": -7949171993351480185
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_23": 2565265061331641522
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_8": 8765485089839741153
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_21": 2662153764857760071
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_27": -5948542263127389508
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_24": -96348403008845968
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_22": -3600897850618016679
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_11": 635883542875888053
+      "weapon_sword \u2014 \u043A\u043E\u043F\u0438\u044F_30": -5249338981130204017
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

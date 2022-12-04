@@ -543,7 +543,7 @@ TextureImporter:
       213: -9007190348919149204
     second: character_sword_59
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -564,6 +564,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -602,6 +603,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -641,6 +643,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1924,6 +1950,67 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      character_sword_42: -5667462851807865406
+      character_sword_3: 6493153746241141104
+      character_sword_14: 6206028840877145659
+      character_sword_21: -2931329920608235317
+      character_sword_35: -8551819737114366938
+      character_sword_12: -7178937571239972114
+      character_sword_33: -7405433457441753902
+      character_sword_9: 2670969469035216481
+      character_sword_0: -5275846419451274271
+      character_sword_13: 7521966283663054250
+      character_sword_5: 8114431268508192337
+      character_sword_17: 6949202230723558010
+      character_sword_20: -2584123571552340444
+      character_sword_53: -7220022606294983250
+      character_sword_54: -6177547987371668401
+      character_sword_34: 1994740548049860123
+      character_sword_56: -2224465553409694486
+      character_sword_55: 7704371390665140608
+      character_sword_25: 7350456314185002420
+      character_sword_40: -2584407119833164082
+      character_sword_18: -1442045717376165265
+      character_sword_2: 4608952986121737545
+      character_sword_4: -5316052926520873960
+      character_sword_31: 3763904510081086309
+      character_sword_48: -3184007833269622075
+      character_sword_43: 6544755545985567965
+      character_sword_58: -4431535810414288312
+      character_sword_7: 7624077911269786755
+      character_sword_39: 4138424462274053272
+      character_sword_19: -2354475907439439618
+      character_sword_28: 7073152139247751696
+      character_sword_36: -2101914579552176562
+      character_sword_32: 2401613129517792643
+      character_sword_27: -2899370434072590726
+      character_sword_52: 7532376333653289691
+      character_sword_11: -2104396794197162907
+      character_sword_8: -3467200851766448346
+      character_sword_23: 4814989850129331160
+      character_sword_47: 5253503220383141644
+      character_sword_45: -7389136891478787827
+      character_sword_37: -5745720484986866249
+      character_sword_44: 2963380187119064778
+      character_sword_30: -2556260383351401383
+      character_sword_1: -5431636989346345798
+      character_sword_15: -7555433864499394672
+      character_sword_6: -1829824148583466045
+      character_sword_51: 3830799879234936698
+      character_sword_41: 775551867453163546
+      character_sword_59: -9007190348919149204
+      character_sword_10: 2983443078754033722
+      character_sword_57: -8410352315034878027
+      character_sword_46: -4893826426573099619
+      character_sword_22: 7602851230757815436
+      character_sword_38: -5345102648145076678
+      character_sword_50: 2448560792722971690
+      character_sword_26: -2960751016313130599
+      character_sword_24: 2879235366165112933
+      character_sword_29: -7785160918926837384
+      character_sword_16: 7596732045638467521
+      character_sword_49: -4641564395838597288
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

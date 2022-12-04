@@ -843,7 +843,7 @@ TextureImporter:
       213: -1172172460835049988
     second: character_sycthe_69
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -864,6 +864,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -902,6 +903,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -941,6 +943,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
@@ -2434,6 +2460,77 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      character_sycthe_43: 8884730678907002829
+      character_sycthe_4: 993346751201039369
+      character_sycthe_5: 2739746802597978866
+      character_sycthe_69: -1172172460835049988
+      character_sycthe_48: 4809427431369819008
+      character_sycthe_23: -4061172045945431691
+      character_sycthe_14: -5844607095244054233
+      character_sycthe_10: -6189941692963828619
+      character_sycthe_57: -8752229340085292807
+      character_sycthe_52: 4290873939356389715
+      character_sycthe_20: 3012838341022553922
+      character_sycthe_22: 4495746488896253739
+      character_sycthe_29: 3520105690379369312
+      character_sycthe_17: -6271402378594908337
+      character_sycthe_2: -8513981240317331803
+      character_sycthe_7: 3557354918419956573
+      character_sycthe_45: 7327733998154372136
+      character_sycthe_44: 8886524854075271681
+      character_sycthe_37: -3333510975224159176
+      character_sycthe_19: -1665804930991831071
+      character_sycthe_67: 2814548334380099161
+      character_sycthe_51: -5072962680400268132
+      character_sycthe_59: 2153902083157547289
+      character_sycthe_68: -6267805244298327388
+      character_sycthe_30: -6839171444397955572
+      character_sycthe_54: 4821981360410858696
+      character_sycthe_3: -3573250066453841046
+      character_sycthe_6: -3192674244661650692
+      character_sycthe_38: 4054786482062768702
+      character_sycthe_56: -3659977821738563182
+      character_sycthe_65: -5242457142374161030
+      character_sycthe_41: -8356196016431866902
+      character_sycthe_15: 3231911442985215408
+      character_sycthe_25: -1997857586791840731
+      character_sycthe_26: -8031659430736833525
+      character_sycthe_9: 3253978685394882496
+      character_sycthe_28: -1969280179936309603
+      character_sycthe_8: -9121306074057854860
+      character_sycthe_50: 2197829232408721961
+      character_sycthe_49: -3032841894177716242
+      character_sycthe_16: 5928835449950373447
+      character_sycthe_18: -6156419519703263963
+      character_sycthe_62: 6961717092068838827
+      character_sycthe_31: 1613101527349736407
+      character_sycthe_27: 8347452871807419933
+      character_sycthe_47: -6808514554905445081
+      character_sycthe_34: -3259365285401668219
+      character_sycthe_1: 4849551402195318896
+      character_sycthe_0: -5384809123960365537
+      character_sycthe_21: -4945114042809047294
+      character_sycthe_61: 7112277258830555663
+      character_sycthe_60: 7799786735274924256
+      character_sycthe_13: -4966549336751678984
+      character_sycthe_33: 6538941764021722091
+      character_sycthe_40: -3857029332645125372
+      character_sycthe_63: 6980934107604142311
+      character_sycthe_35: -4039958495298169181
+      character_sycthe_53: -2894468297780140872
+      character_sycthe_66: -5371723317525841972
+      character_sycthe_55: 7112626674259206137
+      character_sycthe_24: 3298678893615335162
+      character_sycthe_12: -5845808651411875678
+      character_sycthe_64: 3164405628863815673
+      character_sycthe_32: 7945563636854588740
+      character_sycthe_11: 6745603240432807066
+      character_sycthe_42: -7299747117125528322
+      character_sycthe_58: -8735900310821345598
+      character_sycthe_46: 1095015537616594397
+      character_sycthe_36: 6901403473301960622
+      character_sycthe_39: 9003635996017973322
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

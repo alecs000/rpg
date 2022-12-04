@@ -99,7 +99,7 @@ TextureImporter:
       213: 879265212016438391
     second: SlimeBack_31
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -120,6 +120,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -158,6 +159,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -197,6 +199,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -892,6 +906,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      SlimeBack_16: -1108940168943582611
+      SlimeBack_18: 7116611712951230931
+      SlimeBack_12: -3351461633661976219
+      SlimeBack_28: -9138886352215864231
+      SlimeBack_19: -4683479954640986189
+      SlimeBack_21: 2807795968304526530
+      SlimeBack_24: 1557682522964101658
+      SlimeBack_23: 6085651904181484783
+      SlimeBack_31: 879265212016438391
+      SlimeBack_13: 6526375126925861732
+      SlimeBack_17: 2887277099638345075
+      SlimeBack_26: -3319325349015108692
+      SlimeBack_29: 3372033466462157382
+      SlimeBack_7: 295387984528941151
+      SlimeBack_8: -6748845560366846221
+      SlimeBack_2: 7351606687965046936
+      SlimeBack_4: -1332694355635852588
+      SlimeBack_14: -6613632052869683583
+      SlimeBack_1: -6022557896466106576
+      SlimeBack_15: 5426547420642702273
+      SlimeBack_25: -4341976414566275584
+      SlimeBack_3: 5023283678154369082
+      SlimeBack_6: -1212269119813052989
+      SlimeBack_9: 5528351874399118580
+      SlimeBack_22: -8007976045932250464
+      SlimeBack_27: -7918374898238534497
+      SlimeBack_30: -118799885577865831
+      SlimeBack_0: 1962293458543410012
+      SlimeBack_5: 6196294317377640918
+      SlimeBack_11: 8003602785794762764
+      SlimeBack_10: 2607354698988657861
+      SlimeBack_20: -3361994474053239392
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

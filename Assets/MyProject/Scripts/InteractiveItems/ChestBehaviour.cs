@@ -6,11 +6,13 @@ using UnityEngine.UI;
 
 public class ChestBehaviour : MonoBehaviour
 {
+    public int MoneyAdded;
     [SerializeField] private ChestInfo _chestInfo;
     [SerializeField] private GameObject _openedChest;
     [SerializeField] private GameObject _closedChest;
     [SerializeField] private GameObject _notification;
-    [SerializeField] private Text _notificationText;
+    [SerializeField] private AudioSource _chestAudioSource;
+
     private Animation _notificationAnimator;
     private void Start()
     {
@@ -19,20 +21,11 @@ public class ChestBehaviour : MonoBehaviour
     public void Open(GameObject sender)
     {
         int moneyAmount = Random.Range(_chestInfo.MoneyAmount - _chestInfo.Diviation, _chestInfo.MoneyAmount + _chestInfo.Diviation);
+        MoneyAdded=moneyAmount;
         sender.SetActive(false);
-        _closedChest.SetActive(true);
-        _openedChest.SetActive(false);
+        _openedChest.SetActive(true);
         Money.instance.Add(moneyAmount);
-        _notificationText.color = "DDCC7A".ToColor();
-        _notificationText.text = $"+{moneyAmount} gold";
         _notification.SetActive(true);
-        StartCoroutine(CloseNotification());
-    }
-    IEnumerator CloseNotification()
-    {
-        yield return new WaitForSeconds(3);
-        _notificationAnimator.Play();
-        yield return new WaitForSeconds(1);
-        _notification.SetActive(false);
+        _closedChest.SetActive(false);
     }
 }

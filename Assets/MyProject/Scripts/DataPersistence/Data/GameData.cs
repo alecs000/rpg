@@ -10,6 +10,7 @@ public class GameData
     public int MoneyAmount;
     public int MoneyAmountOnLevel;
     public int LevelsAmount;
+    public int NumberAdEye;
 
     // the _values defined in this constructor will be the default _values
     // the game starts with when there's no data to load

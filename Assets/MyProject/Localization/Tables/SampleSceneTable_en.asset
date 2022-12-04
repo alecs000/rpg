@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: SampleSceneTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: ce860a8ad43198f4e9a676ec546991bf, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 3404895688478687241
+  m_TableData:
+  - m_Id: 1387805777920
+    m_Localized: Open
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3487428222976
+    m_Localized: '+{0: coin|{} coins}'
+    m_Metadata:
+      m_Items:
+      - rid: 3404895688478687241
+  - m_Id: 397224377556992
+    m_Localized: '+{0: coin|{} coins} in the last attempt'
+    m_Metadata:
+      m_Items:
+      - rid: 3404895688478687241
+  - m_Id: 398502663004160
+    m_Localized: + magic eye
+    m_Metadata:
+      m_Items: []
+  - m_Id: 399378798583808
+    m_Localized: Activate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400636250923008
+    m_Localized: Great Job, You are the best
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401187197919232
+    m_Localized: All your magic eyes have been stolen from you
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401328994754560
+    m_Localized: Shop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401373940916224
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401433625862144
+    m_Localized: Nice try
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401526638747648
+    m_Localized: Second live
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401879463600128
+    m_Localized: '+{0: coin|{} coins}'
+    m_Metadata:
+      m_Items:
+      - rid: 3404895688478687241
+  - m_Id: 403823796133888
+    m_Localized: '+{0: coin|{} coins}'
+    m_Metadata:
+      m_Items:
+      - rid: 3404895688478687241
+  - m_Id: 404400894615552
+    m_Localized: Restart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 443542206652416
+    m_Localized: ?Open?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 443795341287424
+    m_Localized: Need to find the key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2284305257308160
+    m_Localized: "+{0: coin|{} coins}\n + key"
+    m_Metadata:
+      m_Items:
+      - rid: 3404895688478687241
+  - m_Id: 2298541593305088
+    m_Localized: Loading
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 3404895688478687241
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00a0ebfa2b03000000a0eb014669010000a0abda816d010000a0eb8d466f010000a06b43901d0800

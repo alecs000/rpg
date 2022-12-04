@@ -99,7 +99,7 @@ TextureImporter:
       213: -5476507095845229449
     second: imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_31
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -120,6 +120,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -158,6 +159,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -197,6 +199,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -892,6 +906,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_17: 7462052619147966554
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_29: -4093054393468870182
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_4: -7660223779624296316
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_20: 954007890319332487
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_18: 3555506096478104558
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_23: -7370801145261195217
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_3: 6298653682437973392
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_10: 8460140029516465704
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_9: 8392364801065721671
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_7: 8579723163937566312
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_11: -1465211118462274808
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_5: -1558960823051621396
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_27: 6861526044670600907
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_15: -3681685604685180357
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_25: -7795535209703857629
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_2: -2249342532806690905
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_31: -5476507095845229449
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_26: -6455929060147650081
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_22: -4512449132880101150
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_8: -1009862875102798223
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_6: -4723601719114483454
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_21: 1927075235029446501
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_14: 7023858353044505292
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_1: -3097343869244472338
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_0: -4446440712208724081
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_24: -2364831930369324584
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_16: 7415184917246132819
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_13: -8789553972580246255
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_30: -3664132254361700202
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_12: -2070807253937820323
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_19: 5110225901936630322
+      imgonline-com-ua-Replace-color-yxUepTTBsSVR0-PhotoRoom_28: -2113944456804452954
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

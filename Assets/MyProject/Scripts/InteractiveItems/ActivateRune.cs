@@ -7,8 +7,9 @@ public class ActivateRune : MonoBehaviour
 {
     [SerializeField] private GameObject _glow;
     [SerializeField] private GameObject _notification;
-    [SerializeField] private Text _notificationText;
     [SerializeField] private BoxCollider2D _boxCollider2D;
+    [SerializeField] private AudioSource _runeAudioSource;
+
     private Animation _notificationAnimator;
     private void Start()
     {
@@ -19,9 +20,8 @@ public class ActivateRune : MonoBehaviour
         _boxCollider2D.enabled = false;
         sender.SetActive(false);
         _glow.SetActive(true);
-        _notificationText.text = "+ 1 magic eye";
-        _notificationText.color = "7ADBDD".ToColor();
         _notification.SetActive(true);
+        _runeAudioSource.Play();
         StartCoroutine(CloseNotification());
     }
     IEnumerator CloseNotification()

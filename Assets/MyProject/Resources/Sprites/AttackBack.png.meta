@@ -99,7 +99,7 @@ TextureImporter:
       213: -1222349721128565994
     second: AttackBack_31
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -120,6 +120,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -158,6 +159,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -197,6 +199,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -892,6 +906,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      AttackBack_10: 3816535258945139622
+      AttackBack_16: 8704307489658109546
+      AttackBack_27: 6581667667972421429
+      AttackBack_24: -4558083059210508184
+      AttackBack_22: -7558534149633945047
+      AttackBack_19: 8772637978624720556
+      AttackBack_2: -6045671413757781051
+      AttackBack_14: -3203301453259721648
+      AttackBack_29: -7757820697775916200
+      AttackBack_20: 2265569100268512095
+      AttackBack_26: -6462171443588886970
+      AttackBack_11: 8803226172572112405
+      AttackBack_6: 4570342198340278415
+      AttackBack_15: 5069700354858862554
+      AttackBack_3: -3494236780316218606
+      AttackBack_1: -4323601339852204422
+      AttackBack_0: 3827471490420344502
+      AttackBack_31: -1222349721128565994
+      AttackBack_23: 269700413220573466
+      AttackBack_18: -8783954695771638086
+      AttackBack_28: 2441148478391959478
+      AttackBack_21: 356664972095348317
+      AttackBack_7: 542476519418717561
+      AttackBack_25: 3744690619660345387
+      AttackBack_17: 6413238739766214193
+      AttackBack_9: 174490639686272354
+      AttackBack_12: 5320366595122041663
+      AttackBack_4: -6804648759285829905
+      AttackBack_8: 2338969411892023986
+      AttackBack_5: 1009939961359703259
+      AttackBack_13: 5150441464153897152
+      AttackBack_30: -2546459974749951644
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

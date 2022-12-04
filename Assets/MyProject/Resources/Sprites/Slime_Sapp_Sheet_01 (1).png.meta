@@ -132,7 +132,7 @@ TextureImporter:
       213: 2433616603936895006
     second: Slime_Sapp_Sheet_01 (1)_42
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -153,6 +153,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -191,6 +192,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -230,6 +232,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -925,6 +939,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Slime_Sapp_Sheet_01 (1)_19: 6405702071142830692
+      Slime_Sapp_Sheet_01 (1)_28: -2988874226572892052
+      Slime_Sapp_Sheet_01 (1)_13: 303995515596547359
+      Slime_Sapp_Sheet_01 (1)_18: -8733137869509882870
+      Slime_Sapp_Sheet_01 (1)_25: -3903877150939212817
+      Slime_Sapp_Sheet_01 (1)_1: -5842340449582504702
+      Slime_Sapp_Sheet_01 (1)_2: 2646992297097244908
+      Slime_Sapp_Sheet_01 (1)_4: -2808980319877273018
+      Slime_Sapp_Sheet_01 (1)_9: -1972757168606796383
+      Slime_Sapp_Sheet_01 (1)_17: 4677835685288900621
+      Slime_Sapp_Sheet_01 (1)_20: -2842008465263729800
+      Slime_Sapp_Sheet_01 (1)_29: 5912056571766581772
+      Slime_Sapp_Sheet_01 (1)_5: -1431133668748940783
+      Slime_Sapp_Sheet_01 (1)_27: 668706209491664473
+      Slime_Sapp_Sheet_01 (1)_21: -7981075542268576577
+      Slime_Sapp_Sheet_01 (1)_31: -5551982966727026257
+      Slime_Sapp_Sheet_01 (1)_24: 5521832370686875498
+      Slime_Sapp_Sheet_01 (1)_16: 8944408051378013674
+      Slime_Sapp_Sheet_01 (1)_30: -3620935270028956823
+      Slime_Sapp_Sheet_01 (1)_6: -6908241971591154618
+      Slime_Sapp_Sheet_01 (1)_22: 7483720346402312483
+      Slime_Sapp_Sheet_01 (1)_10: 3497007257328617864
+      Slime_Sapp_Sheet_01 (1)_7: -2813176274552166016
+      Slime_Sapp_Sheet_01 (1)_3: 6216077339324007530
+      Slime_Sapp_Sheet_01 (1)_12: 6230576057399769188
+      Slime_Sapp_Sheet_01 (1)_14: 1695846937556324556
+      Slime_Sapp_Sheet_01 (1)_23: -5264311745069501331
+      Slime_Sapp_Sheet_01 (1)_0: -4796981629621277041
+      Slime_Sapp_Sheet_01 (1)_15: -9182494826827569361
+      Slime_Sapp_Sheet_01 (1)_26: -8066369073404900144
+      Slime_Sapp_Sheet_01 (1)_8: -5872801566668651731
+      Slime_Sapp_Sheet_01 (1)_11: -8617392404364094997
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

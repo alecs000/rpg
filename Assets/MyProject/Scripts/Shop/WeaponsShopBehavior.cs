@@ -3,13 +3,17 @@ using UnityEngine.UI;
 
 public class WeaponsShopBehavior : MonoBehaviour, IDataPersistence
 {
-    [SerializeField] private Text _nameWeapon;
-    [SerializeField] private Text _characteristic;
+    public string NameWeapon="gh";
+    //[SerializeField] private Text _nameWeapon;
+    //[SerializeField] private Text _damageText;
+    //[SerializeField] private Text _attackSpeedText;
+    //[SerializeField] private Text _costText;
     [SerializeField] private Image _weaponImage;
     [SerializeField] private GameObject _weaponBuyButton;
     [SerializeField] private GameObject _weaponEquipButton;
     [SerializeField] private GameObject _weaponUpgradeButton;
     [SerializeField] private WeaponInfo _weaponInfo;
+    [SerializeField] private Text _nameText;
 
     private SerializableDictionary<string, int> _weaponsBought;
     private SerializableDictionary<string, float> _weaponsUpgrade;
@@ -28,7 +32,7 @@ public class WeaponsShopBehavior : MonoBehaviour, IDataPersistence
         _weaponUpgradeButton.SetActive(false);
         _weaponEquipButton.SetActive(false);
         _weaponBuyButton.SetActive(true);
-        _nameWeapon.text = weaponInfo.nameWeapon;
+        //_nameWeapon.text = weaponInfo.nameWeapon;
         _weaponImage.sprite = weaponInfo.sprite;
         UpdateText();
 
@@ -39,6 +43,10 @@ public class WeaponsShopBehavior : MonoBehaviour, IDataPersistence
             _weaponBuyButton.SetActive(false);
         }
 
+    }
+    public void SetButtonText(Text text)
+    {
+        _nameText.text = text.text;
     }
     public void WeaponBuy()
     {
@@ -66,9 +74,17 @@ public class WeaponsShopBehavior : MonoBehaviour, IDataPersistence
     private void UpdateText()
     {
         if (_weaponsBought.ContainsKey(_weaponInfo.nameWeapon))
-            _characteristic.text = "Damage: " + _weaponsUpgrade[_weaponInfo.nameWeapon].ToString() + "\nAttack _speed: " + _weaponInfo.attackSpeed.ToString() + "\nUpgrade Cost: " + ((_weaponInfo.cost + 1f) / 10f * _weaponsBought[_weaponInfo.name]).ToString();
+        {
+            //_damageText.text = $"Damage: " + _weaponsUpgrade[_weaponInfo.nameWeapon].ToString();
+           // _attackSpeedText.text = $"Attack _speed: " + _weaponInfo.attackSpeed.ToString();
+           // _costText.text = $"Upgrade Cost: " + ((_weaponInfo.cost + 1f) / 10f * _weaponsBought[_weaponInfo.name]).ToString();
+        }
         else
-            _characteristic.text = "Damage: " + _weaponInfo.damage.ToString() + "\nAttack _speed: " + _weaponInfo.attackSpeed.ToString() + "\nCost: " + _weaponInfo.cost.ToString();
+        {
+          //  _damageText.text = $"Damage: " + _weaponInfo.damage.ToString();
+           // _attackSpeedText.text = $"Attack _speed: " + _weaponInfo.attackSpeed.ToString();
+            //_costText.text = $"Cost: " + _weaponInfo.cost.ToString();
+        }
     }
     public void WeaponEquip()
     {

@@ -14,7 +14,7 @@ public class EndMenuManager : MonoBehaviour
     public void ClickNextLevel()
     {
         endMenuAnimation.Play();
-        StartCoroutine(SwitchScene(SceneManager.GetActiveScene().buildIndex+1));
+        StartCoroutine(SwitchScene(PlayerPrefs.GetInt("Scene")));
     }
     public void ClickRestart()
     {
@@ -25,6 +25,5 @@ public class EndMenuManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene(sceneIndex);
-
     }
 }

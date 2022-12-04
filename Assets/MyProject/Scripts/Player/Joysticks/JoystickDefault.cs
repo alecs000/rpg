@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using System;
 
 public abstract class JoysticDefault : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
 {
@@ -56,6 +57,32 @@ public abstract class JoysticDefault : MonoBehaviour, IPointerDownHandler, IPoin
         _joystick.rectTransform.anchoredPosition = Vector2.zero;
         _inputPosition = Vector2.zero;
         SwitchJoystick();
+    }
+    public float GetAngle()
+    {
+        Vector2 VectorAttack = _inputPosition.normalized;
+        if (VectorAttack.x == 0)
+        {
+            if (VectorAttack.y > 0)
+                return 90;
+            else
+                return 270;
+        }
+        double radians = Math.Atan(VectorAttack.y / VectorAttack.x);
+        float angle = (float)Math.Abs(radians * (180 / Math.PI));
+        if (VectorAttack.x < 0 && VectorAttack.y < 0)
+        {
+            angle += 180;
+        }
+        else if (VectorAttack.x < 0)
+        {
+            angle = 180 - angle;
+        }
+        else if (VectorAttack.y < 0)
+        {
+            angle = 360 - angle;
+        }
+        return angle;
     }
 
 }
