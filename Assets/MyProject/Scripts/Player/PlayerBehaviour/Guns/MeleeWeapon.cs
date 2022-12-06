@@ -13,7 +13,6 @@ public abstract class MeleeWeapon : MonoBehaviour, IWeapon, IDataPersistence
     public WeaponInfo WeaponInfo => _weaponInfo;
     public virtual void StartAttack()
     {
-        _animatorBody.SetBool("IdleActive", false);
     }
     public virtual void Attack()
     {
@@ -31,7 +30,7 @@ public abstract class MeleeWeapon : MonoBehaviour, IWeapon, IDataPersistence
         {
             item.GetComponent<IAlive>().GetDamage(_damage);
         }
-        _animatorBody.SetInteger(_weaponInfo.animationName, 4);
+        _animatorBody.SetInteger(_weaponInfo.AnimationName, 4);
         _animatorsWeapons[0].SetActive(false);
         _animatorsWeapons[1].SetActive(false);
         _animatorsWeapons[2].SetActive(false);
@@ -63,7 +62,7 @@ public abstract class MeleeWeapon : MonoBehaviour, IWeapon, IDataPersistence
     private void AttackAnimation(int direction)
     {
         _animatorsWeapons[direction].SetActive(true);
-        _animatorBody.SetInteger(_weaponInfo.animationName, direction);
+        _animatorBody.SetInteger(_weaponInfo.AnimationName, direction);
     }
 
     private void RotateCollider()
@@ -76,11 +75,11 @@ public abstract class MeleeWeapon : MonoBehaviour, IWeapon, IDataPersistence
         if (data.WeaponsUpgrade.ContainsKey(_weaponInfo.name))
         {
             _damage = data.WeaponsUpgrade[_weaponInfo.name];
-            _damage = _weaponInfo.damage;
+            _damage = _weaponInfo.Damage;
         }
         else
         {
-            _damage = _weaponInfo.damage;
+            _damage = _weaponInfo.Damage;
         }
     }
 

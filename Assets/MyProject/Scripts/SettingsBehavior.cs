@@ -43,4 +43,8 @@ public class SettingsBehavior : MonoBehaviour
         _audioMixerGroup.audioMixer.SetFloat("MusicVolume", Mathf.Lerp(-80, 0, volume));
         PlayerPrefs.SetFloat("Music", volume);
     }
+    public void Clear()
+    {
+        PlayerPrefs.DeleteAll();
+    }
 }

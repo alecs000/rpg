@@ -50,10 +50,15 @@ public class DarkCharacter : AliveDefault
     }
     private void Spawn()
     {
+
         _enemySpawner.Spawn(GetAvalibleArea(_spawnDeviationX, _spawnDeviationY));
     }
     private void Attack()
     {
+        if (_isDie)
+        {
+            return;
+        }
         for (int i = 0; i < _countEnemyInSpawn; i++)
         {
             Spawn();
@@ -88,6 +93,10 @@ public class DarkCharacter : AliveDefault
 
     private void EndAttack()
     {
+        if (_isDie)
+        {
+            return;
+        }
         transform.position = GetAvalibleArea(5, 5);
     }
     private Vector2 GetAvalibleArea(float DeviationX, float DeviationY)
@@ -109,6 +118,7 @@ public class DarkCharacter : AliveDefault
     {
         _isDie = true;
         Money.instance.Add(_enemyInfo.RewardForMurder);
+        _characterAnimator.SetBool("IsAttack", false);
         _characterAnimator.SetBool("IsDie", true);
     }
 }

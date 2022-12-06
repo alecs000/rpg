@@ -9,6 +9,9 @@ public class PortalActive : MonoBehaviour
     [SerializeField] private GameObject _runes;
     [SerializeField] private GameObject _menu;
     [SerializeField] private AudioSource _portalAudioSource;
+    [SerializeField] private AudioSource _musicAudioSource;
+
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -16,6 +19,7 @@ public class PortalActive : MonoBehaviour
         {
             PlayerPrefs.SetInt("Scene", SceneManager.GetActiveScene().buildIndex + 1);
             _runes.SetActive(true);
+            _musicAudioSource.Stop();
             _particleSystem.Play();
             PlayerPrefs.SetInt("MoneyInLastLevel", 0);
             MoneyOnLevel = Money.instance.GetMoneyOnLevel();

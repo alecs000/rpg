@@ -161,12 +161,12 @@ public abstract class DefoultEnemy : AliveDefault
     }
 
     public override void Die() {
+        _isDie = true;
         _enemyAnimator.SetBool("IsDie", true);
         _enemyAnimator.SetBool("IsAttack", false);
         _enemyAnimator.SetInteger("Direction", 4);
         _enemyRigidbody.velocity = Vector2.zero;
         Money.instance.Add(_enemyInfo.RewardForMurder);
-        _isDie = true;
     }
     public override void GetDamage(float damage) {
         if (_isDie)

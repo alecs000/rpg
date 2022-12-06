@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Advertisements;
+using UnityEngine.Localization.Settings;
 
 public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListener
 {
@@ -21,6 +22,13 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
 
         //Disable the button until the ad is ready to show:
         _showAdButton.interactable = false;
+    }
+    private void Start()
+    {
+        if (AdsInitializer.IsInitialized)
+        {
+            LoadAd();
+        }
     }
     // Load content to the Ad Unit:
     public void LoadAd()

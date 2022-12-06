@@ -9,7 +9,7 @@ public class EndMenuManager : MonoBehaviour
     public void ClickShop()
     {
         endMenuAnimation.Play();
-        StartCoroutine(SwitchScene(0));
+        StartCoroutine(SwitchScene(7));
     }
     public void ClickNextLevel()
     {

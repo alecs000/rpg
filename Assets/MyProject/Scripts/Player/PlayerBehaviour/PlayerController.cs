@@ -16,24 +16,33 @@ public class PlayerController : AliveDefault
     [SerializeField] private JoystickForAttack _joystickForAttack;
     [SerializeField] private float _hitPointsStartValue;
     [SerializeField] private GameObject _loseMenu;
-    [SerializeField] private HeadBehavior _headBehavior;
     [SerializeField] private Vector2 _startPosition;
+    [SerializeField] private GameObject _shield;
+    [SerializeField] private AudioSource _dieAudioSource;
+    [SerializeField] private AudioSource _musicAudioSource;
+    [SerializeField] private HeadBehavior[] _headBehaviors;
 
+
+    private HeadBehavior _headBehavior;
     private SpriteRenderer _spriteRenderer;
     private bool _isDie;
+    private bool _isInvulnerable;
 
     private void Awake()
     {
+        int i = 0;
         foreach (var item in _weapons)
         {
             var weapon = item.GetComponent<IWeapon>();
-            if (weapon.WeaponInfo.index==PlayerPrefs.GetInt("GunIndex"))
+            if (weapon.WeaponInfo.Index==PlayerPrefs.GetInt("GunIndex"))
             {
+                _headBehavior = _headBehaviors[i];
                 LayerTrigger.item = item;
                 _player.Weapon = weapon;
                 item.SetActive(true);
                 break;
             }
+            i++;
         }
     }
     private void Start()
@@ -63,17 +72,23 @@ public class PlayerController : AliveDefault
     {
         if (_isDie)
             return;
+        if(_isInvulnerable)
+            return;
         base.GetDamage(damage);
         float colorValue = 1 / (_hitPointsStartValue / base._hitPoints);
         if (colorValue >= 0)
         {
             Color color = new Color(1, colorValue, colorValue, 1);
             _spriteRenderer.color = color;
-            _headBehavior.SwitchColor(color);
+            _headBehavior?.SwitchColor(color);
         }
     }
     public override void Die()
     {
+        if (_isInvulnerable)
+            return;
+        _musicAudioSource.Pause();
+        _dieAudioSource.Play();
         _isDie = true;
         MoneyOnLevel = Money.instance.GetMoneyOnLevel();
         PlayerPrefs.SetInt("MoneyInLastLevel", -1);
@@ -96,6 +111,15 @@ public class PlayerController : AliveDefault
         _isDie = false;
         IsAttack=false;
         GetDamage(0);
+        _isInvulnerable = true;
+        _shield.SetActive(true);
         _player.SetBehaviourIdle();
+        StartCoroutine(EndRevial());
+    }
+    IEnumerator EndRevial()
+    {
+        yield return new WaitForSeconds(2);
+        _isInvulnerable = false;
+        _shield.SetActive(false);
     }
 }

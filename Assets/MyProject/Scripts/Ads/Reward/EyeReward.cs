@@ -13,12 +13,16 @@ public class EyeReward : RewardDefault, IDataPersistence
 {
     public int NumberAd = 0;
     
-    public LocalizeStringEvent puzzleNameEvent;
-    private LocalizedString localPuzzleName;
+    [SerializeField] LocalizeStringEvent _coinsEvent;
+    private LocalizedString _localCoins;
+    void OnEnable()
+    {
+        _localCoins = _coinsEvent.StringReference;
+    }
     public override void GetReward()
     {
         NumberAd++;
-        localPuzzleName.RefreshString();
+        _localCoins.RefreshString();
         if (NumberAd == 3)
         {
             Money.instance.Add(100);
@@ -36,17 +40,7 @@ public class EyeReward : RewardDefault, IDataPersistence
         data.NumberAdEye = NumberAd;
     }
 
-    void OnEnable()
-    {
-        localPuzzleName = puzzleNameEvent.StringReference;
-        puzzleNameEvent.OnUpdateString.AddListener(OnStringChanged);
-    }
 
-    void OnStringChanged(string s)
-    {
-        Debug.Log($"String changed to `{s}`");
-        Debug.Log("Language selected: " + LocalizationSettings.SelectedLocale);
-    }
 }
 
 

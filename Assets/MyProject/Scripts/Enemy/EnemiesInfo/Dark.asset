@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df12d2540432e6b4bb69452d835fb3d6, type: 3}
   m_Name: Dark
   m_EditorClassIdentifier: 
-  _hp: 500
+  _hp: 700
   _damage: 50
   _speed: 0
   _rewardForMurder: 300

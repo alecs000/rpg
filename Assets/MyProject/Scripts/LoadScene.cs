@@ -7,15 +7,14 @@ using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
 {
-    private void Awake()
+    private void Start()
     {
-        if(PlayerPrefs.GetInt("ChangeLocale")==1)
-            LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[PlayerPrefs.GetInt("SelectedLocale")];
-        if (PlayerPrefs.GetInt("Scene") == 0)
+        if (!PlayerPrefs.HasKey("Scene"))
         {
             PlayerPrefs.SetInt("Scene", 1);
         }
-        SceneManager.LoadScene(PlayerPrefs.GetInt("Scene"));
+        int scene = PlayerPrefs.GetInt("Scene");
+        SceneManager.LoadScene(scene);
     }
 
 }

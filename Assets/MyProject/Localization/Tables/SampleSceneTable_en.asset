@@ -29,7 +29,7 @@ MonoBehaviour:
       m_Items:
       - rid: 3404895688478687241
   - m_Id: 397224377556992
-    m_Localized: '+{0: coin|{} coins} in the last attempt'
+    m_Localized: '+ {0: coin|{} coins} in the last attempt'
     m_Metadata:
       m_Items:
       - rid: 3404895688478687241
@@ -66,12 +66,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 401879463600128
-    m_Localized: '+{0: coin|{} coins}'
+    m_Localized: '+{coins.MoneyOnLevel} {0: coin|{} coins}'
     m_Metadata:
       m_Items:
       - rid: 3404895688478687241
   - m_Id: 403823796133888
-    m_Localized: '+{0: coin|{} coins}'
+    m_Localized: + {coins.MoneyOnLevel:{} coin|{} coins}
     m_Metadata:
       m_Items:
       - rid: 3404895688478687241
@@ -88,12 +88,24 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2284305257308160
-    m_Localized: "+{0: coin|{} coins}\n + key"
+    m_Localized: "+{coins.MoneyAdded} {0: coin|{} coins}\n + key"
     m_Metadata:
       m_Items:
       - rid: 3404895688478687241
   - m_Id: 2298541593305088
     m_Localized: Loading
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2572309112791040
+    m_Localized: Attack zone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2572497407680512
+    m_Localized: Move zone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2884339443146752
+    m_Localized: Kill all the enemies before they reach the world tree
     m_Metadata:
       m_Items: []
   references:

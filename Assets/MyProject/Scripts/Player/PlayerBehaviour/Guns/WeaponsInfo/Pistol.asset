@@ -17,6 +17,7 @@ MonoBehaviour:
   _sprite: {fileID: -6187221215261355628, guid: 5371930b9bda14a4ebd10f1c972c1d0b,
     type: 3}
   _damage: 10
-  _attackSpeed: 0
+  _attackSpeed: 5
   _animationName: PistolAttack
   _cost: 100
+  _equipAudioSource: {fileID: 8300000, guid: 7255d771b81305144abfe073bc01af40, type: 3}

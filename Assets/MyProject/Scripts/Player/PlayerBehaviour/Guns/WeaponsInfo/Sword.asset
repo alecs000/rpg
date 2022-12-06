@@ -17,6 +17,7 @@ MonoBehaviour:
   _sprite: {fileID: -8070225327856036354, guid: b33f8c403f6c24c4c9b038b39d2dadda,
     type: 3}
   _damage: 30
-  _attackSpeed: 0
+  _attackSpeed: 11
   _animationName: SwordAttack
   _cost: 20
+  _equipAudioSource: {fileID: 8300000, guid: 2c6508e23ae3d584b9e4b2f5923237e5, type: 3}

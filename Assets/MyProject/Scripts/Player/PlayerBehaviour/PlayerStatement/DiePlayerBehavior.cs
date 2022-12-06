@@ -12,6 +12,7 @@ public class DiePlayerBehavior : IPlayerBehaviour
 
     public void Enter()
     {
+        _playerAnimator.SetBool("IdleActive", false);
         _playerAnimator.SetBool("IsDie", true);
     }
 

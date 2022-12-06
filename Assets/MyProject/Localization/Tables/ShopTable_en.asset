@@ -52,24 +52,27 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 674233032704
-    m_Localized: 'Cost:'
+    m_Localized: 'Cost: {ShopInfo.Cost}'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 3404895690790010928
   - m_Id: 95989506048
-    m_Localized: 'Attack speed:'
+    m_Localized: 'Attack speed: {ShopInfo.AttackSpeed}'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 3404895690790010928
   - m_Id: 92772474880
-    m_Localized: 'Damage:'
+    m_Localized: 'Damage: {ShopInfo.Damage}'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 3404895690790010928
   - m_Id: 14736752877568
     m_Localized: '{name}'
     m_Metadata:
       m_Items:
       - rid: 3404895690790010928
   - m_Id: 408822215319552
-    m_Localized: Runes
+    m_Localized: Episodes
     m_Metadata:
       m_Items: []
   - m_Id: 423092932026368
@@ -98,4 +101,4 @@ MonoBehaviour:
     - rid: 3404895690790010928
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00a0ebdf1400000000a0eb2a670d000000a0ebffcc800100
+        m_Entries: 00a0ebdf1400000000a0eb2a670d000000a0ebffcc80010000a06bfb9c00000000a06b591600000000a0ab9915000000

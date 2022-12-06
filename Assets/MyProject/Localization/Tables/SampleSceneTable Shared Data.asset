@@ -87,6 +87,18 @@ MonoBehaviour:
     m_Key: LoadingKey
     m_Metadata:
       m_Items: []
+  - m_Id: 2572309112791040
+    m_Key: AttackZoneKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2572497407680512
+    m_Key: MoveZoneKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2884339443146752
+    m_Key: LastTraning
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

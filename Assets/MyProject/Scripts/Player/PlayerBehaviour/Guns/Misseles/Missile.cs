@@ -14,7 +14,7 @@ public abstract class Missile : MonoBehaviour
     private Vector2 _direction;
     private void OnEnable()
     {
-        _joystickForAttack = GameObject.FindWithTag("_joystickForAttack").GetComponent<JoystickForAttack>();
+        _joystickForAttack = GameObject.FindWithTag("JoystickForAttack").GetComponent<JoystickForAttack>();
         float rotation = _joystickForAttack.GetAngle();
         transform.rotation = Quaternion.Euler(0, 0, rotation);
         _direction = _joystickForAttack.VectorAttack;
@@ -36,7 +36,7 @@ public abstract class Missile : MonoBehaviour
     {
         if (collisionGameObject.CompareTag("Enemy"))
         {
-            collisionGameObject.GetComponent<IAlive>().GetDamage(_weapon.damage);
+            collisionGameObject.GetComponent<IAlive>().GetDamage(_weapon.Damage);
         }
         else
         {

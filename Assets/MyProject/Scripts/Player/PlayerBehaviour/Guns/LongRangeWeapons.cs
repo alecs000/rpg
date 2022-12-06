@@ -24,7 +24,6 @@ public abstract class LongRangeWeapons : MonoBehaviour, IWeapon, IDataPersistenc
     }
     public virtual void StartAttack()
     {
-        _animatorBody.SetBool("IdleActive", false);
         Missile missile = _pool.GetFreeElement();
         missile.gameObject.layer = _animatorBody.gameObject.layer;
         missile.gameObject.GetComponent<SpriteRenderer>().sortingLayerID = _playerSpriteRenderer.sortingLayerID;
@@ -42,7 +41,7 @@ public abstract class LongRangeWeapons : MonoBehaviour, IWeapon, IDataPersistenc
     public virtual void EndAttack()
     {
         _animatorBody.SetBool("IdleActive", true);
-        _animatorBody.SetInteger(_weaponInfo.animationName, 4);
+        _animatorBody.SetInteger(_weaponInfo.AnimationName, 4);
         _weapons[0].SetActive(false);
         _weapons[1].SetActive(false);
         _weapons[2].SetActive(false);
@@ -79,7 +78,7 @@ public abstract class LongRangeWeapons : MonoBehaviour, IWeapon, IDataPersistenc
     private void AttackAnimation(int direction)
     {
         _weapons[direction].SetActive(true);
-        _animatorBody.SetInteger(_weaponInfo.animationName, direction);
+        _animatorBody.SetInteger(_weaponInfo.AnimationName, direction);
     }
 
     public void LoadData(GameData data)

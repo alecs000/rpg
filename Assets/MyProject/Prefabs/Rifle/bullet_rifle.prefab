@@ -160,6 +160,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d790b5bb41997479894d2bb87274d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weapon: {fileID: 0}
-  _missleRigidbody: {fileID: 0}
-  _speed: 0
+  _weapon: {fileID: 11400000, guid: f0f5e14191ab087439abcbf4fba17fa5, type: 2}
+  _missleRigidbody: {fileID: 3091611789361948072}
+  _speed: 9

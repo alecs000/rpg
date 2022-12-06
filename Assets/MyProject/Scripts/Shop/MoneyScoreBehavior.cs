@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MoneyScoreBehavior : MonoBehaviour, IDisposable
+public class MoneyScoreBehavior : MonoBehaviour
 {
     private Text _textMoney;
     private void Start()
@@ -13,8 +13,8 @@ public class MoneyScoreBehavior : MonoBehaviour, IDisposable
         _textMoney = GetComponent<Text>();
         _textMoney.text = Money.instance.Value.ToString();
     }
-
-    public void Dispose()
+    
+    public void OnDisable()
     {
         Money.instance.RemoveObserver(OnChangedMoney);
     }

@@ -17,6 +17,7 @@ MonoBehaviour:
   _sprite: {fileID: -1245067320436552432, guid: fb1015b471b94354797cb9cba5c8ca74,
     type: 3}
   _damage: 50
-  _attackSpeed: 0
+  _attackSpeed: 23
   _animationName: HammerAttack
   _cost: 40
+  _equipAudioSource: {fileID: 8300000, guid: 841938d23d40c514796f635f1ad434f0, type: 3}

@@ -4,19 +4,29 @@ using UnityEngine;
 
 public class Training : MonoBehaviour
 {
-    [SerializeField] private Animation _joystickZoneAnimation;
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private GameObject _traning;
+    [SerializeField] private Canvas[] _canvas;
+    private void Start()
     {
-        StartTraining();
+        if (PlayerPrefs.GetInt("Traning") !=1)
+        {
+            _traning.SetActive(true);
+            foreach (Canvas canvas in _canvas)
+            {
+                canvas.enabled = false; 
+            }
+            Time.timeScale = 0;
+        }
     }
-    void StartTraining()
+    public void CloseTraning()
     {
-        _joystickZoneAnimation.Play();
+        foreach (Canvas canvas in _canvas)
+        {
+            canvas.enabled = true;
+        }
+        PlayerPrefs.SetInt("Traning", 1);
+        _traning.SetActive(false);
+        Time.timeScale = 1;
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

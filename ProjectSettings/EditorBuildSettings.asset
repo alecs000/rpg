@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/MyProject/Scenes/FifthScene.unity
     guid: 628156efca7838a42aa7e0ecbcf73b23
   - enabled: 1
+    path: Assets/MyProject/Scenes/LastScene.unity
+    guid: c0520070b5fa6a64e8db6294b9dad30c
+  - enabled: 1
     path: Assets/MyProject/Scenes/City.unity
     guid: f5860e80c00bcf44f90c7aaff55efa51
   m_configObjects:
