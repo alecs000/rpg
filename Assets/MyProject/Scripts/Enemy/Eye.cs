@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class Eye : DefoultEnemy
@@ -18,7 +15,7 @@ public class Eye : DefoultEnemy
             Vector2 dir = (_playerTransform.position - this.transform.position).normalized;
             _agent.SetDestination(_playerTransform.position);
             isMoving = true;
-            if (dir.x>0)
+            if (dir.x > 0)
             {
                 _enemyAnimator.SetInteger("Direction", 1);
             }
@@ -29,7 +26,7 @@ public class Eye : DefoultEnemy
         }
         else
         {
-           _enemyRigidbody.velocity = Vector2.zero;
+            _enemyRigidbody.velocity = Vector2.zero;
             _enemyAnimator.SetInteger("Direction", 4);
             isMoving = false;
         }
@@ -51,7 +48,7 @@ public class Eye : DefoultEnemy
         if (dis > _distance)
         {
             Vector2 dir = (_playerTransform.position - this.transform.position).normalized;
-            DefaultMovement.Move(dir,_enemyRigidbody, _enemyInfo.Speed);
+            DefaultMovement.Move(dir, _enemyRigidbody, _enemyInfo.Speed);
             isMoving = true;
             if (dir.x > 0)
             {

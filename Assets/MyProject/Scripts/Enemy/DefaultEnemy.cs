@@ -1,10 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.UIElements;
-using UnityEngine.XR;
 
 public abstract class DefoultEnemy : AliveDefault
 {
@@ -29,8 +25,8 @@ public abstract class DefoultEnemy : AliveDefault
         _playerTransform = player.transform;
         _enemyRigidbody = GetComponent<Rigidbody2D>();
         _enemyAnimator = GetComponent<Animator>();
-        _enemySpriteRenderer = GetComponent<SpriteRenderer>(); 
-        playerController = player.GetComponent<PlayerController>(); 
+        _enemySpriteRenderer = GetComponent<SpriteRenderer>();
+        playerController = player.GetComponent<PlayerController>();
         if (NavMeshMovment)
         {
             _agent = GetComponent<NavMeshAgent>();
@@ -44,8 +40,8 @@ public abstract class DefoultEnemy : AliveDefault
     {
         base._hitPoints = _enemyInfo.HP;
         _isDie = false;
-        _isAttack=false;
-        if(NavMeshMovment && !_isSpawn)
+        _isAttack = false;
+        if (NavMeshMovment && !_isSpawn)
             _agent.enabled = true;
     }
     private void OnDisable()
@@ -95,8 +91,8 @@ public abstract class DefoultEnemy : AliveDefault
             return;
         }
         bool isMoving;
-        isMoving = DefaultMovement.TryMove(this.transform.position, _playerTransform.position,_enemyRigidbody, _enemyAnimator, _distance, _enemyInfo.Speed);
-        if(isMoving)
+        isMoving = DefaultMovement.TryMove(this.transform.position, _playerTransform.position, _enemyRigidbody, _enemyAnimator, _distance, _enemyInfo.Speed);
+        if (isMoving)
             _enemyAnimator.SetBool("IsAttack", false);
         if (!isMoving)
         {
@@ -121,7 +117,7 @@ public abstract class DefoultEnemy : AliveDefault
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (SimpleMovment&&collision.CompareTag("AttackTrigger"))
+        if (SimpleMovment && collision.CompareTag("AttackTrigger"))
         {
             Attack();
         }
@@ -156,11 +152,12 @@ public abstract class DefoultEnemy : AliveDefault
         {
             playerController.GetDamage(_enemyInfo.Damage);
         }
-            _isAttack = false;
+        _isAttack = false;
         _enemyAnimator.SetBool("IsAttack", false);
     }
 
-    public override void Die() {
+    public override void Die()
+    {
         _isDie = true;
         _enemyAnimator.SetBool("IsDie", true);
         _enemyAnimator.SetBool("IsAttack", false);
@@ -168,7 +165,8 @@ public abstract class DefoultEnemy : AliveDefault
         _enemyRigidbody.velocity = Vector2.zero;
         Money.instance.Add(_enemyInfo.RewardForMurder);
     }
-    public override void GetDamage(float damage) {
+    public override void GetDamage(float damage)
+    {
         if (_isDie)
         {
             return;

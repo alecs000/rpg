@@ -1,9 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public abstract class LongRangeWeapons : MonoBehaviour, IWeapon, IDataPersistence
 {
@@ -14,12 +9,12 @@ public abstract class LongRangeWeapons : MonoBehaviour, IWeapon, IDataPersistenc
     [SerializeField] private Animator _animatorBody;
     [SerializeField] private WeaponInfo _weaponInfo;
     private PoolMono<Missile> _pool;
-    private SpriteRenderer  _playerSpriteRenderer;
+    private SpriteRenderer _playerSpriteRenderer;
     private float _damage;
     public WeaponInfo WeaponInfo => _weaponInfo;
     private void Start()
     {
-         _pool = new PoolMono<Missile>(_prefab, _poolCount, this.transform);
+        _pool = new PoolMono<Missile>(_prefab, _poolCount, this.transform);
         _playerSpriteRenderer = _animatorBody.GetComponent<SpriteRenderer>();
     }
     public virtual void StartAttack()
@@ -53,7 +48,7 @@ public abstract class LongRangeWeapons : MonoBehaviour, IWeapon, IDataPersistenc
         if (_joystickForAttack.VectorAttack.y > 0.5)
         {
             AttackAnimation(0);
-            _weapons[0].transform.rotation = Quaternion.Euler(0, 0, angle-90);
+            _weapons[0].transform.rotation = Quaternion.Euler(0, 0, angle - 90);
             return;
         }
         if (_joystickForAttack.VectorAttack.x > 0.5)
@@ -91,7 +86,7 @@ public abstract class LongRangeWeapons : MonoBehaviour, IWeapon, IDataPersistenc
 
     public void SaveData(GameData data)
     {
-        
+
     }
 }
 

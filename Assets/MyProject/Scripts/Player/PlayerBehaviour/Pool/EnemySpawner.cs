@@ -1,8 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
-using static UnityEditor.PlayerSettings;
+
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -18,8 +16,8 @@ public class EnemySpawner : MonoBehaviour
     }
     public void RandomSpawn(Vector2 position, float deviationX, float deviationY, string layer = "Layer 1")
     {
-        Spawn(new Vector2( position.x + Random.Range(-deviationX, deviationX), position.y + Random.Range(-deviationY, deviationY)), layer);
-    } 
+        Spawn(new Vector2(position.x + Random.Range(-deviationX, deviationX), position.y + Random.Range(-deviationY, deviationY)), layer);
+    }
     public void Spawn(Vector2 position, string layer = "Layer 1")
     {
         DefoultEnemy enemy = _pool.GetFreeElement(false) as DefoultEnemy;
