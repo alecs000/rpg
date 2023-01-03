@@ -11,13 +11,17 @@ public class ChestBehaviour : MonoBehaviour
     [SerializeField] private ChestInfo[] _chestInfo;
     [SerializeField] private GameObject[] _openedChest;
     [SerializeField] private GameObject[] _closedChest;
-    [SerializeField] private GameObject _notification;
+    [SerializeField] private GameObject[] _notifications;
     [SerializeField] private AudioSource[] _chestAudioSource;
 
-    private Animation _notificationAnimator;
+    private Animation[] _notificationAnimators ;
     private void Start()
     {
-        _notificationAnimator = _notification.GetComponent<Animation>();
+        _notificationAnimators = new Animation[_notifications.Length];
+        for(int i = 0; i< _notifications.Length; i++)
+        {
+            _notificationAnimators[i] = _notifications[i].GetComponent<Animation>();
+        }
     }
     public void Open(GameObject sender)
     {
@@ -26,7 +30,7 @@ public class ChestBehaviour : MonoBehaviour
         sender.SetActive(false);
         _openedChest[Index].SetActive(true);
         Money.instance.Add(moneyAmount);
-        _notification.SetActive(true);
+        _notifications[Index].SetActive(true);
         _closedChest[Index].SetActive(false);
         _chestAudioSource[Index].Play();
     }

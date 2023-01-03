@@ -24,12 +24,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3487428222976
-    m_Localized: '+{0: coin|{} coins}'
+    m_Localized: '+{coins.MoneyAdded}{0: coin| coins}'
     m_Metadata:
       m_Items:
       - rid: 3404895688478687241
   - m_Id: 397224377556992
-    m_Localized: '+ {0: coin|{} coins} in the last attempt'
+    m_Localized: '+{maneyInLastAtempt.MoneyInLastLevel}{0: coin| coins} in the last
+      attempt'
     m_Metadata:
       m_Items:
       - rid: 3404895688478687241

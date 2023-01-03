@@ -15,8 +15,8 @@ MonoBehaviour:
   _index: 4
   _nameWeapon: Rifle
   _sprite: {fileID: 7475298369558532723, guid: c32e45283c8b0064dab78cce8e2d65e3, type: 3}
-  _damage: 100
+  _damage: 40
   _attackSpeed: 6
   _animationName: RifleAttack
-  _cost: 400
+  _cost: 500
   _equipAudioSource: {fileID: 8300000, guid: 135ee0869cb16a647b574a95ac310baf, type: 3}

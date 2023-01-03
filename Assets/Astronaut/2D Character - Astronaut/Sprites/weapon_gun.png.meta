@@ -47,6 +47,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -90,6 +91,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
@@ -168,49 +170,49 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gun_0
+      name: weapon_gun_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 137
         y: 0
-        width: 448
-        height: 432
+        width: 93
+        height: 223
       alignment: 9
-      pivot: {x: 0.46472666, y: 0.44131926}
+      pivot: {x: 0.79430515, y: 0.8952256}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 666830bf4942304a0800000000000000
-      internalID: -6628414004274166170
+      spriteID: 69daae070f9545140b9339fdd543ca1e
+      internalID: -553763405
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gun_1
+      name: weapon_gun_1
       rect:
         serializedVersion: 2
-        x: 448
+        x: 645
         y: 0
-        width: 448
-        height: 432
+        width: 52
+        height: 212
       alignment: 9
-      pivot: {x: 0.5, y: 0.40656847}
+      pivot: {x: 0.49913025, y: 0.85171795}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f035ac79ee6fd85d0800000000000000
-      internalID: -3058517067305430257
+      spriteID: 9faa9757d422ff541bdcf50b11991d10
+      internalID: -225794764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gun_2
+      name: weapon_gun_2
       rect:
         serializedVersion: 2
         x: 896
@@ -218,14 +220,14 @@ TextureImporter:
         width: 448
         height: 432
       alignment: 9
-      pivot: {x: 0.5, y: 0.5931254}
+      pivot: {x: 0.5, y: 0.60608137}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 984abfb7b22efb280800000000000000
-      internalID: -9025246451835624311
+      spriteID: 535dda430edef1f41a6ac17f7f12cc39
+      internalID: -315019653
       vertices: []
       indices: 
       edges: []
@@ -241,12 +243,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      gun_0: -6628414004274166170
-      gun_1: -3058517067305430257
-      gun_2: -9025246451835624311
+      weapon_gun_0: -553763405
+      weapon_gun_1: -225794764
+      weapon_gun_2: -315019653
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

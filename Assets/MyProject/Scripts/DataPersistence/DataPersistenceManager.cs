@@ -66,16 +66,23 @@ public class DataPersistenceManager : MonoBehaviour
         // save that data to a file using the data handler
         _dataHandler.Save(_gameData);
     }
-    private void OnDisable()
+    private void OnDestroy()
     {
         SaveGame();
     }
 
     private List<IDataPersistence> FindAllDataPersistenceObjects() 
     {
-        IEnumerable<IDataPersistence> dataPersistenceObjects = FindObjectsOfType<MonoBehaviour>(true)
+        var gameObjects = FindObjectsOfType<MonoBehaviour>(true)
             .OfType<IDataPersistence>();
-
+        List<IDataPersistence> dataPersistenceObjects = new List<IDataPersistence>();
+        foreach (IDataPersistence dataPersistenceObj in gameObjects)
+        {
+            if (dataPersistenceObj!=null)
+            {
+                dataPersistenceObjects.Add(dataPersistenceObj);
+            }
+        }
         return new List<IDataPersistence>(dataPersistenceObjects);
     }
 }

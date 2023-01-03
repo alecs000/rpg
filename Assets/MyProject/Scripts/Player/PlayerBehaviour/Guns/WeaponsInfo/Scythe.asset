@@ -15,8 +15,8 @@ MonoBehaviour:
   _index: 3
   _nameWeapon: Scythe
   _sprite: {fileID: 2144103145164238673, guid: 033a0dfc04c8a3b4a983baa72f41ec3e, type: 3}
-  _damage: 70
+  _damage: 100
   _attackSpeed: 14
   _animationName: BraidAttack
-  _cost: 150
+  _cost: 200
   _equipAudioSource: {fileID: 8300000, guid: 952fa86356b9ac54aae4fb5b7e59e291, type: 3}

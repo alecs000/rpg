@@ -47,6 +47,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -90,6 +91,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
@@ -171,12 +173,12 @@ TextureImporter:
       name: rifle_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 0
-        width: 448
-        height: 432
+        width: 185
+        height: 222
       alignment: 9
-      pivot: {x: 0.5229277, y: 0.43766114}
+      pivot: {x: 0.7450166, y: 0.8647548}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -192,12 +194,12 @@ TextureImporter:
       name: rifle_1
       rect:
         serializedVersion: 2
-        x: 448
+        x: 635
         y: 0
-        width: 448
-        height: 432
+        width: 71
+        height: 216
       alignment: 9
-      pivot: {x: 0.5, y: 0.43034518}
+      pivot: {x: 0.511129, y: 0.85832864}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -246,7 +248,6 @@ TextureImporter:
       rifle_0: 8333481726314500824
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

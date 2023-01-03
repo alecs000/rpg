@@ -5,10 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Notice
   - JoystickForAttack
   - InvisibleZone
-  - AttackTrigger
-  - Notice
   layers:
   - Default
   - TransparentFX
@@ -47,14 +46,11 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Layer 1
-    uniqueID: 2425651459
+    uniqueID: 558307081
     locked: 0
   - name: Layer 2
-    uniqueID: 4250941897
+    uniqueID: 3886888959
     locked: 0
   - name: Layer 3
-    uniqueID: 4189426099
-    locked: 0
-  - name: LayerUI
-    uniqueID: 4086997411
+    uniqueID: 2920905899
     locked: 0

@@ -30,7 +30,8 @@ EditorBuildSettings:
     path: Assets/MyProject/Scenes/City.unity
     guid: f5860e80c00bcf44f90c7aaff55efa51
   m_configObjects:
-    com.unity.addressableassets: {fileID: 11400000, guid: 2a3f4db5dfd25fd40b3a04e3a4b436e7,
-      type: 2}
-    com.unity.localization.settings: {fileID: 11400000, guid: 0589ed4701ba83d43b77dcbc97ccdde4,
-      type: 2}
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 6c4afcc04169fc84689f3099836f3051, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: f02c31fd762283f46ae94ac3641330b0, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 40cf83bbd46a3a644b81b31981a759ed, type: 2}
+    com.unity.addressableassets: {fileID: 11400000, guid: 2a3f4db5dfd25fd40b3a04e3a4b436e7, type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 0589ed4701ba83d43b77dcbc97ccdde4, type: 2}

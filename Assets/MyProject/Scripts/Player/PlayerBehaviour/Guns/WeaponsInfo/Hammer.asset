@@ -14,10 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _index: 1
   _nameWeapon: Hammer
-  _sprite: {fileID: -1245067320436552432, guid: fb1015b471b94354797cb9cba5c8ca74,
-    type: 3}
-  _damage: 50
+  _sprite: {fileID: -1245067320436552432, guid: fb1015b471b94354797cb9cba5c8ca74, type: 3}
+  _damage: 100
   _attackSpeed: 23
   _animationName: HammerAttack
-  _cost: 40
+  _cost: 80
   _equipAudioSource: {fileID: 8300000, guid: 841938d23d40c514796f635f1ad434f0, type: 3}

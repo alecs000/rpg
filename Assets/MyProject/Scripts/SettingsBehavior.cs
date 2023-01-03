@@ -10,6 +10,7 @@ public class SettingsBehavior : MonoBehaviour
     [SerializeField] private Slider _effectsSlider;
     private void Start()
     {
+        Time.timeScale = 1;
         float music = PlayerPrefs.GetFloat("Music");
         if (music != 0)
         {

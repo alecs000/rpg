@@ -404,8 +404,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0f874d7c806493640b13e694368eadaa, type: 2}
-  m_sharedMaterial: {fileID: -2833967700733828990, guid: 0f874d7c806493640b13e694368eadaa,
-    type: 2}
+  m_sharedMaterial: {fileID: -2833967700733828990, guid: 0f874d7c806493640b13e694368eadaa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -523,6 +522,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 574e03beee37f6240aa4c8e13babdd08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1344056991
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7548026264796620493, guid: 3a076640165f60046b3b6b7ff5b2e1c8, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548026264796620493, guid: 3a076640165f60046b3b6b7ff5b2e1c8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.741604
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548026264796620493, guid: 3a076640165f60046b3b6b7ff5b2e1c8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 30.851501
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548026264796620493, guid: 3a076640165f60046b3b6b7ff5b2e1c8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 74.13927
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548026264796620493, guid: 3a076640165f60046b3b6b7ff5b2e1c8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548026264796620493, guid: 3a076640165f60046b3b6b7ff5b2e1c8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548026264796620493, guid: 3a076640165f60046b3b6b7ff5b2e1c8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548026264796620493, guid: 3a076640165f60046b3b6b7ff5b2e1c8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548026264796620493, guid: 3a076640165f60046b3b6b7ff5b2e1c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548026264796620493, guid: 3a076640165f60046b3b6b7ff5b2e1c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548026264796620493, guid: 3a076640165f60046b3b6b7ff5b2e1c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548026264796620495, guid: 3a076640165f60046b3b6b7ff5b2e1c8, type: 3}
+      propertyPath: m_Name
+      value: Bank
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a076640165f60046b3b6b7ff5b2e1c8, type: 3}
 --- !u!1 &1732132820
 GameObject:
   m_ObjectHideFlags: 0
